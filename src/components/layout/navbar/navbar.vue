@@ -63,7 +63,7 @@
         Login
       </router-link>
       <router-link to="" class="d-none d-md-flex navbar__btn ml-3">Sign Up</router-link>
-      <div>
+      <div class="d-md-none">
         <transition appear name="fade">
           <div
             v-if="!showMobileNav"
