@@ -16,14 +16,14 @@
       <div class="row justify-content-between footer__socials-row">
         <template v-for="item in socials">
           <div :key="item.name" class="col-auto">
-            <router-link to="">
+            <a :href="item.url" target="_blank" rel="noopener noreferrer">
               <div class="d-flex align-items-center footer__social">
                 <svg class="footer__social-icon">
                   <use :xlink:href="item.icon"></use>
                 </svg>
                 <span class="footer__social-name ml-3">{{ item.name }}</span>
               </div>
-            </router-link>
+            </a>
           </div>
         </template>
       </div>
@@ -76,12 +76,31 @@ export default {
   data() {
     return {
       socials: [
-        { name: 'Telegram', icon: '#telegram-logo' },
-        { name: 'Twitter', icon: '#twitter-logo' },
-        { name: 'Instagram', icon: '#instagram-logo' },
-        { name: 'Medium', icon: '#medium-logo' },
-        { name: 'Facebook', icon: '#facebook-square-logo' },
-        { name: 'Bitcointalk', icon: '#facebook-square-logo' },
+        {
+          name: 'Telegram',
+          icon: '#telegram-logo',
+          url: 'https://t.me/zamzambank',
+        },
+        {
+          name: 'Twitter',
+          icon: '#twitter-logo',
+          url: 'https://twitter.com/zamzambank',
+        },
+        {
+          name: 'Instagram',
+          icon: '#instagram-logo',
+          url: 'https://instagram.com/zamzam.io',
+        },
+        {
+          name: 'Medium',
+          icon: '#medium-logo',
+          url: 'https://medium.com/@zamzamofficial',
+        },
+        {
+          name: 'Facebook',
+          icon: '#facebook-square-logo',
+          url: 'https://www.facebook.com/zamzambank',
+        },
       ],
     };
   },

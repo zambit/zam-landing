@@ -209,14 +209,14 @@ export default {
         },
 
         {
-          name: 'Dzera',
-          role: 'CEO of the MENA region',
+          name: 'Dzera Gazdanova',
+          role: 'Press Secretary',
           photo: '',
         },
 
         {
           name: 'Alina Belova',
-          role: 'CEO of the MENA region',
+          role: 'Public Relations',
           photo: '',
         },
       ],

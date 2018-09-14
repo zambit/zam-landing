@@ -34,9 +34,13 @@
           </svg>
         </div>
         <transition appear name="fade">
-          <div v-if="showLocales" class="locales-sb__items">
+          <div
+            v-if="showLocales"
+            class="locales-sb__items"
+          >
             <template v-for="(locale, index) in locales">
               <div
+                v-click-outside="handleClickOutside"
                 :key="locale"
                 class="locales-sb__item"
                 @click="setCurrentLocale(index)"
@@ -58,11 +62,16 @@
 </template>
 
 <script>
+import ClickOutside from 'vue-click-outside';
+
 import './logo.svg';
 import './down-arrow.svg';
 
 export default {
   name: 'navbar',
+  directives: {
+    ClickOutside,
+  },
   data() {
     return {
       showLocales: false,
@@ -84,6 +93,9 @@ export default {
       this.currentLocale = index;
       this.showLocales = false;
     },
+    handleClickOutside() {
+      this.showLocales = false;
+    },
   },
 };
 </script>
@@ -92,9 +104,11 @@ export default {
 @import "@/assets/styles/_settings.scss";
 
 .navbar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
+  z-index: 9nav;
 }
 
 .navbar__logo {
@@ -163,6 +177,7 @@ export default {
   top: calc(100% + 15px);
 
   border: 1px solid #ececec;
+  z-index: 99;
 
   & > .locales-sb__item:hover {
     background-color: $sky-blue;

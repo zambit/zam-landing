@@ -179,10 +179,12 @@
               :style="{ 'marginTop': n > 3 ? '30px' : '0' }"
               class="col-4"
             >
-              <news-card
-                :news="news[index]"
-                class="h-100"
-              />
+              <router-link to="">
+                <news-card
+                  :news="news[index]"
+                  class="h-100"
+                />
+              </router-link>
             </div>
           </template>
           <div
@@ -512,7 +514,7 @@ export default {
 }
 
 .apps-row {
-  margin-top: 210px;
+  margin-top: 130px;
   margin-bottom: 586px;
 }
 
