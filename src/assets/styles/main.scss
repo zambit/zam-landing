@@ -1,0 +1,71 @@
+@import "./settings";
+
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/utilities/text";
+@import "~bootstrap/scss/utilities/visibility";
+@import "~bootstrap/scss/utilities/spacing";
+@import "~bootstrap/scss/utilities/sizing";
+@import "~bootstrap/scss/utilities/flex";
+@import "~bootstrap/scss/utilities/display";
+@import "~bootstrap/scss/utilities/background";
+@import "~bootstrap/scss/utilities/borders";
+@import "~bootstrap/scss/utilities/position";
+
+html, body {
+  color: white;
+  font-family: 'Maven Pro', sans-serif;
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.dark-blue {
+  color: #2a3271;
+}
+
+.sky-blue {
+  color: $sky-blue;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+// For Google Chrome
+::-webkit-scrollbar {
+  width:  6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #454e8d;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.77;
+  letter-spacing: -0.7px;
+  text-align: center;
+  color: $sky-blue;
+}

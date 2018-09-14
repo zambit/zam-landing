@@ -1,0 +1,58 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$green: #28a744;
+$weird-green: #4ce479;
+$lightish-green: #8de37f;
+$red: #dc3545;
+$cornflower: #5d76f3;
+$sky-blue: #56c0fd;
+$turquoise-blue: #01a7d6;
+$flat-blue: #346ca4;
+$dusk: #474b73;
+$dark-indigo: #0e1145;
+$silver: #858997;
+
+$colors: map-merge(
+    (
+      'green': $green,
+      'weird-green': $weird-green,
+      'lightish-green': $lightish-green,
+      'red': $red,
+      'cornflower': $cornflower,
+      'sky-blue': $sky-blue,
+      'turquoise-blue': $turquoise-blue,
+      'flat-blue': $flat-blue,
+      'dusk': $dusk,
+      'dark-indigo': $dark-indigo,
+      'silver': $silver,
+    ),
+    $colors
+);
+
+$theme-colors: map-merge(
+    (
+      "action": $sky-blue,
+    ),
+    $theme-colors
+);
+
+$h1-font-size: 2.125rem;
+$h2-font-size: 1.375rem;
+
+$link-color: $sky-blue;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+@import "~bootstrap/scss/mixins";
