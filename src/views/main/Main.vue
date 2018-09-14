@@ -624,7 +624,7 @@ export default {
 
 .apps-row {
   margin-top: 130px;
-  margin-bottom: 586px;
+  margin-bottom: 300px;
 }
 
 .musthead__app-icon {

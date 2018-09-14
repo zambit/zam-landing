@@ -3,15 +3,17 @@
     <slot name="photo" class="team-member__photo"></slot>
     <h4 class="team-member__name">{{ person.name }}</h4>
     <p class="team-member__role">{{ person.role }}</p>
-    <div class="popup">
-      <div class="popup-wrap">
-        <div class="container">
-          <div class="row">
+    <transition appear name="fade">
+      <div v-if="false" class="popup">
+        <div class="popup-wrap">
+          <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
 
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </transition>
   </div>
 </template>
 
@@ -70,4 +72,16 @@ export default {
   margin-top: 6px;
 }
 
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+}
+
+.popup-wrap {
+}
 </style>
