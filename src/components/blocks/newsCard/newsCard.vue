@@ -79,6 +79,10 @@ export default {
 
     background-color: rgba(66, 33, 9, 0.3);
   }
+
+  @include media-breakpoint-down(md) {
+    padding: 20px 12px 30px;
+  }
 }
 
 .news-card__tag {
@@ -111,6 +115,11 @@ export default {
   line-height: 1.11;
   margin-bottom: 0;
   margin-top: 150px;
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.3125rem;
+    margin-top: 110px;
+  }
 }
 
 .news-card__author {

@@ -6,11 +6,13 @@
           <h2 class="section-title"><span class="dark-blue">Contact</span> Us</h2>
         </div>
       </div>
-      <div class="row justify-content-between justify-content-lg-center mt-5">
+      <div
+        class="row justify-content-center mt-0 mt-lg-5"
+      >
         <template v-for="(city, index) in cities">
           <div
             :key="index"
-            class="col-auto mt-md-5 mt-xl-0"
+            class="col-auto mt-5 mt-md-5 mt-xl-0"
           >
             <div class="city">
               <span class="city__name">{{ city.name }}</span>
@@ -28,7 +30,7 @@
         </div>
         <div class="col-12 col-lg-6">
           <div class="row no-gutters justify-content-center">
-            <div class="col-12 col-lg-12 col-xl-10">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-12 col-xl-10">
               <form @submit.prevent="" class="w-100 contact-form__form">
                 <v-input
                   :value="formData.name"
@@ -228,6 +230,8 @@ export default {
   box-shadow: 0 20px 42px -8px rgba(141, 227, 127, 0.82);
 
   transition: box-shadow .2s ease;
+
+  cursor: pointer;
 
   &:hover {
     box-shadow: none;

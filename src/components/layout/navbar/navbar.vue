@@ -6,10 +6,12 @@
           <use xlink:href="#logo"></use>
         </svg>
       </router-link>
-      <span class="navbar__text-logo ml-3">zamzam</span>
+      <span
+        :class="['navbar__text-logo ml-3', { 'd-inline' : showMobileNav }]"
+      >zamzam</span>
     </div>
     <div class="d-flex align-items-center">
-      <ul class="navbar__list">
+      <ul class="d-none d-md-flex navbar__list">
         <template v-for="item in routes">
           <li :key="item.route" class="navbar__list-item">
             <router-link
@@ -20,7 +22,7 @@
           </li>
         </template>
       </ul>
-      <div class="navbar__select-lang locales-sb">
+      <div class="navbar__select-lang locales-sb d-none d-md-flex ">
         <div class="locales-sb__item" @click="showLocales = true">
           <div
             class="locales-sb__flag"
@@ -55,8 +57,88 @@
           </div>
         </transition>
       </div>
-      <router-link to="" class="navbar__btn">Login</router-link>
-      <router-link to="" class="navbar__btn ml-3">Sign Up</router-link>
+      <router-link
+        to=""
+        :class="['navbar__btn navbar__btn--no-border mr-3 mr-md-0', { 'd-none' : showMobileNav }]">
+        Login
+      </router-link>
+      <router-link to="" class="d-none d-md-flex navbar__btn ml-3">Sign Up</router-link>
+      <div>
+        <transition appear name="fade">
+          <div
+            v-if="!showMobileNav"
+            class="d-flex flex-column burger-wrap"
+            @click="showMobileNav = true"
+          >
+            <div class="burger-line w-100"></div>
+            <div class="burger-line w-75"></div>
+            <div class="burger-line w-100"></div>
+          </div>
+          <div
+            v-else
+            class="d-flex w-100 h-100"
+            @click="showMobileNav = false"
+          >
+            <svg class="navbar__icon-close">
+              <use xlink:href="#icon-close"></use>
+            </svg>
+          </div>
+        </transition>
+      </div>
+    </div>
+    <div
+      :class="['navbar-m', { 'navbar-m--open' : showMobileNav }]"
+    >
+      <ul class="d-flex flex-column list-unstyled mb-0">
+        <template v-for="item in routes">
+          <li :key="item.route" class="navbar__list-item mx-0 mb-3">
+            <router-link
+              :to="item.route"
+              class="navbar__list-link"
+            >{{ item.name }}
+            </router-link>
+          </li>
+        </template>
+      </ul>
+      <div class="navbar__select-lang locales-sb">
+        <div class="locales-sb__item px-0" @click="showLocales = true">
+          <div
+            class="locales-sb__flag"
+            :style="{
+            backgroundImage: `url(https://www.countryflags.io/${locales[currentLocale]}/flat/64.png)`
+            }"
+          ></div>
+          <span class="locales-sb__name ml-2">{{ locales[currentLocale] }}</span>
+          <svg class="locales-sb__arrow-icon ml-2">
+            <use xlink:href="#down-arrow"></use>
+          </svg>
+        </div>
+        <transition appear name="fade">
+          <div
+            v-if="showLocales"
+            class="locales-sb__items"
+          >
+            <template v-for="(locale, index) in locales">
+              <div
+                v-click-outside="handleClickOutside"
+                :key="locale"
+                class="locales-sb__item"
+                @click="setCurrentLocale(index)"
+              >
+                <div
+                  class="locales-sb__flag"
+                  :style="{ backgroundImage: `url(https://www.countryflags.io/${locale}/flat/64.png)` }"
+                ></div>
+                <span class="locales-sb__name ml-2">{{ locale }}</span>
+              </div>
+            </template>
+          </div>
+        </transition>
+      </div>
+      <div class="d-flex mt-5 pt-4">
+        <router-link to="" class="navbar__btn">Login</router-link>
+        <router-link to="" class="navbar__btn ml-3">Sign Up</router-link>
+      </div>
     </div>
   </nav>
 </template>
@@ -66,6 +148,7 @@ import ClickOutside from 'vue-click-outside';
 
 import './logo.svg';
 import './down-arrow.svg';
+import './icon-close.svg';
 
 export default {
   name: 'navbar',
@@ -74,6 +157,7 @@ export default {
   },
   data() {
     return {
+      showMobileNav: false,
       showLocales: false,
       currentLocale: 0,
       locales: [
@@ -96,6 +180,9 @@ export default {
     handleClickOutside() {
       this.showLocales = false;
     },
+    closeMobileNav() {
+      this.showMobileNav = false;
+    },
   },
 };
 </script>
@@ -108,7 +195,11 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 20px 50px;
-  z-index: 9nav;
+  z-index: 9;
+
+  @include media-breakpoint-down(md) {
+    padding: 20px 12px;
+  }
 }
 
 .navbar__logo {
@@ -121,6 +212,10 @@ export default {
   font-weight: bold;
   letter-spacing: 0.6px;
   color: #2a3271;
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }
 
 .navbar__list {
@@ -161,6 +256,12 @@ export default {
   &:hover {
     color: white;
     background-color: $sky-blue;
+  }
+}
+
+.navbar__btn--no-border{
+  @include media-breakpoint-down(md) {
+    border: none;
   }
 }
 
@@ -219,5 +320,47 @@ export default {
 .locales-sb__arrow-icon {
   width: 9px;
   height: 5px;
+}
+
+.burger-wrap {
+  display: flex;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  cursor: pointer;
+}
+
+.burger-line {
+  height: 2px;
+  border-radius: 1px;
+  background-color: $sky-blue;
+
+  &:not(:first-child) {
+    margin-top: 5px;
+  }
+}
+
+.navbar-m {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  padding: 32px 12px;
+
+  background-color: white;
+
+  transform: translateX(150%);
+  transition: transform .2s ease;
+}
+
+.navbar-m--open {
+  transform: translateX(0);
+}
+
+.navbar__icon-close {
+  width: 24px;
+  height: 24px;
 }
 </style>

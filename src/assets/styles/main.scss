@@ -68,4 +68,8 @@ a, a:hover {
   letter-spacing: -0.7px;
   text-align: center;
   color: $sky-blue;
+  
+  @include media-breakpoint-down(md) {
+    font-size: 2.125rem;
+  }
 }

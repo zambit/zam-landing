@@ -13,10 +13,15 @@
           </div>
         </div>
       </div>
-      <div class="row justify-content-between footer__socials-row">
-        <template v-for="item in socials">
-          <div :key="item.name" class="col-auto">
-            <a :href="item.url" target="_blank" rel="noopener noreferrer">
+      <div class="row justify-content-md-between footer__socials-row">
+        <template v-for="(item, index) in socials">
+          <div :key="item.name" class="col-12 col-sm-auto text-center text-md-left">
+            <a
+              :href="item.url"
+              target="_blank"
+              rel="noopener noreferrer"
+              :class="['d-inline-block', { 'mb-4' : index !== socials.length - 1 }]"
+            >
               <div class="d-flex align-items-center footer__social">
                 <svg class="footer__social-icon">
                   <use :xlink:href="item.icon"></use>
@@ -46,9 +51,11 @@
         </div>
       </div>
       <div class="row justify-content-center footer__links-row">
-        <div class="col-auto">
+        <div class="col-12 col-sm-auto text-center text-sm-left">
           <router-link to="" class="footer__text text-underline">Privacy Policy</router-link>
-          <router-link to="" class="footer__text text-underline ml-3">
+        </div>
+        <div class="col-12 col-sm-auto text-center text-sm-left">
+          <router-link to="" class="footer__text text-underline ml-sm-3">
             Terms and Conditions
           </router-link>
         </div>
@@ -123,6 +130,12 @@ footer.footer {
   &:hover {
     opacity: .5;
   }
+
+  @include media-breakpoint-down(md) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
 }
 
 .footer__social-icon {
@@ -157,6 +170,10 @@ footer.footer {
 
 .footer__app-row {
   margin-top: 85px;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 58px;
+  }
 }
 
 .footer__text {
@@ -174,6 +191,13 @@ footer.footer {
   height: 35px;
 
   margin-right: 30px;
+
+  @include media-breakpoint-down(md) {
+    width: 35px;
+    height: 30px;
+
+    margin-right: 20px;
+  }
 }
 
 .footer__btn-cta {
@@ -194,9 +218,18 @@ footer.footer {
   &:hover {
     background-color: #283C98;
   }
+
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
 
 .footer__socials-row {
   margin-top: 94px;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 58px;
+  }
 }
 </style>
