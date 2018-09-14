@@ -42,7 +42,19 @@
 
     <section class="product">
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
+          <div class="col-7">
+            <h2 class="product__title text-center">Why does the world need blockchain banks?</h2>
+          </div>
+          <div class="col-8">
+            <p class="feature-desc mt-5 text-center">Zamzam mission
+              is to speed up the process of the transition from
+              a traditional monetary system to a fully digital economy in order for banks and
+              financial institutions all over the world to become open, fair and efficient through
+              the implementation of blockchain and decentralized systems.</p>
+          </div>
+        </div>
+        <div class="row mt-5">
           <div class="col-12 col-lg-3">
             <div class="feature-left">
               <h6 class="feature-title">Openness</h6>
@@ -393,7 +405,6 @@ export default {
 .product {
   display: flex;
   align-items: center;
-
   min-height: 100vh;
 }
 

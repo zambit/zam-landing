@@ -10,12 +10,12 @@ export default new Router({
     {
       path: '/contacts',
       name: 'contacts',
-      component: () => import(/* webpackChunkName: "page-main" */ '@/views/Contacts'),
+      component: () => import(/* webpackChunkName: "page-contacts" */ '@/views/contacts'),
     },
     {
       path: '/team',
       name: 'team',
-      component: () => import(/* webpackChunkName: "page-main" */ '@/views/team/Team'),
+      component: () => import(/* webpackChunkName: "page-team" */ '@/views/team'),
     },
     {
       path: '/',
@@ -23,7 +23,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "page-main" */ '@/views/main/Main'),
+      component: () => import(/* webpackChunkName: "page-main" */ '@/views/main'),
     },
   ],
 });
