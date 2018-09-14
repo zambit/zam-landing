@@ -189,10 +189,12 @@
             class="col-8"
             style="margin-top: 30px;"
           >
-            <news-card
-              :news="news[0]"
-              class="h-100"
-            />
+            <router-link to="">
+              <news-card
+                :news="news[0]"
+                class="h-100"
+              />
+            </router-link>
           </div>
         </div>
         <div class="row justify-content-center">
@@ -272,7 +274,7 @@
             <div class="d-flex justify-content-end">
               <img
                 src="./phones.png"
-                srcset="phones@2x.png 2x, phones@3x.png 3x"
+                srcset="./phones@2x.png 2x, ./phones@3x.png 3x"
                 alt=""
               >
             </div>
@@ -445,6 +447,12 @@ export default {
   letter-spacing: -0.7px;
   color: #ffffff;
   margin-top: 45px;
+
+  transition: box-shadow .2s ease;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .feature-title {
@@ -495,6 +503,12 @@ export default {
   letter-spacing: -0.7px;
   color: #ffffff;
   margin-left: 8px;
+
+  transition: box-shadow .2s ease;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .apps-row {
@@ -507,8 +521,16 @@ export default {
   height: 35px;
   cursor: pointer;
 
+  fill: #ECECEC;
+
+  transition: fill .2s ease;
+
   &:last-child {
     margin-left: 30px;
+  }
+
+  &:hover {
+    fill: #b1b1b1;
   }
 }
 
@@ -562,6 +584,12 @@ export default {
   background-color: #8de37f;
   box-shadow: 0 20px 42px -8px rgba(141, 227, 127, 0.82);
   margin-top: 80px;
+
+  transition: box-shadow .2s ease;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .table {

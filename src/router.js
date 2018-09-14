@@ -1,6 +1,10 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
+import Contacts from '@/views/contacts';
+import Team from '@/views/team';
+import Main from '@/views/main';
+
 Vue.use(Router);
 
 export default new Router({
@@ -10,12 +14,12 @@ export default new Router({
     {
       path: '/contacts',
       name: 'contacts',
-      component: () => import(/* webpackChunkName: "page-contacts" */ '@/views/contacts'),
+      component: Contacts,
     },
     {
       path: '/team',
       name: 'team',
-      component: () => import(/* webpackChunkName: "page-team" */ '@/views/team'),
+      component: Team,
     },
     {
       path: '/',
@@ -23,7 +27,7 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "page-main" */ '@/views/main'),
+      component: Main,
     },
   ],
 });

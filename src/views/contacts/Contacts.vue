@@ -226,6 +226,12 @@ export default {
   border-radius: 78px;
   background-color: #8de37f;
   box-shadow: 0 20px 42px -8px rgba(141, 227, 127, 0.82);
+
+  transition: box-shadow .2s ease;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .contact-form__desc {

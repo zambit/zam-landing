@@ -61,6 +61,12 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
 
+  transition: box-shadow .2s ease;
+
+  &:hover {
+    box-shadow: 0 20px 33px -8px rgba(0, 0, 0, 0.82);
+  }
+
   &::after {
     content: '';
     position: absolute;

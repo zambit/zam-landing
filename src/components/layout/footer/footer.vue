@@ -16,27 +16,33 @@
       <div class="row justify-content-between footer__socials-row">
         <template v-for="item in socials">
           <div :key="item.name" class="col-auto">
-            <div class="d-flex align-items-center">
-              <svg class="footer__social-icon">
-                <use :xlink:href="item.icon"></use>
-              </svg>
-              <span class="footer__social-name ml-3">{{ item.name }}</span>
-            </div>
+            <router-link to="">
+              <div class="d-flex align-items-center footer__social">
+                <svg class="footer__social-icon">
+                  <use :xlink:href="item.icon"></use>
+                </svg>
+                <span class="footer__social-name ml-3">{{ item.name }}</span>
+              </div>
+            </router-link>
           </div>
         </template>
       </div>
       <div class="row justify-content-center footer__app-row">
         <div class="col-auto">
-          <svg class="footer__app-banner">
-            <use xlink:href="#google-play-banner"></use>
-          </svg>
+          <router-link to="">
+            <svg class="footer__app-banner">
+              <use xlink:href="#google-play-banner"></use>
+            </svg>
+          </router-link>
         </div>
       </div>
       <div class="row justify-content-center mt-4">
         <div class="col-auto">
-          <svg class="footer__app-banner">
-            <use xlink:href="#app-store-banner"></use>
-          </svg>
+          <router-link to="">
+            <svg class="footer__app-banner">
+              <use xlink:href="#app-store-banner"></use>
+            </svg>
+          </router-link>
         </div>
       </div>
       <div class="row justify-content-center footer__links-row">
@@ -92,6 +98,14 @@ footer.footer {
   padding: 95px 0 75px;
 }
 
+.footer__social {
+  transition: opacity .2s ease;
+
+  &:hover {
+    opacity: .5;
+  }
+}
+
 .footer__social-icon {
   width: 25px;
   height: 25px;
@@ -101,6 +115,7 @@ footer.footer {
   font-size: 1.3125rem;
   line-height: 1;
   letter-spacing: 0.5px;
+  color: white;
 }
 
 .footer__social-count {
@@ -113,6 +128,12 @@ footer.footer {
 .footer__app-banner {
   width: 185px;
   height: 50px;
+
+  transition: opacity .2s ease;
+
+  &:hover {
+    opacity: .5;
+  }
 }
 
 .footer__app-row {
@@ -148,6 +169,12 @@ footer.footer {
 
   border-radius: 35px;
   border: solid 2px #ffffff;
+
+  transition: background-color .2s ease;
+
+  &:hover {
+    background-color: #283C98;
+  }
 }
 
 .footer__socials-row {

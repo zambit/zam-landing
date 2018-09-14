@@ -1,9 +1,11 @@
 <template>
   <nav class="navbar">
     <div class="d-flex align-items-center">
-      <svg class="navbar__logo">
-        <use xlink:href="#logo"></use>
-      </svg>
+      <router-link to="/">
+        <svg class="navbar__logo">
+          <use xlink:href="#logo"></use>
+        </svg>
+      </router-link>
       <span class="navbar__text-logo ml-3">zamzam</span>
     </div>
     <div class="d-flex align-items-center">
@@ -49,7 +51,7 @@
           </div>
         </transition>
       </div>
-      <router-link to="" class="navbar__btn navbar__btn--filled">Login</router-link>
+      <router-link to="" class="navbar__btn">Login</router-link>
       <router-link to="" class="navbar__btn ml-3">Sign Up</router-link>
     </div>
   </nav>
@@ -71,6 +73,7 @@ export default {
         'TR',
       ],
       routes: [
+        { route: '/', name: 'Home' },
         { route: '/team', name: 'Team' },
         { route: '/contacts', name: 'Contacts' },
       ],
@@ -122,6 +125,10 @@ export default {
   font-size: 1rem;
   letter-spacing: 0.5px;
   color: #343b5c;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .navbar__btn {
@@ -130,13 +137,17 @@ export default {
   justify-content: center;
   width: 130px;
   height: 40px;
+  background-color: white;
+  color: $sky-blue;
   border: solid 2px $sky-blue;
   border-radius: 20px;
-}
 
-.navbar__btn--filled {
-  color: white;
-  background-color: $sky-blue;
+  transition: color .2s ease, background-color .2s ease;
+
+  &:hover {
+    color: white;
+    background-color: $sky-blue;
+  }
 }
 
 .navbar__select-lang {

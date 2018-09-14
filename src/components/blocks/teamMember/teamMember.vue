@@ -3,6 +3,15 @@
     <slot name="photo" class="team-member__photo"></slot>
     <h4 class="team-member__name">{{ person.name }}</h4>
     <p class="team-member__role">{{ person.role }}</p>
+    <div class="popup">
+      <div class="popup-wrap">
+        <div class="container">
+          <div class="row">
+
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
