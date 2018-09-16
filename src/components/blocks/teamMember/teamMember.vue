@@ -1,23 +1,23 @@
 <template>
   <div class="team-member">
-    <slot name="photo" class="team-member__photo"></slot>
-    <h4 class="team-member__name">{{ person.name }}</h4>
-    <p class="team-member__role">{{ person.role }}</p>
-    <transition appear name="fade">
-      <div v-if="false" class="popup">
-        <div class="popup-wrap">
-          <div class="container h-100">
-            <div class="row h-100 justify-content-center align-items-center">
-
-            </div>
-          </div>
-        </div>
+    <div @click="$emit('member', person.name)">
+      <div class="team-member__photo-wrap">
+        <img
+          :src="person.photo.x1"
+          :srcset="`${person.photo.x2} 2x, ${person.photo.x3} 3x`"
+          class="team-member__photo"
+          alt=""
+        >
       </div>
-    </transition>
+      <h4 class="team-member__name">{{ person.name }}</h4>
+      <p class="team-member__role">{{ person.role }}</p>
+    </div>
   </div>
 </template>
 
 <script>
+import './close-popup-icon.svg';
+
 export default {
   name: 'team-member',
   props: {
@@ -29,6 +29,7 @@ export default {
           photo: '',
           name: '',
           role: '',
+          list: [],
         };
       },
     },
@@ -43,12 +44,19 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+  &:hover .team-member__photo-wrap {
+    box-shadow: 15px 25px 42px 0 #c5c5c5;
+  }
+}
+
+.team-member__photo-wrap {
+  transition: box-shadow .2s ease;
 }
 
 .team-member__photo {
   width: 100%;
   height: 360px;
-
   background-color: #aeaeae;
   background-repeat: no-repeat;
   background-position: center;
@@ -60,7 +68,6 @@ export default {
   font-weight: bold;
   letter-spacing: 0.7px;
   color: #2a3271;
-
   margin-top: 23px;
 }
 
@@ -68,20 +75,6 @@ export default {
   font-size: 0.9375rem;
   letter-spacing: 0.5px;
   color: $sky-blue;
-
   margin-top: 6px;
-}
-
-
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 999;
-}
-
-.popup-wrap {
 }
 </style>

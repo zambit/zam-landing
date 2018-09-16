@@ -1,143 +1,147 @@
 <template>
   <nav class="navbar">
-    <div class="d-flex align-items-center">
-      <router-link to="/">
-        <svg class="navbar__logo">
-          <use xlink:href="#logo"></use>
-        </svg>
-      </router-link>
-      <span
-        :class="['navbar__text-logo ml-3', { 'd-inline' : showMobileNav }]"
-      >zamzam</span>
-    </div>
-    <div class="d-flex align-items-center">
-      <ul class="d-none d-md-flex navbar__list">
-        <template v-for="item in routes">
-          <li :key="item.route" class="navbar__list-item">
-            <router-link
-              :to="item.route"
-              class="navbar__list-link"
-            >{{ item.name }}
-            </router-link>
-          </li>
-        </template>
-      </ul>
-      <div class="navbar__select-lang locales-sb d-none d-md-flex ">
-        <div class="locales-sb__item" @click="showLocales = true">
-          <div
-            class="locales-sb__flag"
-            :style="{
+    <div ref="wrap" :class="['navbar-wrap d-flex justify-content-between',
+    { 'navbar-wrap--fixed' : stickNav }]">
+      <div class="d-flex align-items-center">
+        <router-link to="/">
+          <svg class="navbar__logo">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </router-link>
+        <span
+          :class="['navbar__text-logo ml-3', { 'd-inline' : showMobileNav }]"
+        >zamzam</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <ul class="d-none d-md-flex navbar__list">
+          <template v-for="item in routes">
+            <li :key="item.route" class="navbar__list-item">
+              <router-link
+                :to="item.route"
+                class="navbar__list-link"
+              >{{ item.name }}
+              </router-link>
+            </li>
+          </template>
+        </ul>
+        <div class="navbar__select-lang locales-sb d-none d-md-flex ">
+          <div class="locales-sb__item" @click="showLocales = true">
+            <div
+              class="locales-sb__flag"
+              :style="{
             backgroundImage: `url(https://www.countryflags.io/${locales[currentLocale]}/flat/64.png)`
             }"
-          ></div>
-          <span class="locales-sb__name ml-2">{{ locales[currentLocale] }}</span>
-          <svg class="locales-sb__arrow-icon ml-2">
-            <use xlink:href="#down-arrow"></use>
-          </svg>
-        </div>
-        <transition appear name="fade">
-          <div
-            v-if="showLocales"
-            class="locales-sb__items"
-          >
-            <template v-for="(locale, index) in locales">
-              <div
-                v-click-outside="handleClickOutside"
-                :key="locale"
-                class="locales-sb__item"
-                @click="setCurrentLocale(index)"
-              >
-                <div
-                  class="locales-sb__flag"
-                  :style="{ backgroundImage: `url(https://www.countryflags.io/${locale}/flat/64.png)` }"
-                ></div>
-                <span class="locales-sb__name ml-2">{{ locale }}</span>
-              </div>
-            </template>
-          </div>
-        </transition>
-      </div>
-      <router-link
-        to=""
-        :class="['navbar__btn navbar__btn--no-border mr-3 mr-md-0', { 'd-none' : showMobileNav }]">
-        Login
-      </router-link>
-      <router-link to="" class="d-none d-md-flex navbar__btn ml-3">Sign Up</router-link>
-      <div class="d-md-none">
-        <transition appear name="fade">
-          <div
-            v-if="!showMobileNav"
-            class="d-flex flex-column burger-wrap"
-            @click="showMobileNav = true"
-          >
-            <div class="burger-line w-100"></div>
-            <div class="burger-line w-75"></div>
-            <div class="burger-line w-100"></div>
-          </div>
-          <div
-            v-else
-            class="d-flex w-100 h-100"
-            @click="showMobileNav = false"
-          >
-            <svg class="navbar__icon-close">
-              <use xlink:href="#icon-close"></use>
+            ></div>
+            <span class="locales-sb__name ml-2">{{ locales[currentLocale] }}</span>
+            <svg class="locales-sb__arrow-icon ml-2">
+              <use xlink:href="#down-arrow"></use>
             </svg>
           </div>
-        </transition>
+          <transition appear name="fade">
+            <div
+              v-if="showLocales"
+              class="locales-sb__items"
+            >
+              <template v-for="(locale, index) in locales">
+                <div
+                  v-click-outside="handleClickOutside"
+                  :key="locale"
+                  class="locales-sb__item"
+                  @click="setCurrentLocale(index)"
+                >
+                  <div
+                    class="locales-sb__flag"
+                    :style="{ backgroundImage: `url(https://www.countryflags.io/${locale}/flat/64.png)` }"
+                  ></div>
+                  <span class="locales-sb__name ml-2">{{ locale }}</span>
+                </div>
+              </template>
+            </div>
+          </transition>
+        </div>
+        <router-link
+          to=""
+          :class="['navbar__btn navbar__btn--no-border mr-3 mr-md-0',
+          { 'd-none' : showMobileNav }]">
+          Login
+        </router-link>
+        <router-link to="" class="d-none d-md-flex navbar__btn ml-3">Sign Up</router-link>
+        <div class="d-md-none">
+          <transition appear name="fade">
+            <div
+              v-if="!showMobileNav"
+              class="d-flex flex-column burger-wrap"
+              @click="showMobileNav = true"
+            >
+              <div class="burger-line w-100"></div>
+              <div class="burger-line w-75"></div>
+              <div class="burger-line w-100"></div>
+            </div>
+            <div
+              v-else
+              class="d-flex w-100 h-100"
+              @click="showMobileNav = false"
+            >
+              <svg class="navbar__icon-close">
+                <use xlink:href="#icon-close"></use>
+              </svg>
+            </div>
+          </transition>
+        </div>
       </div>
-    </div>
-    <div
-      :class="['navbar-m', { 'navbar-m--open' : showMobileNav }]"
-    >
-      <ul class="d-flex flex-column list-unstyled mb-0">
-        <template v-for="item in routes">
-          <li :key="item.route" class="navbar__list-item mx-0 mb-3">
-            <router-link
-              :to="item.route"
-              class="navbar__list-link"
-            >{{ item.name }}
-            </router-link>
-          </li>
-        </template>
-      </ul>
-      <div class="navbar__select-lang locales-sb">
-        <div class="locales-sb__item px-0" @click="showLocales = true">
-          <div
-            class="locales-sb__flag"
-            :style="{
+      <div
+        :class="['navbar-m', { 'navbar-m--open' : showMobileNav }]"
+      >
+        <ul class="d-flex flex-column list-unstyled mb-0">
+          <template v-for="item in routes">
+            <li :key="item.route" class="navbar__list-item mx-0 mb-3">
+              <router-link
+                :to="item.route"
+                class="navbar__list-link"
+              >{{ item.name }}
+              </router-link>
+            </li>
+          </template>
+        </ul>
+        <div class="navbar__select-lang locales-sb">
+          <div class="locales-sb__item px-0" @click="showLocales = true">
+            <div
+              class="locales-sb__flag"
+              :style="{
             backgroundImage: `url(https://www.countryflags.io/${locales[currentLocale]}/flat/64.png)`
             }"
-          ></div>
-          <span class="locales-sb__name ml-2">{{ locales[currentLocale] }}</span>
-          <svg class="locales-sb__arrow-icon ml-2">
-            <use xlink:href="#down-arrow"></use>
-          </svg>
-        </div>
-        <transition appear name="fade">
-          <div
-            v-if="showLocales"
-            class="locales-sb__items"
-          >
-            <template v-for="(locale, index) in locales">
-              <div
-                v-click-outside="handleClickOutside"
-                :key="locale"
-                class="locales-sb__item"
-                @click="setCurrentLocale(index)"
-              >
-                <div
-                  class="locales-sb__flag"
-                  :style="{ backgroundImage: `url(https://www.countryflags.io/${locale}/flat/64.png)` }"
-                ></div>
-                <span class="locales-sb__name ml-2">{{ locale }}</span>
-              </div>
-            </template>
+            ></div>
+            <span class="locales-sb__name ml-2">{{ locales[currentLocale] }}</span>
+            <svg class="locales-sb__arrow-icon ml-2">
+              <use xlink:href="#down-arrow"></use>
+            </svg>
           </div>
-        </transition>
-      </div>
-      <div class="d-flex mt-5 pt-4">
-        <router-link to="" class="navbar__btn">Login</router-link>
-        <router-link to="" class="navbar__btn ml-3">Sign Up</router-link>
+          <transition appear name="fade">
+            <div
+              v-if="showLocales"
+              class="locales-sb__items"
+            >
+              <template v-for="(locale, index) in locales">
+                <div
+                  v-click-outside="handleClickOutside"
+                  :key="locale"
+                  class="locales-sb__item"
+                  @click="setCurrentLocale(index)"
+                >
+                  <div
+                    class="locales-sb__flag"
+                    :style="{ backgroundImage: `url(https://www.countryflags.io/${locale}/flat/64.png)` }"
+                  ></div>
+                  <span class="locales-sb__name ml-2">{{ locale }}</span>
+                </div>
+              </template>
+            </div>
+          </transition>
+        </div>
+        <div class="d-flex mt-5 pt-4">
+          <router-link to="" class="navbar__btn">Login</router-link>
+          <router-link to="" class="navbar__btn ml-3">Sign Up</router-link>
+        </div>
       </div>
     </div>
   </nav>
@@ -159,6 +163,7 @@ export default {
     return {
       showMobileNav: false,
       showLocales: false,
+      stickNav: false,
       currentLocale: 0,
       locales: [
         'US',
@@ -180,9 +185,17 @@ export default {
     handleClickOutside() {
       this.showLocales = false;
     },
-    closeMobileNav() {
-      this.showMobileNav = false;
+    toggleNavStick() {
+      const offsetTop = this.$el.getBoundingClientRect().y;
+
+      this.stickNav = Math.abs(offsetTop) > window.innerHeight;
     },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.toggleNavStick);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.toggleNavStick);
   },
 };
 </script>
@@ -192,14 +205,23 @@ export default {
 
 .navbar {
   position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
   z-index: 9;
+}
+
+.navbar-wrap {
+  background-color: white;
+  padding: 20px 50px;
 
   @include media-breakpoint-down(md) {
     padding: 20px 12px;
   }
+}
+
+.navbar-wrap--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navbar__logo {
