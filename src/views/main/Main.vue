@@ -136,7 +136,7 @@
               <use xlink:href="#zam-wallet-pic"></use>
             </svg>
             <router-link to="" class="d-md-none product__button mt-4">
-              Read more
+              Try it now
             </router-link>
           </div>
         </div>
@@ -151,9 +151,9 @@
             <svg class="product__zam-merchant-pic">
               <use xlink:href="#zam-merchant-pic"></use>
             </svg>
-            <router-link to="" class="d-md-none product__button mt-4">
-              Read more
-            </router-link>
+            <!--<router-link to="" class="d-md-none product__button mt-4">-->
+              <!--Read more-->
+            <!--</router-link>-->
           </div>
           <div class="col-12 col-lg-6 order-0 order-md-1">
             <div class="product__name">Zam Merchant</div>
@@ -163,9 +163,9 @@
               While developing the
               zam.merchant, we took into account the needs of thousands of businessmеn from all over
               the world.</p>
-            <router-link to="" class="d-none d-md-flex product__button">
-              Read more
-            </router-link>
+            <!--<router-link to="" class="d-none d-md-flex product__button">-->
+              <!--Read more-->
+            <!--</router-link>-->
           </div>
         </div>
       </div>
@@ -182,17 +182,17 @@
               While developing the
               zam.merchant, we took into account the needs of thousands of businessmеn from all over
               the world.</p>
-            <router-link to="" class="d-none d-md-flex product__button">
-              Read more
-            </router-link>
+            <!--<router-link to="" class="d-none d-md-flex product__button">-->
+              <!--Read more-->
+            <!--</router-link>-->
           </div>
           <div class="col-12 col-lg-7">
             <svg class="product__zam-chain-pic">
               <use xlink:href="#zam-chain-pic"></use>
             </svg>
-            <router-link to="" class="d-md-none product__button mt-4">
-              Read more
-            </router-link>
+            <!--<router-link to="" class="d-md-none product__button mt-4">-->
+              <!--Read more-->
+            <!--</router-link>-->
           </div>
         </div>
       </div>
