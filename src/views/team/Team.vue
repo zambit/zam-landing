@@ -101,8 +101,10 @@ export default {
             x3: require('./ceo@3x.jpg'), // eslint-disable-line
           },
           list: [
-            'Founder of MKG Real Estate & Investment, a leading brokerage company for asset management in the Middle East and North Africa with a head office in Dubai, UAE',
-            'Has a CFA level 1 certificate and works closely with the government of Dubai, attracting investments in the stock and financial markets, as well as small and medium-sized businesses',
+            'Successful business developer with assets capitalisation of $50 mln.',
+            'Lobbyist in Turkey, Dubai, Israel, Russia and CIS',
+            'Speaks 6 languages (Turkish, English, Hebrew, Farsi, Russian, Azerbaijani)',
+            'Long track record of work in the financial market in Europe and CIS',
           ],
         },
         {
@@ -113,6 +115,14 @@ export default {
             x2: require('./cvo@2x.jpg'), // eslint-disable-line
             x3: require('./cvo@3x.jpg'), // eslint-disable-line
           },
+          list: [
+            'Solid experience in business development',
+            '6 years of experience of managing investment company with Swissquote Bank white label',
+            '6 years of experience of asset management on American Stock Exchange (AMEX) ',
+            'Lead the representative office of one of the fastest-growing international payment providers in the world',
+            'Was responsible for business negotiations aimed at obtaining a payment system license in Cyprus',
+            'Responsible for developing a currencies exchange system service',
+          ],
         },
         {
           name: 'George Gus',
@@ -122,6 +132,12 @@ export default {
             x2: require('./cmo@2x.jpg'), // eslint-disable-line
             x3: require('./cmo@3x.jpg'), // eslint-disable-line
           },
+          list: [
+            'Crypto investor, blockchain evangelist',
+            '10 years of experience in marketing and product design',
+            'Owner of MakeFresh, international marketing agency',
+            'Experience in promotion of international corporations with HQs in Europe, Turkey, Dubai',
+          ],
         },
         {
           name: 'Zakaria Mekreloufi',
@@ -131,6 +147,10 @@ export default {
             x2: require('./zakaria@2x.jpg'), // eslint-disable-line
             x3: require('./zakaria@3x.jpg'), // eslint-disable-line
           },
+          list: [
+            'Founder of MKG Real Estate & Investment, a leading brokerage company for asset management in the Middle East and North Africa with a head office in Dubai, UAE',
+            'Has a CFA level 1 certificate and works closely with the government of Dubai, attracting investments in the stock and financial markets, as well as small and medium-sized businesses',
+          ],
         },
         {
           name: 'Andrew Skurlatov',
@@ -140,6 +160,13 @@ export default {
             x2: require('./cto@2x.jpg'), // eslint-disable-line
             x3: require('./cto@3x.jpg'), // eslint-disable-line
           },
+          list: [
+            '10 years of experience of high-load systems development',
+            '5 years of experience as an expert in blockchain technologies',
+            'Developed wallets for 15 cryptocurrencies',
+            'Designed and managed the development of DEX exchange based on a proprietary blockchain system of smart contracts',
+            'Designed and managed the development of cryptocurrency indexes',
+          ],
         },
         {
           name: 'Ivan Podtsebnev',
@@ -149,6 +176,11 @@ export default {
             x2: require('./devops@2x.jpg'), // eslint-disable-line
             x3: require('./devops@3x.jpg'), // eslint-disable-line
           },
+          list: [
+            'Experience in hardware and software system implementation in projects with Microsoft , IBM, HP, Intel, Cisco, McAfee, Kaspersky',
+            'Expert in the topics of intranet protocol, virtualization and storage systems, architecture of algo trading robots',
+            '2 years of experience in Federal Agency of Government Communications and Information (FAGCI)',
+          ],
         },
         {
           name: 'Nikita Velko',
@@ -158,6 +190,12 @@ export default {
             x2: require('./frontend@2x.jpg'), // eslint-disable-line
             x3: require('./frontend@3x.jpg'), // eslint-disable-line
           },
+          list: [
+            '9 years of experience in front-end development',
+            'Participated in projects with Google, LG, Adidas, McDonald’s, KFC',
+            'Experience in development at several startups with high ratings on Product Hunt',
+            'Developed a system of cryptocurrencies graphics for DEX exchange indexes',
+          ],
         },
         {
           name: 'Alex Ponomaryov',
@@ -167,6 +205,11 @@ export default {
             x2: require('./ios-dev@2x.jpg'), // eslint-disable-line
             x3: require('./ios-dev@3x.jpg'), // eslint-disable-line
           },
+          list: [
+            'Has been developing applications in the Swift language since 2016',
+            'Knows Java, C#, C ++, as well as basic algorithms, data structures, design patterns, SQL, Git Flow',
+            'Made a game for Android, which had over 150,000 downloads',
+          ],
         },
         {
           name: 'Daniel Danilkin',
@@ -176,6 +219,12 @@ export default {
             x2: require('./backend@2x.jpg'), // eslint-disable-line
             x3: require('./backend@3x.jpg'), // eslint-disable-line
           },
+          list: [
+            '7 years of experience in software development',
+            'Experience in system engineering based on Big Data',
+            'Was part of the team which developed a lending system in the banking sector',
+            'Participant as a developer in several open source projects',
+          ],
         },
 
         {
@@ -186,6 +235,12 @@ export default {
             x2: require('./android-dev@2x.jpg'), // eslint-disable-line
             x3: require('./android-dev@3x.jpg'), // eslint-disable-line
           },
+          list: [
+            'Winner of SpaceAppChallenge hackathon organized by NASA (2017) and Yandex. Money Codefest (2018)',
+            'Participant of HackUPC and Junction hackathons (2017)',
+            'Winner of payment system QIWI API Contest (2017)',
+            'Developed an app for monitoring of cryptocurrencies prices',
+          ],
         },
 
         {
@@ -196,6 +251,9 @@ export default {
             x2: require('./dzera@2x.jpg'), // eslint-disable-line
             x3: require('./dzera@3x.jpg'), // eslint-disable-line
           },
+          list: [
+
+          ],
         },
 
         {
@@ -206,6 +264,9 @@ export default {
             x2: require('./alina@2x.jpg'), // eslint-disable-line
             x3: require('./alina@3x.jpg'), // eslint-disable-line
           },
+          list: [
+
+          ],
         },
       ],
     };
@@ -264,7 +325,6 @@ export default {
   align-items: center;
   width: 100%;
   height: 100%;
-
   overflow-y: auto;
   overflow-x: hidden;
 
@@ -341,10 +401,8 @@ export default {
 
 .popup__arrow {
   fill: white;
-
   width: 55px;
   height: 55px;
-
   cursor: pointer;
 
   &:last-child {

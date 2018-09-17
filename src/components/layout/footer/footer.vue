@@ -4,7 +4,12 @@
       <div class="row justify-content-center">
         <div class="col-12">
           <div class="d-flex justify-content-center">
-            <a href="" class="footer__btn-cta">
+            <a
+              href="https://t.me/zamzamchat"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="footer__btn-cta"
+            >
               <svg class="footer__btn-icon">
                 <use xlink:href="#telegram-logo"></use>
               </svg>
@@ -52,12 +57,24 @@
       </div>
       <div class="row justify-content-center footer__links-row">
         <div class="col-12 col-sm-auto text-center text-sm-left">
-          <router-link to="" class="footer__text text-underline">Privacy Policy</router-link>
+          <a
+            href="https://privacy.zam.io/PRIVACY_POLICY.pdf"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="footer__text text-underline"
+          >
+            Privacy Policy
+          </a>
         </div>
         <div class="col-12 col-sm-auto text-center text-sm-left">
-          <router-link to="" class="footer__text text-underline ml-sm-3">
+          <a
+            href="https://terms.zam.io/TERMS_OF_USE_for_site.pdf"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="footer__text text-underline ml-sm-3"
+          >
             Terms and Conditions
-          </router-link>
+          </a>
         </div>
       </div>
       <div class="row justify-content-center mt-4">

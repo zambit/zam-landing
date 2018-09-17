@@ -7,10 +7,10 @@
           <svg class="navbar__logo">
             <use xlink:href="#logo"></use>
           </svg>
+          <span
+            :class="['navbar__text-logo ml-3', { 'd-inline' : showMobileNav }]"
+          >zamzam</span>
         </router-link>
-        <span
-          :class="['navbar__text-logo ml-3', { 'd-inline' : showMobileNav }]"
-        >zamzam</span>
       </div>
       <div class="d-flex align-items-center">
         <ul class="d-none d-md-flex navbar__list">
@@ -29,10 +29,11 @@
             <div
               class="locales-sb__flag"
               :style="{
-            backgroundImage: `url(https://www.countryflags.io/${locales[currentLocale]}/flat/64.png)`
+            backgroundImage:
+            `url(https://www.countryflags.io/${locales[currentLocale].flag}/flat/64.png)`
             }"
             ></div>
-            <span class="locales-sb__name ml-2">{{ locales[currentLocale] }}</span>
+            <span class="locales-sb__name ml-2">{{ locales[currentLocale].label }}</span>
             <svg class="locales-sb__arrow-icon ml-2">
               <use xlink:href="#down-arrow"></use>
             </svg>
@@ -45,15 +46,16 @@
               <template v-for="(locale, index) in locales">
                 <div
                   v-click-outside="handleClickOutside"
-                  :key="locale"
+                  :key="locale.label"
                   class="locales-sb__item"
                   @click="setCurrentLocale(index)"
                 >
                   <div
                     class="locales-sb__flag"
-                    :style="{ backgroundImage: `url(https://www.countryflags.io/${locale}/flat/64.png)` }"
+                    :style="{ backgroundImage:
+                    `url(https://www.countryflags.io/${locale.flag}/flat/64.png)` }"
                   ></div>
-                  <span class="locales-sb__name ml-2">{{ locale }}</span>
+                  <span class="locales-sb__name ml-2">{{ locale.label }}</span>
                 </div>
               </template>
             </div>
@@ -108,10 +110,11 @@
             <div
               class="locales-sb__flag"
               :style="{
-            backgroundImage: `url(https://www.countryflags.io/${locales[currentLocale]}/flat/64.png)`
+            backgroundImage:
+            `url(https://www.countryflags.io/${locales[currentLocale].flag}/flat/64.png)`
             }"
             ></div>
-            <span class="locales-sb__name ml-2">{{ locales[currentLocale] }}</span>
+            <span class="locales-sb__name ml-2">{{ locales[currentLocale].label }}</span>
             <svg class="locales-sb__arrow-icon ml-2">
               <use xlink:href="#down-arrow"></use>
             </svg>
@@ -124,15 +127,16 @@
               <template v-for="(locale, index) in locales">
                 <div
                   v-click-outside="handleClickOutside"
-                  :key="locale"
+                  :key="locale.label"
                   class="locales-sb__item"
                   @click="setCurrentLocale(index)"
                 >
                   <div
                     class="locales-sb__flag"
-                    :style="{ backgroundImage: `url(https://www.countryflags.io/${locale}/flat/64.png)` }"
+                    :style="{ backgroundImage:
+                    `url(https://www.countryflags.io/${locale.flag}/flat/64.png)` }"
                   ></div>
-                  <span class="locales-sb__name ml-2">{{ locale }}</span>
+                  <span class="locales-sb__name ml-2">{{ locale.label }}</span>
                 </div>
               </template>
             </div>
@@ -166,9 +170,8 @@ export default {
       stickNav: false,
       currentLocale: 0,
       locales: [
-        'US',
-        'RU',
-        'TR',
+        { label: 'EN', flag: 'US' },
+        { label: 'KO', flag: 'KR' },
       ],
       routes: [
         { route: '/', name: 'Home' },

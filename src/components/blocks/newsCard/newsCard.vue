@@ -1,6 +1,6 @@
 <template>
   <article
-    :style="{ backgroundImage: `url(${news.thumbnail})` }"
+    :style="{ backgroundImage: `url(${news.thumb.x1})` }"
     class="news-card"
   >
     <div class="position-relative" style="z-index: 1">
@@ -31,7 +31,11 @@ export default {
           month: '',
           title: '',
           author: '',
-          thumbnail: '',
+          thumb: {
+            x1: '',
+            x2: '',
+            x3: '',
+          },
         };
       },
     },

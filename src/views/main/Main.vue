@@ -26,9 +26,15 @@
               <svg class="musthead__app-icon ml-5">
                 <use xlink:href="#apple-logo"></use>
               </svg>
-              <svg class="musthead__app-icon">
-                <use xlink:href="#android-logo"></use>
-              </svg>
+              <a
+                href="https://play.google.com/store/apps/details?id=zam.wallet "
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="musthead__app-icon">
+                  <use xlink:href="#android-logo"></use>
+                </svg>
+              </a>
             </div>
           </div>
           <div class="col-12 col-lg-5">
@@ -39,7 +45,7 @@
               src="./main-phone-mobile.png"
               srcset="./main-phone-mobile@2x.png 2x, ./main-phone-mobile@3x.png 3x"
               alt=""
-              class="d-md-none mt-5"
+              class="d-md-none mt-5 mx-auto d-block"
               style="max-width: 100%; height: auto;"
             >
           </div>
@@ -49,9 +55,15 @@
             <svg class="musthead__app-icon">
               <use xlink:href="#apple-logo"></use>
             </svg>
-            <svg class="musthead__app-icon">
-              <use xlink:href="#android-logo"></use>
-            </svg>
+            <a
+              href="https://play.google.com/store/apps/details?id=zam.wallet "
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <svg class="musthead__app-icon">
+                <use xlink:href="#android-logo"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -94,6 +106,7 @@
                   src="./features-pic.jpg"
                   srcset="./features-pic@2x.jpg 2x, ./features-pic@3x.jpg 3x"
                   alt=""
+                  style="max-width: 100%"
                 >
               </div>
               <div class="col-12 col-lg-6">
@@ -118,7 +131,7 @@
 
     <section class="product">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-12 col-lg-5">
             <div class="product__name">zam wallet</div>
             <h2 class="product__title">Cryptocurrency wallet, as it
@@ -131,7 +144,7 @@
               Try it now
             </router-link>
           </div>
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-lg-7 col-xl-6">
             <svg class="product__zam-wallet-pic">
               <use xlink:href="#zam-wallet-pic"></use>
             </svg>
@@ -146,7 +159,7 @@
 
     <section class="product">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-12 col-lg-6 order-1 order-md-0">
             <svg class="product__zam-merchant-pic">
               <use xlink:href="#zam-merchant-pic"></use>
@@ -174,7 +187,7 @@
 
     <section class="product">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-12 col-lg-5">
             <div class="product__name">Zam Chain</div>
             <h2 class="product__title">Fast financial blockchain based on Stellar fork</h2>
@@ -206,35 +219,31 @@
           </div>
         </div>
         <div class="row news-row">
-          <template v-for="(n, index) in 4">
+          <template v-for="(item, index) in news">
             <div
               :key="index"
               style="margin-top: 30px"
               class="col-12 col-sm-6 col-lg-4"
             >
-              <router-link to="">
+              <a :href="item.url" target="_blank" rel="noreferrer noopener">
                 <news-card
-                  :news="news[index]"
+                  :news="item"
                   class="h-100"
                 />
-              </router-link>
+              </a>
             </div>
           </template>
-          <div
-            class="col-12 col-sm-6 col-lg-8"
-            style="margin-top: 30px;"
-          >
-            <router-link to="">
-              <news-card
-                :news="news[0]"
-                class="h-100"
-              />
-            </router-link>
-          </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-auto">
-            <router-link to="" class="news-btn">See more content</router-link>
+            <a
+              href="https://medium.com/@zamzamofficial"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="news-btn"
+            >
+              More
+            </a>
           </div>
         </div>
       </div>
@@ -281,10 +290,10 @@
             <div :key="row.title" class="col-12 table__row">
               <div class="row h-100 align-items-center">
                 <div class="col-8">
-                  <span class="table__title-m">{{ row.title }}</span>
+                  <span v-html="row.title" class="table__title-m"></span>
                 </div>
                 <div class="col-4">
-                  <span class="table__free-m">{{ row[showTableData] }}</span>
+                  <span v-html="row[showTableData]" class="table__free-m"></span>
                 </div>
               </div>
             </div>
@@ -302,12 +311,12 @@
                 </div>
                 <div class="col-4">
                   <div class="d-flex h-100 justify-content-center">
-                    <span class="table__free">{{ row.free }}</span>
+                    <span v-html="row.free" class="table__free"></span>
                   </div>
                 </div>
                 <div class="col-4">
                   <div class="d-flex h-100 justify-content-center">
-                    <span class="table__premium">{{ row.premium }}</span>
+                    <span v-html="row.premium" class="table__premium"></span>
                   </div>
                 </div>
               </div>
@@ -320,15 +329,12 @@
 
     <section class="product product__footer-cta">
       <div class="container">
-        <div class="row">
+        <div class="row align-items-center">
           <div class="col-12 col-lg-6">
             <h2 class="product__title">
               Test zam wallet and
               <span class="sky-blue">get 1000 ZAM</span> as a gift for
               premium payment</h2>
-            <p class="product__desc">Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-              since the 1500s,</p>
             <form class="d-none d-md-flex mt-5" @submit.prevent="">
               <phone-input
                 :phone="phone"
@@ -379,6 +385,7 @@ import './zam-chain-pic.svg';
 import './zam-wallet-pic.svg';
 import './zam-merchant-pic.svg';
 
+/* eslint-disable global-require */
 export default {
   name: 'main-page',
   data() {
@@ -387,51 +394,50 @@ export default {
       showTableData: 'free',
       news: [
         {
-          day: '28',
+          day: '17',
           tag: 'News',
-          month: 'July',
-          title: 'Why did we choose the Stellar blockchain?',
-          author: 'Bruno Salmator',
-          thumbnail: 'https://nerdist.com/wp-content/uploads/2017/07/Rick-and-Morty-NNTB.jpg',
+          month: 'Sep',
+          title: 'Zamzam launched sending crypto by cell phone number',
+          author: 'zamzam',
+          url: 'https://medium.com/@Zamzamofficial/zamzam-launched-sending-crypto-by-cell-phone-number-5335efd34d2a',
+          thumb: {
+            x1: require('./news--zamzam-launch.jpg'),
+            x2: require('./news--zamzam-launch@2x.jpg'),
+            x3: require('./news--zamzam-launch@3x.jpg'),
+          },
         },
         {
-          day: '28',
+          day: '14',
           tag: 'News',
-          month: 'July',
-          title: 'Why did we choose the Stellar blockchain?',
-          author: 'Bruno Salmator',
-          thumbnail: 'https://nerdist.com/wp-content/uploads/2017/07/Rick-and-Morty-NNTB.jpg',
+          month: 'Sep',
+          title: 'Namig Mamedov — New technical advisor to Zamzam',
+          author: 'zamzam',
+          url: 'https://medium.com/@Zamzamofficial/namig-mamedov-new-technical-advisor-to-zamzam-3c35257925f9',
+          thumb: {
+            x1: require('./news-namig-mamedov.jpg'),
+            x2: require('./news-namig-mamedov@2x.jpg'),
+            x3: require('./news-namig-mamedov@3x.jpg'),
+          },
         },
         {
-          day: '28',
+          day: '1',
           tag: 'News',
-          month: 'July',
-          title: 'Why did we choose the Stellar blockchain?',
-          author: 'Bruno Salmator',
-          thumbnail: 'https://nerdist.com/wp-content/uploads/2017/07/Rick-and-Morty-NNTB.jpg',
-        },
-        {
-          day: '28',
-          tag: 'News',
-          month: 'July',
-          title: 'Why did we choose the Stellar blockchain?',
-          author: 'Bruno Salmator',
-          thumbnail: 'https://nerdist.com/wp-content/uploads/2017/07/Rick-and-Morty-NNTB.jpg',
-        },
-        {
-          day: '28',
-          tag: 'News',
-          month: 'July',
-          title: 'Why did we choose the Stellar blockchain?',
-          author: 'Bruno Salmator',
-          thumbnail: 'https://nerdist.com/wp-content/uploads/2017/07/Rick-and-Morty-NNTB.jpg',
+          month: 'Aug',
+          title: 'Islamic Banking',
+          author: 'zamzam',
+          url: 'https://medium.com/@Zamzamofficial/islamic-banking-4196aff59a82',
+          thumb: {
+            x1: require('./news-islamic-banking.jpg'),
+            x2: require('./news-islamic-banking@2x.jpg'),
+            x3: require('./news-islamic-banking@3x.jpg'),
+          },
         },
       ],
       tableData: [
         {
           title: 'Price',
-          free: '$0 / 0 ZAM',
-          premium: '$9 / 450 ZAM',
+          free: '$0 / 0&nbsp;ZAM',
+          premium: '$9 / 450&nbsp;ZAM',
         },
         {
           title: 'Transfers of cryptocurrency by phone number',
@@ -470,8 +476,8 @@ export default {
         },
         {
           title: 'Limit per month for withdrawal to the card',
-          free: '400 € / 400 $',
-          premium: '1000 € / 1000 $',
+          free: '400&nbsp;€ / 400&nbsp;$',
+          premium: '1000&nbsp;€ / 1000&nbsp;$',
         },
       ],
     };
@@ -584,7 +590,6 @@ export default {
   line-height: 0.85;
   letter-spacing: -3px;
   color: $sky-blue;
-  margin-top: 32px;
 
   @include media-breakpoint-down(md) {
     font-size: 3.625rem;
@@ -646,17 +651,17 @@ export default {
 }
 
 .musthead__pic {
-  width: 610px;
-  height: 640px;
+  width: 640px;
+  height: 800px;
 }
 
 .product__zam-wallet-pic {
   width: 687px;
   height: 532px;
 
-  @include media-breakpoint-down(md) {
-    width: auto;
-    height: 300px;
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+    height: 400px;
   }
 }
 
@@ -666,10 +671,10 @@ export default {
   width: 739px;
   height: 460px;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     left: 0;
-    width: auto;
-    height: 230px;
+    width: 100%;
+    height: 400px;
   }
 }
 
@@ -677,9 +682,9 @@ export default {
   width: 647px;
   height: 481px;
 
-  @include media-breakpoint-down(md) {
-    width: auto;
-    height: 290px;
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+    height: 400px;
   }
 }
 
