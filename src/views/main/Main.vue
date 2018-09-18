@@ -159,11 +159,11 @@
             ></a>
           </div>
           <div class="col-12 col-lg-7 col-xl-6">
-            <!--<svg class="product__zam-wallet-pic">-->
-              <!--<use xlink:href="#zam-wallet-pic"></use>-->
-            <!--</svg>-->
+            <svg class="d-md-none product__zam-wallet-pic">
+              <use xlink:href="#zam-wallet-pic"></use>
+            </svg>
             <video
-              class="product__zam-wallet-pic"
+              class="product__zam-wallet-pic d-none d-md-block"
               autoplay
               muted
               loop
@@ -187,11 +187,11 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 order-1 order-md-0">
-            <!--<svg class="product__zam-merchant-pic">-->
-              <!--<use xlink:href="#zam-merchant-pic"></use>-->
-            <!--</svg>-->
+            <svg class="product__zam-merchant-pic d-md-none">
+              <use xlink:href="#zam-merchant-pic"></use>
+            </svg>
             <video
-              class="product__zam-merchant-pic"
+              class="product__zam-merchant-pic d-none d-md-block"
               autoplay
               muted
               loop
@@ -227,11 +227,11 @@
             <!--</router-link>-->
           </div>
           <div class="col-12 col-lg-7">
-            <!--<svg class="product__zam-chain-pic">-->
-              <!--<use xlink:href="#zam-chain-pic"></use>-->
-            <!--</svg>-->
+            <svg class="product__zam-chain-pic d-md-none">
+              <use xlink:href="#zam-chain-pic"></use>
+            </svg>
             <video
-              class="product__zam-chain-pic"
+              class="product__zam-chain-pic d-none d-md-block"
               autoplay
               muted
               loop
