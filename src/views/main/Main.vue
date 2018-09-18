@@ -343,7 +343,7 @@
         <div class="row align-items-center">
           <div class="col-12 col-lg-6">
             <h2 v-html="$t('alpha.title')" class="product__title"></h2>
-            <form class="d-none d-md-flex mt-5" @submit.prevent="">
+            <!--<form class="d-none d-md-flex mt-5" @submit.prevent="">
               <phone-input
                 :phone="phone"
                 :guess-country-on-created="true"
@@ -351,7 +351,7 @@
                 @value="phone = $event"
               />
               <button type="submit" class="btn musthead__btn">Ok</button>
-            </form>
+            </form>-->
             <div class="d-flex d-md-none align-items-center">
               <a
                  href="https://play.google.com/store/apps/details?id=zam.wallet "
