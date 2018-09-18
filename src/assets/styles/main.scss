@@ -21,6 +21,11 @@ html, body {
   overflow-y: auto;
 }
 
+video {
+  border: none !important;
+  outline: none !important;
+}
+
 a, a:hover {
   text-decoration: none;
 }
