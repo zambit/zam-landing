@@ -159,9 +159,17 @@
             ></a>
           </div>
           <div class="col-12 col-lg-7 col-xl-6">
-            <svg class="product__zam-wallet-pic">
-              <use xlink:href="#zam-wallet-pic"></use>
-            </svg>
+            <!--<svg class="product__zam-wallet-pic">-->
+              <!--<use xlink:href="#zam-wallet-pic"></use>-->
+            <!--</svg>-->
+            <video
+              class="product__zam-wallet-pic"
+              autoplay
+              muted
+              loop
+            >
+              <source src="./zam-wallet.mp4" />
+            </video>
             <a
               v-html="$t('products.wallet.btn')"
               href="https://app.zam.io"
@@ -179,9 +187,17 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6 order-1 order-md-0">
-            <svg class="product__zam-merchant-pic">
-              <use xlink:href="#zam-merchant-pic"></use>
-            </svg>
+            <!--<svg class="product__zam-merchant-pic">-->
+              <!--<use xlink:href="#zam-merchant-pic"></use>-->
+            <!--</svg>-->
+            <video
+              class="product__zam-merchant-pic"
+              autoplay
+              muted
+              loop
+            >
+              <source src="./zam-merchant.mp4" />
+            </video>
             <!--<router-link to="" class="d-md-none product__button mt-4">-->
               <!--Read more-->
             <!--</router-link>-->
@@ -211,9 +227,17 @@
             <!--</router-link>-->
           </div>
           <div class="col-12 col-lg-7">
-            <svg class="product__zam-chain-pic">
-              <use xlink:href="#zam-chain-pic"></use>
-            </svg>
+            <!--<svg class="product__zam-chain-pic">-->
+              <!--<use xlink:href="#zam-chain-pic"></use>-->
+            <!--</svg>-->
+            <video
+              class="product__zam-chain-pic"
+              autoplay
+              muted
+              loop
+            >
+              <source src="./zam-chain.mp4" />
+            </video>
             <!--<router-link to="" class="d-md-none product__button mt-4">-->
               <!--Read more-->
             <!--</router-link>-->
