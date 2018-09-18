@@ -40,16 +40,35 @@
             </div>
           </div>
           <div class="col-12 col-lg-5">
-            <svg class="d-none d-md-block musthead__pic">
-              <use xlink:href="#man-on-chair"></use>
-            </svg>
-            <img
-              src="./main-phone-mobile.png"
-              srcset="./main-phone-mobile@2x.png 2x, ./main-phone-mobile@3x.png 3x"
-              alt=""
+            <video
+              ref="video"
+              class="musthead__pic d-none d-md-block"
+              autoplay
+              muted
+            >
+              <source src="./man-on-chair.mp4"/>
+              <source src="./man-on-chair.webm"/>
+            </video>
+            <video
+              ref="videoMobile"
               class="d-md-none mt-5 mx-auto d-block"
               style="max-width: 100%; height: auto;"
+              autoplay
+              muted
             >
+              <source src="./phone.mp4"/>
+              <source src="./phone.webm"/>
+            </video>
+            <!--<svg class="d-none d-md-block musthead__pic">-->
+              <!--<use xlink:href="#man-on-chair"></use>-->
+            <!--</svg>-->
+            <!--<img-->
+              <!--src="./main-phone-mobile.png"-->
+              <!--srcset="./main-phone-mobile@2x.png 2x, ./main-phone-mobile@3x.png 3x"-->
+              <!--alt=""-->
+              <!--class="d-md-none mt-5 mx-auto d-block"-->
+              <!--style="max-width: 100%; height: auto;"-->
+            <!--&gt;-->
           </div>
         </div>
         <div class="row apps-row d-none d-md-flex">
@@ -484,6 +503,23 @@ export default {
   components: {
     phoneInput,
     newsCard,
+  },
+  methods: {
+    toggleVideoPlay() {
+      this.$refs.video.pause();
+      this.$refs.videoMobile.pause();
+
+      setTimeout(() => {
+        this.$refs.video.play();
+        this.$refs.videoMobile.play();
+      }, 1300);
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.toggleVideoPlay);
+  },
+  beforeDestroy() {
+    window.removeEventListener('scroll', this.toggleVideoPlay);
   },
 };
 </script>
