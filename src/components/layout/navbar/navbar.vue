@@ -201,7 +201,7 @@ export default {
   watch: {
     $route: {
       handler() {
-        // this.showMobileNav = false;
+        this.showMobileNav = false;
       },
       deep: true,
     },
