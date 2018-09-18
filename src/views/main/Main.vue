@@ -533,11 +533,11 @@ export default {
   methods: {
     toggleVideoPlay() {
       this.$refs.video.pause();
-      this.$refs.videoMobile.pause();
+      // this.$refs.videoMobile.pause();
 
       setTimeout(() => {
         this.$refs.video.play();
-        this.$refs.videoMobile.play();
+        // this.$refs.videoMobile.play();
       }, 1300);
     },
   },
