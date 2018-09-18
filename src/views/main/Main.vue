@@ -45,6 +45,7 @@
               class="musthead__pic d-none d-md-block"
               autoplay
               muted
+              loop
             >
               <source src="./man-on-chair.mp4"/>
               <source src="./man-on-chair.webm"/>
@@ -55,6 +56,7 @@
               style="max-width: 100%; height: auto;"
               autoplay
               muted
+              loop
             >
               <source src="./phone.mp4"/>
               <source src="./phone.webm"/>
