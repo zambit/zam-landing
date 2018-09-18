@@ -223,12 +223,12 @@
         <div class="row justify-content-center">
           <div class="col-auto">
             <a
+              v-html="$t('news.more')"
               href="https://medium.com/@zamzamofficial"
               target="_blank"
               rel="noreferrer noopener"
               class="news-btn"
             >
-              More
             </a>
           </div>
         </div>
@@ -572,7 +572,7 @@ export default {
 .musthead__title {
   font-size: 6.25rem;
   font-weight: bold;
-  line-height: 0.85;
+  line-height: 1;
   letter-spacing: -3px;
   color: $sky-blue;
 

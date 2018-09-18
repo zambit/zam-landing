@@ -1,6 +1,13 @@
 {
+  "navbar": {
+    "home": "집",
+    "team": "팀",
+    "contacts": "연락하기"
+  },
+  "signIn": "로그인",
+  "signUp": "가입",
   "musthead": {
-    "title": "<span class=\"dark-blue\">암호화폐를 온 세상에</span>",
+    "title": "<span class=\"dark-blue\">암호화폐를<br>온세상에</span>",
     "desc": "전화 번호로 가상화폐 전송을 공개적으로 테스트하고 추가 ZAM 토큰을 얻으십시오 "
   },
   "features": {
@@ -40,7 +47,8 @@
     }
   },
   "news": {
-    "title": "<span class=\"dark-blue\">뉴스</span>"
+    "title": "<span class=\"dark-blue\">뉴스</span>",
+    "more": "더"
   },
   "table": {
     "title": "가격",
@@ -63,5 +71,8 @@
   },
   "footer": {
     "telegramButton": "전보에 가입하십시오."
+  },
+  "team": {
+    "title": "우리 팀"
   }
 }

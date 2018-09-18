@@ -14,7 +14,7 @@
             :key="index"
             class="col-auto mt-5 mt-md-5 mt-xl-0"
           >
-            <div class="city">
+            <div class="city" :style="{ backgroundImage: `url('${city.thumb}')`}">
               <span class="city__name">{{ city.name }}</span>
               <span class="city__address">{{ city.address }}</span>
             </div>
@@ -55,12 +55,14 @@
                 >
 
                 </textarea>
-                <button
-                  type="submit"
+                <a
+                  :href="`mailto:support@zam.me
+                  ?subject=${encodeURIComponent(formData.name)}
+                  &body=${encodeURIComponent(formData.message)}`"
                   class="contact-form__button mt-4"
                 >
                   Send
-                </button>
+                </a>
               </form>
             </div>
           </div>
@@ -73,6 +75,7 @@
 <script>
 import vInput from '@/components/common/input';
 
+/* eslint-disable global-require */
 export default {
   name: 'contacts-page',
   data() {
@@ -84,16 +87,19 @@ export default {
       },
       cities: [
         {
-          name: 'Moscow',
-          address: '8900 E, Unnion Ave. Suite 1100 Denver, C0 829013 8900 E, ',
+          name: 'Estonia',
+          address: 'Randla 13-201, 10315 Tallinn, Estonia Company Zam Zam Technology OÜ',
+          thumb: require('./contacts-estonia.jpg'),
         },
         {
           name: 'Turkey',
-          address: '8900 E, Unnion Ave. Suite 1100 Denver, C0 829013 8900 E, ',
+          address: 'Coming Soon',
+          thumb: require('./contacts-turkey.jpg'),
         },
         {
           name: 'Dubai',
-          address: '8900 E, Unnion Ave. Suite 1100 Denver, C0 829013 8900 E, ',
+          address: 'Coming Soon',
+          thumb: require('./contacts-dubai.jpg'),
         },
       ],
     };

@@ -3,9 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class="section-title team-title">
-            <span class="dark-blue">Our</span> team
-          </h2>
+          <h2 v-html="$t('team.title')" class="section-title team-title"></h2>
         </div>
       </div>
       <div class="row justify-content-center justify-content-md-between team-row">

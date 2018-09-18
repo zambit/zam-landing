@@ -62,20 +62,20 @@
           </transition>
         </div>
         <a
+          v-html="$t('signIn')"
           href="https://app.zam.io/sign-in"
           target="_blank"
           rel="noreferrer noopener"
           :class="['navbar__btn navbar__btn--no-border mr-3 mr-md-0',
           { 'd-none' : showMobileNav }]">
-          Login
         </a>
         <a
+          v-html="$t('signUp')"
           href="https://app.zam.io/sign-up"
           target="_blank"
           rel="noreferrer noopener"
           class="d-none d-md-flex navbar__btn ml-3"
         >
-          Sign Up
         </a>
         <div class="d-md-none">
           <transition appear name="fade">
@@ -153,20 +153,20 @@
         </div>
         <div class="d-flex mt-5 pt-4">
           <a
+            v-html="$t('signIn')"
             href="https://app.zam.io/sign-in"
             target="_blank"
             rel="noreferrer noopener"
             class="navbar__btn"
           >
-            Login
           </a>
           <a
+            v-html="$t('signUp')"
             href="https://app.zam.io/sign-up"
             target="_blank"
             rel="noreferrer noopener"
             class="navbar__btn ml-3"
           >
-            Sign Up
           </a>
         </div>
       </div>
@@ -196,11 +196,6 @@ export default {
         { label: 'en', flag: 'us' },
         { label: 'kr', flag: 'kr' },
       ],
-      routes: [
-        { route: '/', name: 'Home' },
-        { route: '/team', name: 'Team' },
-        { route: '/contacts', name: 'Contacts' },
-      ],
     };
   },
   watch: {
@@ -227,7 +222,18 @@ export default {
       this.stickNav = Math.abs(offsetTop) > window.innerHeight;
     },
   },
+  computed: {
+    routes() {
+      const { lang } = this.$route.params;
+      return [
+        { route: `/${lang}`, name: this.$t('navbar.home') },
+        { route: `/${lang}/team`, name: this.$t('navbar.team') },
+        { route: `/${lang}/contacts`, name: this.$t('navbar.contacts') },
+      ];
+    },
+  },
   mounted() {
+    this.currentLocale = this.locales.findIndex(el => el.label === this.$route.params.lang) || 0;
     window.addEventListener('scroll', this.toggleNavStick);
   },
   beforeDestroy() {

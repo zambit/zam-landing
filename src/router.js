@@ -5,7 +5,7 @@ import Contacts from '@/views/contacts';
 import Team from '@/views/team';
 import Main from '@/views/main';
 
-import loadLanguageAsync from '@/main';
+import setI18nLanguage from '@/main';
 
 Vue.use(Router);
 
@@ -21,7 +21,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      redirect: '/:lang',
+      redirect: '/en',
     },
     {
       path: '/:lang/contacts',
@@ -45,14 +45,9 @@ const router = new Router({
 });
 
 router.beforeEach((to, from, next) => {
-  let { lang = null } = to.params;
-
-  if (!lang) {
-    lang = window.navigator.language.split('-')[0]
-      || window.navigator.userLanguage.split('-')[0];
-  }
-
-  return loadLanguageAsync(lang).then(() => next());
+  const { lang } = to.params;
+  setI18nLanguage(lang);
+  return next();
 });
 
 export default router;

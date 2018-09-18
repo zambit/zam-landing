@@ -1,69 +1,78 @@
 {
-  "en": {
-    "musthead": {
-      "title": "<span class=\"dark-blue\">The fair</span> blockchain bank",
-      "desc": "Take part in the open testing of cryptocurrency transfers by phone number and earn additional ZAM tokens"
+  "navbar": {
+    "home": "Home",
+    "team": "Team",
+    "contacts": "Contacts"
+  },
+  "signIn": "Login",
+  "signUp": "Sign Up",
+  "musthead": {
+    "title": "<span class=\"dark-blue\">The fair</span> blockchain bank",
+    "desc": "Take part in the open testing of cryptocurrency transfers by phone number and earn additional ZAM tokens"
+  },
+  "features": {
+    "title": "Why does the world need blockchain banks?",
+    "desc": "Zamzam mission is to speed up the process of the transition from a traditional monetary system to a fully digital economy in order for banks and financial institutions all over the world to become open, fair and efficient through the implementation of blockchain and decentralized systems.",
+    "openness": {
+      "title": "Openness",
+      "desc": "Transparency of all operations in blockchain. Real-time publication of the Zamzam bank’s detailed financial activities. Open results of bank audit. You have never worked with such an open banking system!"
     },
-    "features": {
-      "title": "Why does the world need blockchain banks?",
-      "desc": "Zamzam mission is to speed up the process of the transition from a traditional monetary system to a fully digital economy in order for banks and financial institutions all over the world to become open, fair and efficient through the implementation of blockchain and decentralized systems.",
-      "openness": {
-        "title": "Openness",
-        "desc": "Transparency of all operations in blockchain. Real-time publication of the Zamzam bank’s detailed financial activities. Open results of bank audit. You have never worked with such an open banking system!"
-      },
-      "fairness": {
-        "title": "Fairness",
-        "desc": "Provide users with a choice between centralized and decentralized assets storage. Future is for hybrid systems, which give freedom of choice."
-      },
-      "efficiency": {
-        "title": "Efficiency",
-        "desc": "Reduce costs by circumventing the chain of intermediaries and abandoning obsolete methods of managing financial organizations."
-      }
+    "fairness": {
+      "title": "Fairness",
+      "desc": "Provide users with a choice between centralized and decentralized assets storage. Future is for hybrid systems, which give freedom of choice."
     },
-    "products": {
-      "wallet": {
-        "name": "zam wallet",
-        "title": "Cryptocurrency wallet, as it should be",
-        "desc": "Stop wasting your attention on dozens of financial applications with severely limited functionalities. The zam.wallet erases the boundaries between traditional money and cryptocurrencies while remaining more efficient than the market by 2-3 times.",
-        "btn": "Try it now"
-      },
-      "merchant": {
-        "name": "Zam Merchant",
-        "title": "Effortless financial management for your business!",
-        "desc": "Doing business has never been so easy, intuitive & automated. While developing the zam.merchant, we took into account the needs of thousands of businessmеn from all over the world.",
-        "btn": ""
-      },
-      "chain": {
-        "name": "Zam Chain",
-        "title": "Fast financial blockchain based on Stellar fork",
-        "desc": "Doing business has never been so easy, intuitive & automated. While developing the zam.merchant, we took into account the needs of thousands of businessmеn from all over the world.",
-        "btn": ""
-      }
-    },
-    "news": {
-      "title": "<span class=\"dark-blue\">Our</span> news"
-    },
-    "table": {
-      "title": "Pricing",
-      "free": "Free",
-      "premium": "Premium",
-      "data": [
-        "Price",
-        "Transfers of cryptocurrency by phone number",
-        "Transfers within the bank",
-        "External transfer of cryptocurrency",
-        "Purchase of cryptocurrency with Visa, MasterCard, UnionPay cards",
-        "Immediate withdrawal of cryptocurrency",
-        "Ability to bind 1 bank card for withdrawal",
-        "Free SMS notifications of transactions per month",
-        "Limit per month for withdrawal to the card"
-      ]
-    },
-    "alpha": {
-      "title": "Test zam wallet and <span class=\"sky-blue\">get 1000 ZAM</span> as a gift for premium payment"
-    },
-    "footer": {
-      "telegramButton": "Join us on Telegram"
+    "efficiency": {
+      "title": "Efficiency",
+      "desc": "Reduce costs by circumventing the chain of intermediaries and abandoning obsolete methods of managing financial organizations."
     }
+  },
+  "products": {
+    "wallet": {
+      "name": "zam wallet",
+      "title": "Cryptocurrency wallet, as it should be",
+      "desc": "Stop wasting your attention on dozens of financial applications with severely limited functionalities. The zam.wallet erases the boundaries between traditional money and cryptocurrencies while remaining more efficient than the market by 2-3 times.",
+      "btn": "Try it now"
+    },
+    "merchant": {
+      "name": "Zam Merchant",
+      "title": "Effortless financial management for your business!",
+      "desc": "Doing business has never been so easy, intuitive & automated. While developing the zam.merchant, we took into account the needs of thousands of businessmеn from all over the world.",
+      "btn": ""
+    },
+    "chain": {
+      "name": "Zam Chain",
+      "title": "Fast financial blockchain based on Stellar fork",
+      "desc": "Doing business has never been so easy, intuitive & automated. While developing the zam.merchant, we took into account the needs of thousands of businessmеn from all over the world.",
+      "btn": ""
+    }
+  },
+  "news": {
+    "title": "<span class=\"dark-blue\">Our</span> news",
+    "more": "More"
+  },
+  "table": {
+    "title": "Pricing",
+    "free": "Free",
+    "premium": "Premium",
+    "data": [
+      "Price",
+      "Transfers of cryptocurrency by phone number",
+      "Transfers within the bank",
+      "External transfer of cryptocurrency",
+      "Purchase of cryptocurrency with Visa, MasterCard, UnionPay cards",
+      "Immediate withdrawal of cryptocurrency",
+      "Ability to bind 1 bank card for withdrawal",
+      "Free SMS notifications of transactions per month",
+      "Limit per month for withdrawal to the card"
+    ]
+  },
+  "alpha": {
+    "title": "Test zam wallet and <span class=\"sky-blue\">get 1000 ZAM</span> as a gift for premium payment"
+  },
+  "footer": {
+    "telegramButton": "Join us on Telegram"
+  },
+  "team": {
+    "title": "<span class=\"dark-blue\">Our</span> team"
   }
 }
