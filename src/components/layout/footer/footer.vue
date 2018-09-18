@@ -39,20 +39,24 @@
       </div>
       <div class="row justify-content-center footer__app-row">
         <div class="col-auto">
-          <router-link to="">
+          <a
+            href="https://play.google.com/store/apps/details?id=zam.wallet "
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <svg class="footer__app-banner">
               <use xlink:href="#google-play-banner"></use>
             </svg>
-          </router-link>
+          </a>
         </div>
       </div>
       <div class="row justify-content-center mt-4">
         <div class="col-auto">
-          <router-link to="">
+          <!--<router-link to="">
             <svg class="footer__app-banner">
               <use xlink:href="#app-store-banner"></use>
             </svg>
-          </router-link>
+          </router-link>-->
         </div>
       </div>
       <div class="row justify-content-center footer__links-row">
