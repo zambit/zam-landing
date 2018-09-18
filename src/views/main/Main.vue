@@ -50,27 +50,27 @@
               <source src="./man-on-chair.mp4"/>
               <source src="./man-on-chair.webm"/>
             </video>
-            <video
-              ref="videoMobile"
-              class="d-md-none mt-5 mx-auto d-block"
-              style="max-width: 100%; height: auto;"
-              autoplay
-              muted
-              loop
-            >
-              <source src="./phone.mp4"/>
-              <source src="./phone.webm"/>
-            </video>
+            <!--<video-->
+              <!--ref="videoMobile"-->
+              <!--class="d-md-none mt-5 mx-auto d-block"-->
+              <!--style="max-width: 100%; height: auto;"-->
+              <!--autoplay-->
+              <!--muted-->
+              <!--loop-->
+            <!--&gt;-->
+              <!--<source src="./phone.mp4"/>-->
+              <!--<source src="./phone.webm"/>-->
+            <!--</video>-->
             <!--<svg class="d-none d-md-block musthead__pic">-->
               <!--<use xlink:href="#man-on-chair"></use>-->
             <!--</svg>-->
-            <!--<img-->
-              <!--src="./main-phone-mobile.png"-->
-              <!--srcset="./main-phone-mobile@2x.png 2x, ./main-phone-mobile@3x.png 3x"-->
-              <!--alt=""-->
-              <!--class="d-md-none mt-5 mx-auto d-block"-->
-              <!--style="max-width: 100%; height: auto;"-->
-            <!--&gt;-->
+            <img
+              src="./main-phone-mobile.png"
+              srcset="./main-phone-mobile@2x.png 2x, ./main-phone-mobile@3x.png 3x"
+              alt=""
+              class="d-md-none mt-5 mx-auto d-block"
+              style="max-width: 100%; height: auto;"
+            >
           </div>
         </div>
         <div class="row apps-row d-none d-md-flex">
