@@ -1,4 +1,4 @@
-# zam.me
+# zam.io
 
 ## Project setup
 ```
