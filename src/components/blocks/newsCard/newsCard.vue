@@ -71,19 +71,6 @@ export default {
     box-shadow: 0 20px 33px -8px rgba(0, 0, 0, 0.82);
   }
 
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-
-    border-radius: 12px;
-
-    background-color: rgba(66, 33, 9, 0.3);
-  }
-
   @include media-breakpoint-down(md) {
     padding: 20px 12px 30px;
   }

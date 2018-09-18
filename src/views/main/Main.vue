@@ -75,7 +75,7 @@
             <h2 v-html="$t('features.title')" class="product__title text-md-center"></h2>
           </div>
           <div class="col-12 col-md-8">
-            <p v-html="$t('features.desc')" class="feature-desc mt-5 text-md-center"></p>
+            <p v-html="$t('features.desc')" class="feature-desc mt-3 text-md-center"></p>
             <img
               src="./features-pic.jpg"
               srcset="./features-pic@2x.jpg 2x, ./features-pic@3x.jpg 3x"
@@ -329,7 +329,7 @@
               />
               <button type="submit" class="btn musthead__btn">Ok</button>
             </form>
-            <div class="d-flex d-md-none align-items-center">
+            <div class="d-flex d-md-none align-items-center mt-5">
               <router-link to="" class="product__button m-0">
                 Get the app
               </router-link>
@@ -507,6 +507,7 @@ export default {
   @include media-breakpoint-down(md) {
     font-size: 1.875rem;
     line-height: 1;
+    letter-spacing: 1px;
   }
 }
 
@@ -646,7 +647,7 @@ export default {
 
   @include media-breakpoint-down(lg) {
     width: 100%;
-    height: 400px;
+    height: 300px;
   }
 }
 
@@ -659,7 +660,7 @@ export default {
   @include media-breakpoint-down(lg) {
     left: 0;
     width: 100%;
-    height: 400px;
+    height: 300px;
   }
 }
 
@@ -669,7 +670,7 @@ export default {
 
   @include media-breakpoint-down(lg) {
     width: 100%;
-    height: 400px;
+    height: 300px;
   }
 }
 
