@@ -378,7 +378,7 @@
               />
               <button type="submit" class="btn musthead__btn">Ok</button>
             </form>-->
-            <div class="d-flex d-md-none align-items-center">
+            <div class="d-flex d-md-none align-items-center mt-5">
               <a
                  href="https://play.google.com/store/apps/details?id=zam.wallet "
                  target="_blank"
