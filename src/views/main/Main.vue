@@ -8,7 +8,7 @@
           <div class="col-12 col-lg-6">
             <h1 v-html="$t('musthead.title')" class="musthead__title"></h1>
             <p v-html="$t('musthead.desc')" class="musthead__desc"></p>
-            <form class="d-none d-md-flex mt-5" @submit.prevent="">
+            <!--<form class="d-none d-md-flex mt-5" @submit.prevent="">
               <phone-input
                 :phone="phone"
                 :guess-country-on-created="true"
@@ -16,14 +16,18 @@
                 @value="phone = $event"
               />
               <button type="submit" class="btn musthead__btn">Ok</button>
-            </form>
+            </form>-->
             <div class="d-flex d-md-none align-items-center">
-              <router-link to="" class="product__button m-0">
+              <a
+                 href="https://play.google.com/store/apps/details?id=zam.wallet "
+                 target="_blank"
+                 rel="noreferrer noopener"
+                 class="product__button m-0">
                 Get the app
-              </router-link>
-              <svg class="musthead__app-icon ml-5">
+              </a>
+              <!--<svg class="musthead__app-icon ml-5">
                 <use xlink:href="#apple-logo"></use>
-              </svg>
+              </svg>-->
               <a
                 href="https://play.google.com/store/apps/details?id=zam.wallet "
                 target="_blank"
@@ -50,9 +54,9 @@
         </div>
         <div class="row apps-row d-none d-md-flex">
           <div class="col-auto">
-            <svg class="musthead__app-icon">
+            <!--<svg class="musthead__app-icon">
               <use xlink:href="#apple-logo"></use>
-            </svg>
+            </svg>-->
             <a
               href="https://play.google.com/store/apps/details?id=zam.wallet "
               target="_blank"
