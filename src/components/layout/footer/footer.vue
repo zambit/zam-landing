@@ -13,7 +13,7 @@
               <svg class="footer__btn-icon">
                 <use xlink:href="#telegram-logo"></use>
               </svg>
-              Join us on Telegram
+              {{ $t('footer.telegramButton') }}
             </a>
           </div>
         </div>

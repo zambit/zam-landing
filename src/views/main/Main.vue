@@ -6,10 +6,8 @@
       <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-12 col-lg-6">
-            <h1 class="musthead__title"><span class="dark-blue">The fair</span> blockchain bank</h1>
-            <p class="musthead__desc">
-              Take part in the open testing of cryptocurrency transfers by phone number and earn
-              additional ZAM tokens</p>
+            <h1 v-html="$t('musthead.title')" class="musthead__title"></h1>
+            <p v-html="$t('musthead.desc')" class="musthead__desc"></p>
             <form class="d-none d-md-flex mt-5" @submit.prevent="">
               <phone-input
                 :phone="phone"
@@ -74,14 +72,10 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-7">
-            <h2 class="product__title text-md-center">Why does the world need blockchain banks?</h2>
+            <h2 v-html="$t('features.title')" class="product__title text-md-center"></h2>
           </div>
           <div class="col-12 col-md-8">
-            <p class="feature-desc mt-5 text-md-center">Zamzam mission
-              is to speed up the process of the transition from
-              a traditional monetary system to a fully digital economy in order for banks and
-              financial institutions all over the world to become open, fair and efficient through
-              the implementation of blockchain and decentralized systems.</p>
+            <p v-html="$t('features.desc')" class="feature-desc mt-5 text-md-center"></p>
             <img
               src="./features-pic.jpg"
               srcset="./features-pic@2x.jpg 2x, ./features-pic@3x.jpg 3x"
@@ -93,10 +87,8 @@
         <div class="d-none d-md-flex row mt-5">
           <div class="col-12 col-lg-3">
             <div class="feature-left">
-              <h6 class="feature-title">Openness</h6>
-              <p class="feature-desc">Transparency of all operations in blockchain. Real-time
-                publication of the Zamzam bank’s detailed financial activities. Open results of bank
-                audit. You have never worked with such an open banking system!</p>
+              <h6 v-html="$t('features.openness.title')" class="feature-title"></h6>
+              <p v-html="$t('features.openness.desc')" class="feature-desc"></p>
             </div>
           </div>
           <div class="col-12 col-lg-6">
@@ -110,18 +102,15 @@
                 >
               </div>
               <div class="col-12 col-lg-6">
-                <h6 class="feature-title">Fairness</h6>
-                <p class="feature-desc">Provide users with a choice between centralized and
-                  decentralized assets storage. Future is for hybrid systems, which give freedom of
-                  choice.</p>
+                <h6 v-html="$t('features.fairness.title')" class="feature-title"></h6>
+                <p v-html="$t('features.fairness.desc')" class="feature-desc"></p>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-3">
             <div class="feature-right">
-              <h6 class="feature-title">Efficiency</h6>
-              <p class="feature-desc">Reduce costs by circumventing the chain of intermediaries and
-                abandoning obsolete methods of managing financial organizations.</p>
+              <h6 v-html="$t('features.efficiency.title')" class="feature-title"></h6>
+              <p v-html="$t('features.efficiency.desc')" class="feature-desc"></p>
             </div>
           </div>
         </div>
@@ -133,24 +122,28 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-lg-5">
-            <div class="product__name">zam wallet</div>
-            <h2 class="product__title">Cryptocurrency wallet, as it
-              should be</h2>
-            <p class="product__desc">Stop wasting your attention on dozens of financial
-              applications with severely limited
-              functionalities. The zam.wallet erases the boundaries between traditional money and
-              cryptocurrencies while remaining more efficient than the market by 2-3 times.</p>
-            <router-link to="" class="d-none d-md-flex product__button">
-              Try it now
-            </router-link>
+            <div v-html="$t('products.wallet.name')" class="product__name"></div>
+            <h2 v-html="$t('products.wallet.title')" class="product__title"></h2>
+            <p v-html="$t('products.wallet.desc')" class="product__desc"></p>
+            <a
+              v-html="$t('products.wallet.btn')"
+              href="https://app.zam.io"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="d-none d-md-flex product__button"
+            ></a>
           </div>
           <div class="col-12 col-lg-7 col-xl-6">
             <svg class="product__zam-wallet-pic">
               <use xlink:href="#zam-wallet-pic"></use>
             </svg>
-            <router-link to="" class="d-md-none product__button mt-4">
-              Try it now
-            </router-link>
+            <a
+              v-html="$t('products.wallet.btn')"
+              href="https://app.zam.io"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="d-md-none product__button mt-4"
+            ></a>
           </div>
         </div>
       </div>
@@ -169,13 +162,9 @@
             <!--</router-link>-->
           </div>
           <div class="col-12 col-lg-6 order-0 order-md-1">
-            <div class="product__name">Zam Merchant</div>
-            <h2 class="product__title">Effortless financial management for
-              your business!</h2>
-            <p class="product__desc">Doing business has never been so easy, intuitive & automated.
-              While developing the
-              zam.merchant, we took into account the needs of thousands of businessmеn from all over
-              the world.</p>
+            <div v-html="$t('products.merchant.name')" class="product__name"></div>
+            <h2 v-html="$t('products.merchant.title')" class="product__title"></h2>
+            <p v-html="$t('products.merchant.desc')" class="product__desc"></p>
             <!--<router-link to="" class="d-none d-md-flex product__button">-->
               <!--Read more-->
             <!--</router-link>-->
@@ -189,12 +178,9 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-lg-5">
-            <div class="product__name">Zam Chain</div>
-            <h2 class="product__title">Fast financial blockchain based on Stellar fork</h2>
-            <p class="product__desc">Doing business has never been so easy, intuitive & automated.
-              While developing the
-              zam.merchant, we took into account the needs of thousands of businessmеn from all over
-              the world.</p>
+            <div v-html="$t('products.chain.name')" class="product__name"></div>
+            <h2 v-html="$t('products.chain.title')" class="product__title"></h2>
+            <p v-html="$t('products.chain.desc')" class="product__desc"></p>
             <!--<router-link to="" class="d-none d-md-flex product__button">-->
               <!--Read more-->
             <!--</router-link>-->
@@ -215,7 +201,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="section-title"><span class="dark-blue">Our</span> news</h2>
+            <h2 v-html="$t('news.title')" class="section-title"></h2>
           </div>
         </div>
         <div class="row news-row">
@@ -253,16 +239,18 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="section-title"><span class="dark-blue">Pricing</span></h2>
+            <h2 class="section-title">
+              <span v-html="$t('table.title')" class="dark-blue"></span>
+            </h2>
           </div>
         </div>
         <div class="row mt-5 d-none d-md-flex">
           <div class="col-4"></div>
           <div class="col-4">
-            <p class="text-center table__heading">Free</p>
+            <p v-html="$t('table.free')" class="text-center table__heading"></p>
           </div>
           <div class="col-4">
-            <p class="text-center table__heading">Premium</p>
+            <p v-html="$t('table.premium')" class="text-center table__heading"></p>
           </div>
         </div>
 
@@ -331,10 +319,7 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-lg-6">
-            <h2 class="product__title">
-              Test zam wallet and
-              <span class="sky-blue">get 1000 ZAM</span> as a gift for
-              premium payment</h2>
+            <h2 v-html="$t('alpha.title')" class="product__title"></h2>
             <form class="d-none d-md-flex mt-5" @submit.prevent="">
               <phone-input
                 :phone="phone"
@@ -435,47 +420,47 @@ export default {
       ],
       tableData: [
         {
-          title: 'Price',
+          title: this.$t('table.data[0]'),
           free: '$0 / 0&nbsp;ZAM',
           premium: '$9 / 450&nbsp;ZAM',
         },
         {
-          title: 'Transfers of cryptocurrency by phone number',
+          title: this.$t('table.data[1]'),
           free: '0%',
           premium: '0%',
         },
         {
-          title: 'Transfers within the bank ',
+          title: this.$t('table.data[2]'),
           free: '0%',
           premium: '0%',
         },
         {
-          title: 'External transfer of cryptocurrency',
+          title: this.$t('table.data[3]'),
           free: '0.25%',
           premium: '0%',
         },
         {
-          title: 'Purchase of cryptocurrency with Visa, MasterCard, UnionPay cards',
+          title: this.$t('table.data[4]'),
           free: '4%',
           premium: '3.5%',
         },
         {
-          title: 'Immediate withdrawal of cryptocurrency',
+          title: this.$t('table.data[5]'),
           free: '2% + 1,15$',
           premium: '1% + 1,15$',
         },
         {
-          title: 'Ability to bind 1 bank card for withdrawal',
+          title: this.$t('table.data[6]'),
           free: '1',
           premium: '5',
         },
         {
-          title: 'Free SMS notifications of transactions per month',
+          title: this.$t('table.data[7]'),
           free: '25',
           premium: 'Unlimited',
         },
         {
-          title: 'Limit per month for withdrawal to the card',
+          title: this.$t('table.data[8]'),
           free: '400&nbsp;€ / 400&nbsp;$',
           premium: '1000&nbsp;€ / 1000&nbsp;$',
         },

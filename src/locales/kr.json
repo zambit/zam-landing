@@ -1,0 +1,67 @@
+{
+  "musthead": {
+    "title": "<span class=\"dark-blue\">암호화폐를 온 세상에</span>",
+    "desc": "전화 번호로 가상화폐 전송을 공개적으로 테스트하고 추가 ZAM 토큰을 얻으십시오 "
+  },
+  "features": {
+    "title": "블록체인 은행이 필요한 이유는 무엇입니까?",
+    "desc": "미션은 블록체인 및 분산 시스템의 구현을 통해 전 세계의 전통적인 금융 시스템에서 완전 디지털 경제 은행 및 금융 기관으로 개방되고 공정하며 효율적으로 전환하는 과정을 가속화하는 것입니다.",
+    "openness": {
+      "title": "개방 상태",
+      "desc": "블록체인에서 모든 작업의 투명성입니다. Zamzam 은행의 상세한 재정 활동에 대한 실시간 출판입니다. 은행 감사 결과를 볼 수 있습니다 <br><br> 그 쪽은 그런 개방형 은행 시스템으로 일한 적이 없으죠!"
+    },
+    "fairness": {
+      "title": "공평",
+      "desc": "중앙 집중화 된 자산과 분산 자산 저장소 중 하나를 선택할 수 있습니다. 미래는 선택의 자유를주는 하이브리드 시스템입니다."
+    },
+    "efficiency": {
+      "title": "능률",
+      "desc": "중개인의 사슬을 교묘하게 회피하고 금융 기관을 관리하는 구식 방법을 포기함으로써 비용을 절감합니다."
+    }
+  },
+  "products": {
+    "wallet": {
+      "name": "zam wallet",
+      "title": "암호화폐 지갑, 있어야하는 것 ",
+      "desc": "심하게 기능이 제한된 수십 개의 금융 애플리케이션에주의를 기울이지 마십시오. zam.wallet은 전통적인 돈과 암호화폐 사이의 경계를 지우고 시장보다 2-3 배나 효율적입니다.",
+      "btn": "Try it now"
+    },
+    "merchant": {
+      "name": "Zam Merchant",
+      "title": "비즈니스를위한 <br> 간편한 재무 관리!",
+      "desc": "사업을하는 것은 결코 쉽고, 직관적이며 자동화된 적이 없습니다. zam.merchant를 개발하는 동안 우리는 전 세계 수 천명의 비즈니스 요구 사항을 고려했습니다.",
+      "btn": ""
+    },
+    "chain": {
+      "name": "Zam Chain",
+      "title": "스텔라 포크 기반의 <br> 빠른 재정적인 블록체인",
+      "desc": "우리는 최종 사용자를위한 수수료가 가장 적은 독립적인 블록체인 은행을 만들고 있습니다. 이 기술은 Zamzam 제품을 분산화하기 위해 금융 시스템을 기반으로 구성됩니다.",
+      "btn": ""
+    }
+  },
+  "news": {
+    "title": "<span class=\"dark-blue\">뉴스</span>"
+  },
+  "table": {
+    "title": "가격",
+    "free": "무료",
+    "premium": "프리미엄",
+    "data": [
+      "비용",
+      "전화 번호로 0% 가상화폐 송금",
+      "은행 송금",
+      "External transfer of cryptocurrency",
+      "Purchase of cryptocurrency with Visa, MasterCard, UnionPay cards",
+      "Immediate withdrawal of cryptocurrency",
+      "Ability to bind 1 bank card for withdrawal",
+      "Free SMS notifications of transactions per month",
+      "Limit per month for withdrawal to the card"
+    ]
+  },
+  "alpha": {
+    "title": "ZAM 지갑을 테스트하고 <span class=\"sky-blue\">1000 ZAM</span>을 프리미엄 지불 용 선물로 받으십시오."
+  },
+  "footer": {
+    "telegramButton": "전보에 가입하십시오."
+  }
+}

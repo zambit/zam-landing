@@ -5,9 +5,11 @@ import Contacts from '@/views/contacts';
 import Team from '@/views/team';
 import Main from '@/views/main';
 
+import loadLanguageAsync from '@/main';
+
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   scrollBehavior(to, from, savedPosition) {
@@ -18,17 +20,21 @@ export default new Router({
   },
   routes: [
     {
-      path: '/contacts',
+      path: '/',
+      redirect: '/:lang',
+    },
+    {
+      path: '/:lang/contacts',
       name: 'contacts',
       component: Contacts,
     },
     {
-      path: '/team',
+      path: '/:lang/team',
       name: 'team',
       component: Team,
     },
     {
-      path: '/',
+      path: '/:lang',
       name: 'main',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
@@ -37,3 +43,16 @@ export default new Router({
     },
   ],
 });
+
+router.beforeEach((to, from, next) => {
+  let { lang = null } = to.params;
+
+  if (!lang) {
+    lang = window.navigator.language.split('-')[0]
+      || window.navigator.userLanguage.split('-')[0];
+  }
+
+  return loadLanguageAsync(lang).then(() => next());
+});
+
+export default router;

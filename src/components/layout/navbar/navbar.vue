@@ -61,13 +61,22 @@
             </div>
           </transition>
         </div>
-        <router-link
-          to=""
+        <a
+          href="https://app.zam.io/sign-in"
+          target="_blank"
+          rel="noreferrer noopener"
           :class="['navbar__btn navbar__btn--no-border mr-3 mr-md-0',
           { 'd-none' : showMobileNav }]">
           Login
-        </router-link>
-        <router-link to="" class="d-none d-md-flex navbar__btn ml-3">Sign Up</router-link>
+        </a>
+        <a
+          href="https://app.zam.io/sign-up"
+          target="_blank"
+          rel="noreferrer noopener"
+          class="d-none d-md-flex navbar__btn ml-3"
+        >
+          Sign Up
+        </a>
         <div class="d-md-none">
           <transition appear name="fade">
             <div
@@ -143,8 +152,22 @@
           </transition>
         </div>
         <div class="d-flex mt-5 pt-4">
-          <router-link to="" class="navbar__btn">Login</router-link>
-          <router-link to="" class="navbar__btn ml-3">Sign Up</router-link>
+          <a
+            href="https://app.zam.io/sign-in"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="navbar__btn"
+          >
+            Login
+          </a>
+          <a
+            href="https://app.zam.io/sign-up"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="navbar__btn ml-3"
+          >
+            Sign Up
+          </a>
         </div>
       </div>
     </div>
@@ -170,8 +193,8 @@ export default {
       stickNav: false,
       currentLocale: 0,
       locales: [
-        { label: 'EN', flag: 'US' },
-        { label: 'KO', flag: 'KR' },
+        { label: 'en', flag: 'us' },
+        { label: 'kr', flag: 'kr' },
       ],
       routes: [
         { route: '/', name: 'Home' },
@@ -180,10 +203,20 @@ export default {
       ],
     };
   },
+  watch: {
+    $route: {
+      handler() {
+        // this.showMobileNav = false;
+      },
+      deep: true,
+    },
+  },
   methods: {
     setCurrentLocale(index) {
       this.currentLocale = index;
       this.showLocales = false;
+
+      return this.$router.push({ params: { lang: this.locales[index].label } });
     },
     handleClickOutside() {
       this.showLocales = false;
@@ -340,6 +373,7 @@ export default {
   font-size: 0.875rem;
   letter-spacing: 0.5px;
   color: inherit;
+  text-transform: uppercase;
 }
 
 .locales-sb__arrow-icon {
@@ -387,5 +421,7 @@ export default {
 .navbar__icon-close {
   width: 24px;
   height: 24px;
+
+  cursor: pointer;
 }
 </style>
