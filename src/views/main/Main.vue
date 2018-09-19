@@ -745,8 +745,8 @@ export default {
 }
 
 .product__zam-chain-pic {
-  width: 647px;
-  height: 481px;
+  width: 727px;
+  height: 601px;
 
   @include media-breakpoint-down(lg) {
     width: 100%;
