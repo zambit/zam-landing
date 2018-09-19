@@ -155,7 +155,7 @@
               href="https://app.zam.io"
               target="_blank"
               rel="noreferrer noopener"
-              class="d-none d-md-flex product__button"
+              class="d-none d-md-inline-flex product__button"
             ></a>
           </div>
           <div class="col-12 col-lg-7 col-xl-6">
@@ -599,10 +599,11 @@ export default {
 }
 
 .product__button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 180px;
+  min-width: 180px;
+  padding: 0 15px;
   height: 70px;
   border-radius: 78px;
   background-color: #8de37f;
