@@ -58,12 +58,34 @@
       "비용",
       "전화 번호로 0% 가상화폐 송금",
       "은행 송금",
-      "External transfer of cryptocurrency",
-      "Purchase of cryptocurrency with Visa, MasterCard, UnionPay cards",
-      "Immediate withdrawal of cryptocurrency",
-      "Ability to bind 1 bank card for withdrawal",
-      "Free SMS notifications of transactions per month",
-      "Limit per month for withdrawal to the card"
+      "암호화폐 외부 송금",
+      "카드를 통한 가상화폐 구매 ",
+      "암호화폐 즉각적인 철수",
+      "개 은행 카드에 화폐를 인출 할 수 있음",
+      "매달 거래 25 건 무료 SMS 알림",
+      "한도로 카드 인출 가능"
+    ],
+    "freeData": [
+      "$0 / 0 ZAM 달마다",
+      "0%",
+      "0%",
+      "0.25%",
+      "4%",
+      "2% + 1,15$",
+      "1",
+      "25",
+      "400 € / 400 $"
+    ],
+    "premiumData": [
+      "$9 / 450 ZAM 달마다",
+      "0%",
+      "0%",
+      "0%",
+      "3.5%",
+      "1% + 1,15$",
+      "5",
+      "무제한 SMS 알림",
+      "1000 € / 1000 $"
     ]
   },
   "alpha": {

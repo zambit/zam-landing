@@ -477,53 +477,6 @@ export default {
           },
         },
       ],
-      tableData: [
-        {
-          title: this.$t('table.data[0]'),
-          free: '$0 / 0&nbsp;ZAM',
-          premium: '$9 / 450&nbsp;ZAM',
-        },
-        {
-          title: this.$t('table.data[1]'),
-          free: '0%',
-          premium: '0%',
-        },
-        {
-          title: this.$t('table.data[2]'),
-          free: '0%',
-          premium: '0%',
-        },
-        {
-          title: this.$t('table.data[3]'),
-          free: '0.25%',
-          premium: '0%',
-        },
-        {
-          title: this.$t('table.data[4]'),
-          free: '4%',
-          premium: '3.5%',
-        },
-        {
-          title: this.$t('table.data[5]'),
-          free: '2% + 1,15$',
-          premium: '1% + 1,15$',
-        },
-        {
-          title: this.$t('table.data[6]'),
-          free: '1',
-          premium: '5',
-        },
-        {
-          title: this.$t('table.data[7]'),
-          free: '25',
-          premium: 'Unlimited',
-        },
-        {
-          title: this.$t('table.data[8]'),
-          free: '400&nbsp;€ / 400&nbsp;$',
-          premium: '1000&nbsp;€ / 1000&nbsp;$',
-        },
-      ],
     };
   },
   components: {
@@ -539,6 +492,57 @@ export default {
         this.$refs.video.play();
         // this.$refs.videoMobile.play();
       }, 1300);
+    },
+  },
+  computed: {
+    tableData() {
+      return [
+        {
+          title: this.$t('table.data[0]'),
+          free: this.$t('table.freeData[0]'),
+          premium: this.$t('table.premiumData[0]'),
+        },
+        {
+          title: this.$t('table.data[1]'),
+          free: this.$t('table.freeData[1]'),
+          premium: this.$t('table.premiumData[1]'),
+        },
+        {
+          title: this.$t('table.data[2]'),
+          free: this.$t('table.freeData[2]'),
+          premium: this.$t('table.premiumData[2]'),
+        },
+        {
+          title: this.$t('table.data[3]'),
+          free: this.$t('table.freeData[3]'),
+          premium: this.$t('table.premiumData[3]'),
+        },
+        {
+          title: this.$t('table.data[4]'),
+          free: this.$t('table.freeData[4]'),
+          premium: this.$t('table.premiumData[4]'),
+        },
+        {
+          title: this.$t('table.data[5]'),
+          free: this.$t('table.freeData[5]'),
+          premium: this.$t('table.premiumData[5]'),
+        },
+        {
+          title: this.$t('table.data[6]'),
+          free: this.$t('table.freeData[6]'),
+          premium: this.$t('table.premiumData[6]'),
+        },
+        {
+          title: this.$t('table.data[7]'),
+          free: this.$t('table.freeData[7]'),
+          premium: this.$t('table.premiumData[7]'),
+        },
+        {
+          title: this.$t('table.data[8]'),
+          free: this.$t('table.freeData[8]'),
+          premium: this.$t('table.premiumData[8]'),
+        },
+      ];
     },
   },
   mounted() {
