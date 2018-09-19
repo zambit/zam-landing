@@ -19,10 +19,11 @@
             </form>-->
             <div class="d-flex d-md-none align-items-center">
               <a
-                 href="https://play.google.com/store/apps/details?id=zam.wallet "
-                 target="_blank"
-                 rel="noreferrer noopener"
-                 class="product__button m-0">
+                href="https://play.google.com/store/apps/details?id=zam.wallet "
+                target="_blank"
+                rel="noreferrer noopener"
+                class="product__button m-0"
+              >
                 Get the app
               </a>
               <!--<svg class="musthead__app-icon ml-5">
@@ -47,22 +48,22 @@
               muted
               loop
             >
-              <source src="./man-on-chair.mp4"/>
-              <source src="./man-on-chair.webm"/>
+              <source src="./man-on-chair.mp4" />
+              <source src="./man-on-chair.webm" />
             </video>
             <!--<video-->
-              <!--ref="videoMobile"-->
-              <!--class="d-md-none mt-5 mx-auto d-block"-->
-              <!--style="max-width: 100%; height: auto;"-->
-              <!--autoplay-->
-              <!--muted-->
-              <!--loop-->
+            <!--ref="videoMobile"-->
+            <!--class="d-md-none mt-5 mx-auto d-block"-->
+            <!--style="max-width: 100%; height: auto;"-->
+            <!--autoplay-->
+            <!--muted-->
+            <!--loop-->
             <!--&gt;-->
-              <!--<source src="./phone.mp4"/>-->
-              <!--<source src="./phone.webm"/>-->
+            <!--<source src="./phone.mp4"/>-->
+            <!--<source src="./phone.webm"/>-->
             <!--</video>-->
             <!--<svg class="d-none d-md-block musthead__pic">-->
-              <!--<use xlink:href="#man-on-chair"></use>-->
+            <!--<use xlink:href="#man-on-chair"></use>-->
             <!--</svg>-->
             <img
               src="./main-phone-mobile.png"
@@ -199,7 +200,7 @@
               <source src="./zam-merchant.mp4" />
             </video>
             <!--<router-link to="" class="d-md-none product__button mt-4">-->
-              <!--Read more-->
+            <!--Read more-->
             <!--</router-link>-->
           </div>
           <div class="col-12 col-lg-6 order-0 order-md-1">
@@ -207,7 +208,7 @@
             <h2 v-html="$t('products.merchant.title')" class="product__title"></h2>
             <p v-html="$t('products.merchant.desc')" class="product__desc"></p>
             <!--<router-link to="" class="d-none d-md-flex product__button">-->
-              <!--Read more-->
+            <!--Read more-->
             <!--</router-link>-->
           </div>
         </div>
@@ -223,7 +224,7 @@
             <h2 v-html="$t('products.chain.title')" class="product__title"></h2>
             <p v-html="$t('products.chain.desc')" class="product__desc"></p>
             <!--<router-link to="" class="d-none d-md-flex product__button">-->
-              <!--Read more-->
+            <!--Read more-->
             <!--</router-link>-->
           </div>
           <div class="col-12 col-lg-7">
@@ -239,7 +240,7 @@
               <source src="./zam-chain.mp4" />
             </video>
             <!--<router-link to="" class="d-md-none product__button mt-4">-->
-              <!--Read more-->
+            <!--Read more-->
             <!--</router-link>-->
           </div>
         </div>
@@ -310,7 +311,8 @@
               :class="['table__btn-switch', { 'table__btn-switch--active' : showTableData === 'free'
                }]"
               @click="showTableData = 'free'"
-            >Free</button>
+            >Free
+            </button>
           </div>
           <div class="col-auto text-center ml-4">
             <button
@@ -318,7 +320,8 @@
               :class="['table__btn-switch', { 'table__btn-switch--active' : showTableData ===
               'premium' }]"
               @click="showTableData = 'premium'"
-            >Premium</button>
+            >Premium
+            </button>
           </div>
         </div>
 
@@ -380,11 +383,12 @@
             </form>-->
             <div class="d-flex d-md-none align-items-center mt-5">
               <a
-                 href="https://play.google.com/store/apps/details?id=zam.wallet "
-                 target="_blank"
-                 rel="noreferrer noopener"
-                 class="product__button m-0">
-                Get the app
+                v-html="$t('getTheApp')"
+                href="https://play.google.com/store/apps/details?id=zam.wallet "
+                target="_blank"
+                rel="noreferrer noopener"
+                class="product__button m-0"
+              >
               </a>
               <!--<svg class="musthead__app-icon ml-5">
                 <use xlink:href="#apple-logo"></use>
@@ -581,7 +585,6 @@ export default {
   letter-spacing: 0.8px;
   color: #2a3271;
   margin-top: 20px;
-
   transition: font-size .2s ease;
 
   @include media-breakpoint-down(md) {
@@ -613,7 +616,6 @@ export default {
   letter-spacing: -0.7px;
   color: #ffffff;
   margin-top: 45px;
-
   transition: box-shadow .2s ease, font-size .2s ease;
 
   &:hover {
@@ -623,7 +625,6 @@ export default {
   @include media-breakpoint-down(md) {
     width: 136px;
     height: 53px;
-
     font-size: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -684,7 +685,6 @@ export default {
   letter-spacing: -0.7px;
   color: #ffffff;
   margin-left: 8px;
-
   transition: box-shadow .2s ease;
 
   &:hover {
@@ -701,9 +701,7 @@ export default {
   width: 30px;
   height: 35px;
   cursor: pointer;
-
-  fill: #ECECEC;
-
+  fill: #ececec;
   transition: fill .2s ease;
 
   &:last-child {
@@ -785,7 +783,6 @@ export default {
   background-color: #8de37f;
   box-shadow: 0 20px 42px -8px rgba(141, 227, 127, 0.82);
   margin-top: 80px;
-
   transition: box-shadow .2s ease;
 
   &:hover {
@@ -794,10 +791,8 @@ export default {
 
   @include media-breakpoint-down(md) {
     margin-top: 32px;
-
     width: 200px;
     height: 53px;
-
     font-size: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -897,19 +892,15 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 112px;
   height: 30px;
-
   border-radius: 24px;
   background-color: white;
   border: solid 1.3px $sky-blue;
-
   font-size: .875rem;
   font-weight: bold;
   letter-spacing: -0.5px;
   color: $sky-blue;
-
   transition: color .2s ease, background-color .2s ease;
 
   &:focus {

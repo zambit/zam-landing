@@ -6,6 +6,7 @@
   },
   "signIn": "Login",
   "signUp": "Sign Up",
+  "getTheApp": "Get the app",
   "musthead": {
     "title": "<span class=\"dark-blue\">The fair</span> blockchain bank",
     "desc": "Take part in the open testing of cryptocurrency transfers by phone number and earn additional ZAM tokens"
