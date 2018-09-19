@@ -729,9 +729,9 @@ export default {
 
 .product__zam-merchant-pic {
   position: relative;
-  left: -205px;
+  left: -150px;
   width: 739px;
-  height: 460px;
+  height: 600px;
 
   @include media-breakpoint-down(lg) {
     left: 0;
