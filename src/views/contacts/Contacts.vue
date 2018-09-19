@@ -85,27 +85,31 @@ export default {
         email: '',
         message: '',
       },
-      cities: [
-        {
-          name: '',
-          address: '',
-          thumb: require('./contacts-estonia.jpg'),
-        },
-        {
-          name: '',
-          address: '',
-          thumb: require('./contacts-turkey.jpg'),
-        },
-        {
-          name: '',
-          address: '',
-          thumb: require('./contacts-dubai.jpg'),
-        },
-      ],
     };
   },
   components: {
     vInput,
+  },
+  computed: {
+    cities() {
+      return [
+        {
+          name: this.$t('contacts.cities[0].name'),
+          address: this.$t('contacts.cities[0].address'),
+          thumb: require('./contacts-estonia.jpg'),
+        },
+        {
+          name: this.$t('contacts.cities[1].name'),
+          address: this.$t('contacts.cities[1].address'),
+          thumb: require('./contacts-turkey.jpg'),
+        },
+        {
+          name: this.$t('contacts.cities[2].name'),
+          address: this.$t('contacts.cities[2].address'),
+          thumb: require('./contacts-dubai.jpg'),
+        },
+      ];
+    },
   },
 };
 </script>

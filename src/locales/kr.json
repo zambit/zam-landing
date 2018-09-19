@@ -100,7 +100,7 @@
     "title": "우리 팀"
   },
   "contacts": {
-    "title": "<span class=\"dark-blue\">콘택트 </span>",
+    "title": "<span class=\"dark-blue\">콘택트</span>",
     "cities": [
       { "name": "에스토니아", "address": "Randla 13-201, 10315 Tallinn, Estonia Company Zam Zam Technology OÜ" },
       { "name": "터키", "address": "곧 출시 예정" },
