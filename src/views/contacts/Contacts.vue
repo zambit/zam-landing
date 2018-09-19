@@ -3,7 +3,7 @@
     <div class="container cities-container">
       <div class="row">
         <div class="col-12">
-          <h2 class="section-title"><span class="dark-blue">Contact</span> Us</h2>
+          <h2 v-html="$t('contacts.title')" class="section-title"></h2>
         </div>
       </div>
       <div
@@ -25,8 +25,8 @@
     <div class="container contact-form-container">
       <div class="row justify-content-center">
         <div class="col-12">
-          <h2 class="section-title"><span class="dark-blue">Ask a</span> question</h2>
-          <p class="contact-form__desc">Send us a short message with a important question</p>
+          <h2 v-html="$t('contacts.form.title')" class="section-title"></h2>
+          <p v-html="$t('contacts.form.desc')" class="contact-form__desc"></p>
         </div>
         <div class="col-12 col-lg-6">
           <div class="row no-gutters justify-content-center">
@@ -34,7 +34,7 @@
               <form @submit.prevent="" class="w-100 contact-form__form">
                 <v-input
                   :value="formData.name"
-                  :v-placeholder="'Name'"
+                  :v-placeholder="$t('contacts.form.placeholder.email')"
                   type="text"
                   required
                   class="transaction-input"
@@ -42,7 +42,7 @@
                 />
                 <v-input
                   :value="formData.email"
-                  :v-placeholder="'Email'"
+                  :v-placeholder="$t('contacts.form.placeholder.email')"
                   type="email"
                   required
                   class="mt-4 transaction-input"
@@ -50,18 +50,18 @@
                 />
                 <textarea
                   :value="formData.message"
-                  placeholder="Message"
+                  :placeholder="$t('contacts.form.placeholder.message')"
                   class="contacts__textarea mt-4"
                 >
 
                 </textarea>
                 <a
+                  v-html="$t('contacts.form.btn')"
                   :href="`mailto:support@zam.me
                   ?subject=${encodeURIComponent(formData.name)}
                   &body=${encodeURIComponent(formData.message)}`"
                   class="contact-form__button mt-4"
                 >
-                  Send
                 </a>
               </form>
             </div>
@@ -87,18 +87,18 @@ export default {
       },
       cities: [
         {
-          name: 'Estonia',
-          address: 'Randla 13-201, 10315 Tallinn, Estonia Company Zam Zam Technology OÜ',
+          name: '',
+          address: '',
           thumb: require('./contacts-estonia.jpg'),
         },
         {
-          name: 'Turkey',
-          address: 'Coming Soon',
+          name: '',
+          address: '',
           thumb: require('./contacts-turkey.jpg'),
         },
         {
-          name: 'Dubai',
-          address: 'Coming Soon',
+          name: '',
+          address: '',
           thumb: require('./contacts-dubai.jpg'),
         },
       ],

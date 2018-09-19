@@ -643,8 +643,6 @@ export default {
 }
 
 .musthead {
-  padding-top: 145px;
-
   @include media-breakpoint-down(md) {
     padding-top: 30px;
   }
@@ -718,7 +716,7 @@ export default {
 
 .musthead__pic {
   width: 640px;
-  height: 800px;
+  height: 670px;
 }
 
 .product__zam-wallet-pic {

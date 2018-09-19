@@ -92,9 +92,29 @@
     "title": "Test zam wallet and <span class=\"sky-blue\">get 1000 ZAM</span> as a gift for premium payment"
   },
   "footer": {
-    "telegramButton": "Join us on Telegram"
+    "telegramButton": "Join us on Telegram",
+    "privacy": "Privacy Policy",
+    "terms": "Terms and Conditions"
   },
   "team": {
     "title": "<span class=\"dark-blue\">Our</span> team"
+  },
+  "contacts": {
+    "title": "<span class=\"dark-blue\">Contact</span> Us",
+    "cities": [
+      { "name": "Estonia", "address": "Randla 13-201, 10315 Tallinn, Estonia Company Zam Zam Technology OÜ" },
+      { "name": "Turkey", "address": "Coming Soon" },
+      { "name": "Dubai", "address": "Coming Soon" }
+    ],
+    "form": {
+      "title": "<span class=\"dark-blue\">Ask a</span> question",
+      "desc": "Send us a short message with a important question",
+      "placeholder": {
+        "email": "Name",
+        "name": "Email",
+        "message": "Message"
+      },
+      "btn": "Send"
+    }
   }
 }

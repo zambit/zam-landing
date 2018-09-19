@@ -31,7 +31,7 @@
       "name": "zam wallet",
       "title": "암호화폐 지갑, 있어야하는 것 ",
       "desc": "심하게 기능이 제한된 수십 개의 금융 애플리케이션에주의를 기울이지 마십시오. zam.wallet은 전통적인 돈과 암호화폐 사이의 경계를 지우고 시장보다 2-3 배나 효율적입니다.",
-      "btn": "Try it now"
+      "btn": "버튼 : 지금 시도하십시오!"
     },
     "merchant": {
       "name": "Zam Merchant",
@@ -92,9 +92,29 @@
     "title": "ZAM 지갑을 테스트하고 <span class=\"sky-blue\">1000 ZAM</span>을 프리미엄 지불 용 선물로 받으십시오."
   },
   "footer": {
-    "telegramButton": "전보에 가입하십시오."
+    "telegramButton": "전보에 가입하십시오.",
+    "privacy": "개인정보처리방침 ",
+    "terms": "이용약관 "
   },
   "team": {
     "title": "우리 팀"
+  },
+  "contacts": {
+    "title": "<span class=\"dark-blue\">콘택트 </span>",
+    "cities": [
+      { "name": "에스토니아", "address": "Randla 13-201, 10315 Tallinn, Estonia Company Zam Zam Technology OÜ" },
+      { "name": "터키", "address": "곧 출시 예정" },
+      { "name": "두바이 ", "address": "곧 출시 예정" }
+    ],
+    "form": {
+      "title": "<span class=\"dark-blue\">질문 하기</span>",
+      "desc": "질문 메시지를 보내기",
+      "placeholder": {
+        "email": "이름",
+        "name": "메일",
+        "message": "메시지"
+      },
+      "btn": "보내기"
+    }
   }
 }

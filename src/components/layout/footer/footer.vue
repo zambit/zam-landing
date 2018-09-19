@@ -62,22 +62,22 @@
       <div class="row justify-content-center footer__links-row">
         <div class="col-12 col-sm-auto text-center text-sm-left">
           <a
+            v-html="$t('footer.privacy')"
             href="https://privacy.zam.io/PRIVACY_POLICY.pdf"
             target="_blank"
             rel="noreferrer noopener"
             class="footer__text text-underline"
           >
-            Privacy Policy
           </a>
         </div>
         <div class="col-12 col-sm-auto text-center text-sm-left">
           <a
+            v-html="$t('footer.terms')"
             href="https://terms.zam.io/TERMS_OF_USE_for_site.pdf"
             target="_blank"
             rel="noreferrer noopener"
             class="footer__text text-underline ml-sm-3"
           >
-            Terms and Conditions
           </a>
         </div>
       </div>
