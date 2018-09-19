@@ -250,7 +250,11 @@ export default {
             x3: require('./dzera@3x.jpg'), // eslint-disable-line
           },
           list: [
-
+            'Press Secretary',
+            'Graduated from the Faculty of International Journalism of St. Petersburg State University',
+            'Worked in the press-service of St. Petersburg State University',
+            'Was a chief  editor of the project in the Rosbalt news agency',
+            'Knows Ossetian,  English, Russian and Greek languages',
           ],
         },
 
@@ -263,7 +267,11 @@ export default {
             x3: require('./alina@3x.jpg'), // eslint-disable-line
           },
           list: [
-
+            'Specialist in Public Relations',
+            'Graduated from the Institute of Art for Modeling and Design named after Salvador Dali',
+            'Was an assistant of financial director of 4Cervice group Company',
+            'Was a chief of a model agency',
+            'Owns a business in organizing contests, events, private summits',
           ],
         },
       ],
