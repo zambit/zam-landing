@@ -680,6 +680,9 @@ export default {
 }
 
 .musthead {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
   @include media-breakpoint-down(md) {
     padding-top: 30px;
   }
