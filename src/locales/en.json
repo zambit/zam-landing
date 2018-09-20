@@ -2,6 +2,7 @@
   "navbar": {
     "home": "Home",
     "team": "Team",
+    "token": "Token",
     "contacts": "Contacts"
   },
   "signIn": "Login",

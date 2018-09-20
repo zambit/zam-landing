@@ -2,6 +2,7 @@
   "navbar": {
     "home": "집",
     "team": "팀",
+    "token": "토큰",
     "contacts": "연락하기"
   },
   "signIn": "로그인",

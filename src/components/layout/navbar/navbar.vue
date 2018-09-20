@@ -16,7 +16,16 @@
         <ul class="d-none d-md-flex navbar__list">
           <template v-for="item in routes">
             <li :key="item.route" class="navbar__list-item">
+              <a
+                v-if="item.external"
+                :href="item.route"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="navbar__list-link">
+                {{ item.name }}
+              </a>
               <router-link
+                v-else
                 :to="item.route"
                 class="navbar__list-link"
               >{{ item.name }}
@@ -226,9 +235,26 @@ export default {
     routes() {
       const { lang } = this.$route.params;
       return [
-        { route: `/${lang}`, name: this.$t('navbar.home') },
-        { route: `/${lang}/team`, name: this.$t('navbar.team') },
-        { route: `/${lang}/contacts`, name: this.$t('navbar.contacts') },
+        {
+          route: `/${lang}`,
+          name: this.$t('navbar.home'),
+          external: false,
+        },
+        {
+          route: `/${lang}/team`,
+          name: this.$t('navbar.team'),
+          external: false,
+        },
+        {
+          route: 'https://ico.zam.io',
+          name: this.$t('navbar.token'),
+          external: true,
+        },
+        {
+          route: `/${lang}/contacts`,
+          name: this.$t('navbar.contacts'),
+          external: false,
+        },
       ];
     },
   },
