@@ -58,6 +58,7 @@ export default {
       }
 
       this.formatter.reset();
+      this.$emit('country', this.country);
       this.$emit('value', this.formatter.input(value));
     },
   },
@@ -83,6 +84,7 @@ export default {
       if (countryInfo) {
         this.$emit('value', countryInfo.code);
       }
+      this.$emit('country', this.country);
     }
     return true;
   },

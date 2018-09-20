@@ -8,15 +8,16 @@
           <div class="col-12 col-lg-6">
             <h1 v-html="$t('musthead.title')" class="musthead__title"></h1>
             <p v-html="$t('musthead.desc')" class="musthead__desc"></p>
-            <!--<form class="d-none d-md-flex mt-5" @submit.prevent="">
+            <form class="d-none d-md-flex mt-5" @submit.prevent="submitForm">
               <phone-input
-                :phone="phone"
+                :phone="formData.phone"
                 :guess-country-on-created="true"
                 required
-                @value="phone = $event"
+                @value="formData.phone = $event"
+                @country="formData.country = $event"
               />
               <button type="submit" class="btn musthead__btn">Ok</button>
-            </form>-->
+            </form>
             <div class="d-flex d-md-none align-items-center">
               <a
                 href="https://play.google.com/store/apps/details?id=zam.wallet "
@@ -372,15 +373,16 @@
         <div class="row align-items-center">
           <div class="col-12 col-lg-6">
             <h2 v-html="$t('alpha.title')" class="product__title"></h2>
-            <!--<form class="d-none d-md-flex mt-5" @submit.prevent="">
+            <form class="d-none d-md-flex mt-5" @submit.prevent="submitForm">
               <phone-input
-                :phone="phone"
+                :phone="formData.phone"
                 :guess-country-on-created="true"
                 required
-                @value="phone = $event"
+                @value="formData.phone = $event"
+                @country="formData.country = $event"
               />
               <button type="submit" class="btn musthead__btn">Ok</button>
-            </form>-->
+            </form>
             <div class="d-flex d-md-none align-items-center mt-5">
               <a
                 v-html="$t('getTheApp')"
@@ -423,6 +425,9 @@
 </template>
 
 <script>
+import axios from 'axios';
+import md5 from 'md5';
+
 import newsCard from '@/components/blocks/newsCard';
 import phoneInput from '@/components/blocks/phoneInput';
 
@@ -438,7 +443,10 @@ export default {
   name: 'main-page',
   data() {
     return {
-      phone: '',
+      formData: {
+        phone: '',
+        country: '',
+      },
       showTableData: 'free',
       news: [
         {
@@ -488,6 +496,33 @@ export default {
     newsCard,
   },
   methods: {
+    async submitForm() {
+      const data = {
+        phoneFull: this.formData.phone.replace(/ /g, ''),
+        country: this.formData.country,
+      };
+
+      try {
+        await axios.post('https://ico.zam.io/whitelist', {
+          data: JSON.stringify(data),
+        });
+      } catch (e) {
+        alert('Server error'); // eslint-disable-line
+        return false;
+      }
+
+      const token = md5(this.formData.phone + process.env.VUE_APP_SECRET);
+      this.$router.push({
+        name: 'success',
+        query: {
+          token,
+          phone: this.formData.phone,
+        },
+      });
+
+      this.formData.phone = '';
+      return true;
+    },
     toggleVideoPlay() {
       this.$refs.video.pause();
       // this.$refs.videoMobile.pause();

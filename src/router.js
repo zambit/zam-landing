@@ -4,6 +4,7 @@ import Router from 'vue-router';
 import Contacts from '@/views/contacts';
 import Team from '@/views/team';
 import Main from '@/views/main';
+import Success from '@/views/success';
 
 import setI18nLanguage from '@/main';
 
@@ -32,6 +33,11 @@ const router = new Router({
       path: '/:lang/team',
       name: 'team',
       component: Team,
+    },
+    {
+      path: '/:lang/success',
+      name: 'success',
+      component: Success,
     },
     {
       path: '/:lang',
