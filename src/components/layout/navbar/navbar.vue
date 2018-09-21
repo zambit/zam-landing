@@ -1,7 +1,6 @@
 <template>
   <nav class="navbar">
-    <div ref="wrap" :class="['navbar-wrap d-flex justify-content-between',
-    { 'navbar-wrap--fixed' : stickNav }]">
+    <div ref="wrap" class="navbar-wrap d-flex justify-content-between navbar-wrap--fixed">
       <div class="d-flex align-items-center">
         <router-link to="/">
           <svg class="navbar__logo">
@@ -199,7 +198,6 @@ export default {
     return {
       showMobileNav: false,
       showLocales: false,
-      stickNav: false,
       currentLocale: 0,
       locales: [
         { label: 'en', flag: 'us' },
@@ -224,11 +222,6 @@ export default {
     },
     handleClickOutside() {
       this.showLocales = false;
-    },
-    toggleNavStick() {
-      const offsetTop = this.$el.getBoundingClientRect().y;
-
-      this.stickNav = Math.abs(offsetTop) > window.innerHeight;
     },
   },
   computed: {
@@ -260,10 +253,6 @@ export default {
   },
   mounted() {
     this.currentLocale = this.locales.findIndex(el => el.label === this.$route.params.lang) || 0;
-    window.addEventListener('scroll', this.toggleNavStick);
-  },
-  beforeDestroy() {
-    window.removeEventListener('scroll', this.toggleNavStick);
   },
 };
 </script>
@@ -273,6 +262,7 @@ export default {
 
 .navbar {
   position: relative;
+  height: 80px;
   z-index: 9;
 }
 
