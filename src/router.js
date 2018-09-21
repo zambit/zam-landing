@@ -5,7 +5,7 @@ import Contacts from '@/views/contacts';
 import Team from '@/views/team';
 import Main from '@/views/main';
 import Success from '@/views/success';
-import Token from '@/views/token';
+import Docs from '@/views/docs';
 
 import setI18nLanguage from '@/main';
 
@@ -41,9 +41,9 @@ const router = new Router({
       component: Success,
     },
     {
-      path: '/:lang/token',
-      name: 'token',
-      component: Token,
+      path: '/:lang/docs',
+      name: 'docs',
+      component: Docs,
     },
     {
       path: '/:lang',

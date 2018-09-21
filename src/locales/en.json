@@ -2,7 +2,7 @@
   "navbar": {
     "home": "Home",
     "team": "Team",
-    "token": "Token",
+    "token": "Docs",
     "contacts": "Contacts"
   },
   "signIn": "Login",
@@ -120,7 +120,7 @@
     }
   },
   "token": {
-    "title": "<span class=\"dark-blue\">Token</span> sale doc",
+    "title": "<span class=\"dark-blue\">Token</span> sale docs",
     "tokenSaleWhitePaper": "Token sale White Paper",
     "summary": "Summary",
     "onePager": "One Pager",

@@ -2,7 +2,7 @@
   "navbar": {
     "home": "집",
     "team": "팀",
-    "token": "토큰",
+    "token": "서류",
     "contacts": "연락하기"
   },
   "signIn": "로그인",
@@ -120,7 +120,7 @@
     }
   },
   "token": {
-    "title": "<span class=\"dark-blue\">토큰세일</span>",
+    "title": "<span class=\"dark-blue\">토큰 판매 문서</span>",
     "tokenSaleWhitePaper": "토큰세일 백서",
     "summary": "개요",
     "onePager": "원 페이저",

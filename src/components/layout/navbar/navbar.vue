@@ -239,7 +239,7 @@ export default {
           external: false,
         },
         {
-          route: `/${lang}/token`,
+          route: `/${lang}/docs`,
           name: this.$t('navbar.token'),
           external: false,
         },
