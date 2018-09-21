@@ -118,5 +118,12 @@
       },
       "btn": "Send"
     }
+  },
+  "token": {
+    "title": "<span class=\"dark-blue\">Token</span> sale doc",
+    "tokenSaleWhitePaper": "Token sale White Paper",
+    "summary": "Summary",
+    "onePager": "One Pager",
+    "technicalWhitePaper": "Technical White Paper <span class=\"grey\">(coming soon)</span>"
   }
 }

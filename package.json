@@ -32,9 +32,11 @@
     "@vue/cli-plugin-pwa": "^3.0.2",
     "@vue/cli-service": "^3.0.2",
     "@vue/eslint-config-airbnb": "^3.0.2",
+    "file-loader": "^2.0.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "svg-sprite-loader": "^3.9.2",
+    "url-loader": "^1.1.1",
     "vue-template-compiler": "^2.5.17"
   }
 }

@@ -118,5 +118,12 @@
       },
       "btn": "보내기"
     }
+  },
+  "token": {
+    "title": "<span class=\"dark-blue\">토큰세일</span>",
+    "tokenSaleWhitePaper": "토큰세일 백서",
+    "summary": "개요",
+    "onePager": "원 페이저",
+    "technicalWhitePaper": "기술 백서 <span class=\"grey\">(곧 제공 예정)</span>"
   }
 }

@@ -239,9 +239,9 @@ export default {
           external: false,
         },
         {
-          route: 'https://ico.zam.io',
+          route: `/${lang}/token`,
           name: this.$t('navbar.token'),
-          external: true,
+          external: false,
         },
         {
           route: `/${lang}/contacts`,

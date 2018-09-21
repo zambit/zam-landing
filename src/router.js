@@ -5,6 +5,7 @@ import Contacts from '@/views/contacts';
 import Team from '@/views/team';
 import Main from '@/views/main';
 import Success from '@/views/success';
+import Token from '@/views/token';
 
 import setI18nLanguage from '@/main';
 
@@ -38,6 +39,11 @@ const router = new Router({
       path: '/:lang/success',
       name: 'success',
       component: Success,
+    },
+    {
+      path: '/:lang/token',
+      name: 'token',
+      component: Token,
     },
     {
       path: '/:lang',
