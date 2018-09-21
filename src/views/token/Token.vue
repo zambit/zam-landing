@@ -113,6 +113,10 @@ export default {
   text-align: center;
   color: $sky-blue;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   @include media-breakpoint-down(md) {
     font-size: 1rem;
   }
