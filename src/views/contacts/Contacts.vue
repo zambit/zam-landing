@@ -34,7 +34,7 @@
               <form @submit.prevent="" class="w-100 contact-form__form">
                 <v-input
                   :value="formData.name"
-                  :v-placeholder="$t('contacts.form.placeholder.email')"
+                  :v-placeholder="$t('contacts.form.placeholder.name')"
                   type="text"
                   required
                   class="transaction-input"

@@ -112,8 +112,8 @@
       "title": "<span class=\"dark-blue\">Ask a</span> question",
       "desc": "Send us a short message with an important question",
       "placeholder": {
-        "email": "Name",
-        "name": "Email",
+        "email": "Email",
+        "name": "Name",
         "message": "Message"
       },
       "btn": "Send"
