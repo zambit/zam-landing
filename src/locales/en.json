@@ -62,7 +62,7 @@
       "Transfers within the bank",
       "External transfer of cryptocurrency",
       "Purchase of cryptocurrency with Visa, MasterCard, UnionPay cards",
-      "Immediate withdrawal of cryptocurrency",
+      "Instant exchange of cryptocurrency for fiat money and withdrawal them to a bank card",
       "Ability to bind 1 bank card for withdrawal",
       "Free SMS notifications of transactions per month",
       "Limit per month for withdrawal to the card"
@@ -76,7 +76,7 @@
       "2% + 1,15$",
       "1",
       "25",
-      "400 € / 400 $"
+      "5 000 € / 5 000 $"
     ],
     "premiumData": [
       "$9 / 450 ZAM",
@@ -87,7 +87,7 @@
       "1% + 1,15$",
       "5",
       "Unlimited",
-      "1000 € / 1000 $"
+      "15 000 € / 15 000 $"
     ]
   },
   "alpha": {
