@@ -107,7 +107,7 @@ export default {
         {
           name: 'Telegram',
           icon: '#telegram-logo',
-          url: 'https://t.me/zamzambank',
+          url: 'https://t.me/zamzamchat',
         },
         {
           name: 'Twitter',
