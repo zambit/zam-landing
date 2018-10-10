@@ -8,6 +8,31 @@
           class="team-member__photo"
           alt=""
         >
+        <div class="icons-wrap">
+          <a
+            v-if="person.facebook.length > 0"
+            :href="person.facebook"
+            target="_blank"
+            rel="noreferrer noopener"
+            @click.stop
+          >
+            <svg class="icon">
+              <use xlink:href="#icon--facebook--colored"></use>
+            </svg>
+          </a>
+          <a
+            v-if="person.linkedin.length > 0"
+            :href="person.linkedin"
+            class="ml-1"
+            target="_blank"
+            rel="noreferrer noopener"
+            @click.stop
+          >
+            <svg class="icon">
+              <use xlink:href="#icon--linked-in--colored"></use>
+            </svg>
+          </a>
+        </div>
       </div>
       <h4 class="team-member__name">{{ person.name }}</h4>
       <p class="team-member__role">{{ person.role }}</p>
@@ -17,6 +42,8 @@
 
 <script>
 import './close-popup-icon.svg';
+import './icon--facebook--colored.svg';
+import './icon--linked-in--colored.svg';
 
 export default {
   name: 'team-member',
@@ -30,6 +57,8 @@ export default {
           name: '',
           role: '',
           list: [],
+          linkedin: '',
+          facebook: '',
         };
       },
     },
@@ -51,7 +80,14 @@ export default {
 }
 
 .team-member__photo-wrap {
+  position: relative;
   transition: box-shadow .2s ease;
+}
+
+.icons-wrap {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
 }
 
 .team-member__photo {
@@ -76,5 +112,10 @@ export default {
   letter-spacing: 0.5px;
   color: $sky-blue;
   margin-top: 6px;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
 }
 </style>

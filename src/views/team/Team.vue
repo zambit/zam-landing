@@ -7,9 +7,24 @@
         </div>
       </div>
       <div class="row justify-content-center justify-content-md-between team-row">
-        <template v-for="person in team">
+        <template v-for="person in members">
           <div :key="person.name" class="col-12 col-md-6 col-lg-4 col-xl-3 mt-5">
             <team-member :person="person" @member="invokePopup($event)" />
+          </div>
+        </template>
+      </div>
+    </div>
+
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-12">
+          <h2 v-html="$t('team.advisors')" class="section-title team-title"></h2>
+        </div>
+      </div>
+      <div class="row team-row">
+        <template v-for="advisor in advisors">
+          <div :key="advisor.name" class="col-12 col-md-6 col-lg-4 col-xl-3 mt-5">
+            <team-member :person="advisor" @member="invokePopup($event)" />
           </div>
         </template>
       </div>
@@ -20,7 +35,7 @@
         <button
           type="button"
           class="popup__btn-close"
-          @click="showPopup = false"
+          @click="togglePopup"
         >
           <svg class="popup__close-icon">
             <use xlink:href="#close-popup-icon"></use>
@@ -104,6 +119,8 @@ export default {
             'Speaks 6 languages (Turkish, English, Hebrew, Farsi, Russian, Azerbaijani)',
             'Long track record of work in the financial market in Europe and CIS',
           ],
+          linkedin: 'https://www.linkedin.com/in/iliyabiniaminov/',
+          facebook: 'https://www.facebook.com/iliya.biniaminov1',
         },
         {
           name: 'Alex Mikh',
@@ -121,6 +138,8 @@ export default {
             'Was responsible for business negotiations aimed at obtaining a payment system license in Cyprus',
             'Responsible for developing a currencies exchange system service',
           ],
+          linkedin: 'https://www.linkedin.com/in/alexmihk/',
+          facebook: 'https://www.facebook.com/alexey.mikhantev',
         },
         {
           name: 'George Gus',
@@ -136,6 +155,8 @@ export default {
             'Owner of MakeFresh, international marketing agency',
             'Experience in promotion of international corporations with HQs in Europe, Turkey, Dubai',
           ],
+          linkedin: 'https://www.linkedin.com/in/georgegus/',
+          facebook: 'https://www.facebook.com/georgegus01',
         },
         {
           name: 'Zakaria Mekreloufi',
@@ -149,6 +170,8 @@ export default {
             'Founder of MKG Real Estate & Investment, a leading brokerage company for asset management in the Middle East and North Africa with a head office in Dubai, UAE',
             'Has a CFA level 1 certificate and works closely with the government of Dubai, attracting investments in the stock and financial markets, as well as small and medium-sized businesses',
           ],
+          linkedin: 'https://www.linkedin.com/in/zakaria-mekreloufi-731b61158/',
+          facebook: '',
         },
         {
           name: 'Andrew Skurlatov',
@@ -165,6 +188,8 @@ export default {
             'Designed and managed the development of DEX exchange based on a proprietary blockchain system of smart contracts',
             'Designed and managed the development of cryptocurrency indexes',
           ],
+          linkedin: '',
+          facebook: '',
         },
         {
           name: 'Ivan Podtsebnev',
@@ -179,6 +204,8 @@ export default {
             'Expert in the topics of intranet protocol, virtualization and storage systems, architecture of algo trading robots',
             '2 years of experience in Federal Agency of Government Communications and Information (FAGCI)',
           ],
+          linkedin: '',
+          facebook: '',
         },
         {
           name: 'Nikita Velko',
@@ -194,6 +221,8 @@ export default {
             'Experience in development at several startups with high ratings on Product Hunt',
             'Developed a system of cryptocurrencies graphics for DEX exchange indexes',
           ],
+          linkedin: '',
+          facebook: '',
         },
         {
           name: 'Alex Ponomaryov',
@@ -208,6 +237,8 @@ export default {
             'Knows Java, C#, C ++, as well as basic algorithms, data structures, design patterns, SQL, Git Flow',
             'Made a game for Android, which had over 150,000 downloads',
           ],
+          linkedin: '',
+          facebook: '',
         },
         {
           name: 'Daniel Danilkin',
@@ -223,8 +254,9 @@ export default {
             'Was part of the team which developed a lending system in the banking sector',
             'Participant as a developer in several open source projects',
           ],
+          linkedin: '',
+          facebook: '',
         },
-
         {
           name: 'Dzhavid Khalilov',
           role: 'Android developer',
@@ -239,8 +271,9 @@ export default {
             'Winner of payment system QIWI API Contest (2017)',
             'Developed an app for monitoring of cryptocurrencies prices',
           ],
+          linkedin: '',
+          facebook: '',
         },
-
         {
           name: 'Dzera Gazdanova',
           role: 'Press Secretary',
@@ -256,8 +289,9 @@ export default {
             'Was a chief  editor of the project in the Rosbalt news agency',
             'Knows Ossetian,  English, Russian and Greek languages',
           ],
+          linkedin: '',
+          facebook: '',
         },
-
         {
           name: 'Alina Belova',
           role: 'Public Relations',
@@ -273,6 +307,42 @@ export default {
             'Was a chief of a model agency',
             'Owns a business in organizing contests, events, private summits',
           ],
+          linkedin: '',
+          facebook: '',
+        },
+        {
+          name: 'Namig Mamedov',
+          role: 'Technical advisor',
+          photo: {
+            x1: require('./namig-mamedov.jpg'), // eslint-disable-line
+            x2: require('./namig-mamedov@2x.jpg'), // eslint-disable-line
+            x3: require('./namig-mamedov@3x.jpg'), // eslint-disable-line
+          },
+          list: [
+            'He was the director of the Sales and Marketing department at Caspian American Telecom',
+            'From 2002 to 2005, he was a senior manager at Caspian Electronics',
+            'In 2005, he was appointed to the post of CEO of LLC Caspel',
+            'Since 2008 to this day, Masum is chairman of the Board of the Caspel international holding company',
+          ],
+          linkedin: '',
+          facebook: '',
+        },
+        {
+          name: 'Andrew Koch',
+          role: 'Singapore Investment Advisor',
+          photo: {
+            x1: require('./andrew-koch.jpg'), // eslint-disable-line
+            x2: require('./andrew-koch@2x.jpg'), // eslint-disable-line
+            x3: require('./andrew-koch@3x.jpg'), // eslint-disable-line
+          },
+          list: [
+            'Не is an advisor of Singapore’s government, a businessman and a public figure',
+            'Has more than 28 years of expertise covering all aspects of banking and enterprise risk management including credit risk, market risk, operational risk, technology risk, as well as fraud risk and cyber risk',
+            'Currently, Andrew is the Director at the Investment Management Association of Singapore (“IMAS”)',
+            'Involved in more than 200 technology projects, connected with risk management and financial technologies',
+          ],
+          linkedin: 'https://sg.linkedin.com/in/andrewkohmw',
+          facebook: '',
         },
       ],
     };
@@ -283,7 +353,12 @@ export default {
   methods: {
     invokePopup(name) {
       this.memberToShow = this.team.findIndex(el => el.name === name);
-      this.showPopup = true;
+      this.togglePopup();
+    },
+    togglePopup() {
+      this.showPopup = !this.showPopup;
+
+      document.documentElement.classList.toggle('overflow-hidden');
     },
     selectTeamMember(direction) {
       if (this.memberToShow === 0 && direction < 0) {
@@ -300,6 +375,14 @@ export default {
       return false;
     },
   },
+  computed: {
+    members() {
+      return this.team.slice(0, 12);
+    },
+    advisors() {
+      return this.team.slice(12);
+    },
+  },
 };
 </script>
 
@@ -308,7 +391,7 @@ export default {
 
 .team-row {
   margin-top: 50px;
-  margin-bottom: 230px;
+  margin-bottom: 50px;
 }
 
 .team-title {

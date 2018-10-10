@@ -26,8 +26,13 @@ video {
   outline: none !important;
 }
 
+
 a, a:hover {
   text-decoration: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .dark-blue {

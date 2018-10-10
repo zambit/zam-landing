@@ -99,7 +99,8 @@
     "terms": "이용약관 "
   },
   "team": {
-    "title": "우리 팀"
+    "title": "우리 팀",
+    "advisors": "고문"
   },
   "contacts": {
     "title": "<span class=\"dark-blue\">콘택트</span>",

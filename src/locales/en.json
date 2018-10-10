@@ -99,7 +99,8 @@
     "terms": "Terms and Conditions"
   },
   "team": {
-    "title": "<span class=\"dark-blue\">Our</span> team"
+    "title": "<span class=\"dark-blue\">Our</span> team",
+    "advisors": "<span class=\"dark-blue\">Advisors</span>"
   },
   "contacts": {
     "title": "<span class=\"dark-blue\">Contact</span> Us",
