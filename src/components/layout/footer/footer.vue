@@ -52,11 +52,15 @@
       </div>
       <div class="row justify-content-center mt-4">
         <div class="col-auto">
-          <!--<router-link to="">
+          <a
+            href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <svg class="footer__app-banner">
               <use xlink:href="#app-store-banner"></use>
             </svg>
-          </router-link>-->
+          </a>
         </div>
       </div>
       <div class="row justify-content-center footer__links-row">

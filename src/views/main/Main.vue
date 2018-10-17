@@ -20,20 +20,28 @@
             </form>
             <div class="d-flex d-md-none align-items-center">
               <a
-                href="https://play.google.com/store/apps/details?id=zam.wallet "
+                v-if="appLink.length > 0"
+                :href="appLink"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="product__button m-0"
+                class="product__button m-0 mr-5"
               >
                 Get the app
               </a>
-              <!--<svg class="musthead__app-icon ml-5">
-                <use xlink:href="#apple-logo"></use>
-              </svg>-->
+              <a
+                href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
+                target="_blank"
+                ref="noreferrer noopener"
+              >
+                <svg class="musthead__app-icon">
+                  <use xlink:href="#apple-logo"></use>
+                </svg>
+              </a>
               <a
                 href="https://play.google.com/store/apps/details?id=zam.wallet "
                 target="_blank"
                 rel="noreferrer noopener"
+                class="ml-4"
               >
                 <svg class="musthead__app-icon">
                   <use xlink:href="#android-logo"></use>
@@ -77,13 +85,20 @@
         </div>
         <div class="row apps-row d-none d-md-flex">
           <div class="col-auto">
-            <!--<svg class="musthead__app-icon">
-              <use xlink:href="#apple-logo"></use>
-            </svg>-->
+            <a
+              href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
+              target="_blank"
+              ref="noreferrer noopener"
+            >
+              <svg class="musthead__app-icon">
+                <use xlink:href="#apple-logo"></use>
+              </svg>
+            </a>
             <a
               href="https://play.google.com/store/apps/details?id=zam.wallet "
               target="_blank"
               rel="noreferrer noopener"
+              class="ml-4"
             >
               <svg class="musthead__app-icon">
                 <use xlink:href="#android-logo"></use>
@@ -385,20 +400,28 @@
             </form>
             <div class="d-flex d-md-none align-items-center mt-5">
               <a
+                v-if="appLink.length > 0"
                 v-html="$t('getTheApp')"
-                href="https://play.google.com/store/apps/details?id=zam.wallet "
+                :href="appLink"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="product__button m-0"
+                class="product__button m-0 mr-5"
               >
               </a>
-              <!--<svg class="musthead__app-icon ml-5">
-                <use xlink:href="#apple-logo"></use>
-              </svg>-->
+              <a
+                href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
+                target="_blank"
+                ref="noreferrer noopener"
+              >
+                <svg class="musthead__app-icon">
+                  <use xlink:href="#apple-logo"></use>
+                </svg>
+              </a>
               <a
                 href="https://play.google.com/store/apps/details?id=zam.wallet "
                 target="_blank"
                 rel="noreferrer noopener"
+                class="ml-4"
               >
                 <svg class="musthead__app-icon">
                   <use xlink:href="#android-logo"></use>
@@ -427,6 +450,7 @@
 <script>
 import axios from 'axios';
 import md5 from 'md5';
+import MobileDetect from 'mobile-detect';
 
 import newsCard from '@/components/blocks/newsCard';
 import phoneInput from '@/components/blocks/phoneInput';
@@ -582,6 +606,18 @@ export default {
           premium: this.$t('table.premiumData[8]'),
         },
       ];
+    },
+    appLink() {
+      const md = new MobileDetect();
+
+      switch (true) {
+        case (md.os() === 'AndroidOS'):
+          return 'https://play.google.com/store/apps/details?id=zam.wallet ';
+        case (md.os() === 'iOS'):
+          return 'https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8';
+        default:
+          return '';
+      }
     },
   },
   mounted() {
@@ -741,10 +777,6 @@ export default {
   cursor: pointer;
   fill: #ececec;
   transition: fill .2s ease;
-
-  &:last-child {
-    margin-left: 30px;
-  }
 
   &:hover {
     fill: #b1b1b1;
