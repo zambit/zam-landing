@@ -24,7 +24,7 @@
                 :href="appLink"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="product__button m-0 mr-5"
+                class="product__button m-0 mr-3"
               >
                 Get the app
               </a>
@@ -405,7 +405,7 @@
                 :href="appLink"
                 target="_blank"
                 rel="noreferrer noopener"
-                class="product__button m-0 mr-5"
+                class="product__button m-0 mr-3"
               >
               </a>
               <a
@@ -608,7 +608,7 @@ export default {
       ];
     },
     appLink() {
-      const md = new MobileDetect();
+      const md = new MobileDetect(window.navigator.userAgent);
 
       switch (true) {
         case (md.os() === 'AndroidOS'):
