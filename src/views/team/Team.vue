@@ -344,6 +344,41 @@ export default {
           linkedin: 'https://sg.linkedin.com/in/andrewkohmw',
           facebook: '',
         },
+        {
+          name: 'Timur Marshani',
+          role: 'Legal advisor',
+          photo: {
+            x1: require('./timur-marshani.jpg'), // eslint-disable-line
+            x2: require('./timur-marshani@2x.jpg'), // eslint-disable-line
+            x3: require('./timur-marshani@3x.jpg'), // eslint-disable-line
+          },
+          list: [
+            '15 years of experience as one of the most recognized Russian lawyers',
+            'One of the best lawyers in terms of percentage of won cases',
+            'Long track record of international legal cases',
+            'Regular commentator on legal issues on key TV news channels in the CIS',
+          ],
+          linkedin: 'https://www.linkedin.com/in/timur-marshani-447a9883/',
+          facebook: '',
+        },
+        {
+          name: 'Samy Naceri',
+          role: 'France and Algir influencer',
+          photo: {
+            x1: require('./samy-naceri.jpg'), // eslint-disable-line
+            x2: require('./samy-naceri@2x.jpg'), // eslint-disable-line
+            x3: require('./samy-naceri@3x.jpg'), // eslint-disable-line
+          },
+          list: [
+            'Samy is a famous French actor and well-known public figure.',
+            'Was in more than in 35 movies, including The Code and four Taxi films directed by Luc Besson.',
+            'Got several awards and was nominated at international film festivals.',
+            'Has strong connections with  Algerian population of France (about 13% of total) and knows the problems they face trying to support their families overseas.',
+            'As an influencer, also promotes ZamZam solution among Muslims worldwide.',
+          ],
+          linkedin: '',
+          facebook: 'https://www.facebook.com/SamyNaceriOfficiel/',
+        },
       ],
     };
   },
