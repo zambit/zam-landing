@@ -2,12 +2,10 @@
   <div class="container success-container d-flex align-items-center">
     <div class="row justify-content-center align-items-center h-100">
       <div class="col-12 col-md-7">
-        <h1 class="success-title">Thank you for your trust</h1>
+        <h1 v-html="$t('successPage.title')" class="success-title"></h1>
       </div>
       <div class="col-12 col-md-6">
-        <p class="success-desc mt-5">In September we will launch the ZAM Token in the application of
-          Zam.Wallet and you will
-          receive an SMS with bonus tokens.</p>
+        <p v-html="$t('successPage.desc')" class="success-desc mt-5"></p>
       </div>
     </div>
   </div>

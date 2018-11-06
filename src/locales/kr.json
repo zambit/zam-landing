@@ -1,71 +1,71 @@
 {
   "navbar": {
-    "home": "집",
+    "home": "홈",
     "team": "팀",
-    "token": "서류",
-    "contacts": "연락하기"
+    "token": "자료  ",
+    "contacts": "연락처"
   },
   "signIn": "로그인",
-  "signUp": "가입",
+  "signUp": "가입하기",
   "getTheApp": "앱 다운로드",
   "musthead": {
-    "title": "<span class=\"dark-blue\">암호화폐를<br>온세상에</span>",
-    "desc": "전화 번호로 가상화폐 전송을 공개적으로 테스트하고 추가 ZAM 토큰을 얻으십시오 "
+    "title": "<span class=\"dark-blue\">공정한<br>블록체인 은행</span>",
+    "desc": "오픈테스트에 참여하셔서 전화번호로 암호화폐를 보내보고, 추가 ZAM 토큰도 얻으세요"
   },
   "features": {
-    "title": "블록체인 은행이 필요한 이유는 무엇입니까?",
-    "desc": "미션은 블록체인 및 분산 시스템의 구현을 통해 전 세계의 전통적인 금융 시스템에서 완전 디지털 경제 은행 및 금융 기관으로 개방되고 공정하며 효율적으로 전환하는 과정을 가속화하는 것입니다.",
+    "title": "블록체인 은행이 왜 필요할까요?",
+    "desc": "Zamzam의 미션은 블록체인 및 분산 시스템의 구현을 통해 전세계 은행 및 금융 기관들이 전통적인 금융 시스템에서 개방되고 공정하며 효율적인 완전한 디지털 경제로  전환하는 과정을 가속화하는 것입니다.",
     "openness": {
-      "title": "개방 상태",
-      "desc": "블록체인에서 모든 작업의 투명성입니다. Zamzam 은행의 상세한 재정 활동에 대한 실시간 출판입니다. 은행 감사 결과를 볼 수 있습니다 <br><br> 그 쪽은 그런 개방형 은행 시스템으로 일한 적이 없으죠!"
+      "title": "개방성",
+      "desc": "블록체인에서 모든 활동은 투명합니다. Zamzam 은행의 금융 활동들은 실시간으로 기록되고 은행 감사 결과 또한 공개됩니다.<br><br>이러한 오픈 뱅킹 시스템을 Zamzam을 통해 활용해보시길 바랍니다."
     },
     "fairness": {
-      "title": "공평",
-      "desc": "중앙 집중화 된 자산과 분산 자산 저장소 중 하나를 선택할 수 있습니다. 미래는 선택의 자유를주는 하이브리드 시스템입니다."
+      "title": "공평성",
+      "desc": "유저들은 중앙화 또는 탈중앙화된 자산보관방법 중 하나를 선택할 수 있습니다. 미래는 선택의 자유를 제공하는 하이브리드 시스템과 함께합니다."
     },
     "efficiency": {
-      "title": "능률",
-      "desc": "중개인의 사슬을 교묘하게 회피하고 금융 기관을 관리하는 구식 방법을 포기함으로써 비용을 절감합니다."
+      "title": "효율성",
+      "desc": "중개인들을 거치지 않고, 구식 금융기관 경영기법들을 타파하면서 비용을 절감하시길 바랍니다."
     }
   },
   "products": {
     "wallet": {
-      "name": "zam wallet",
-      "title": "암호화폐 지갑, 있어야하는 것 ",
-      "desc": "심하게 기능이 제한된 수십 개의 금융 애플리케이션에주의를 기울이지 마십시오. zam.wallet은 전통적인 돈과 암호화폐 사이의 경계를 지우고 시장보다 2-3 배나 효율적입니다.",
-      "btn": "버튼 : 지금 시도하십시오!"
+      "name": "Zam Wallet",
+      "title": "암호화폐 지갑, 원래 그랬어야하는 것처럼 간편하게",
+      "desc": "한정된 기능들만 있는 금융앱들을 사용하면서 시간낭비하지 마세요. Zam.wallet은 법정화폐와 암호화폐의 경계를 지우고 시장보다 2-3배 효율적입니다.",
+      "btn": "지금 사용해보세요"
     },
     "merchant": {
       "name": "Zam Merchant",
-      "title": "비즈니스를위한 <br> 간편한 재무 관리!",
-      "desc": "사업을하는 것은 결코 쉽고, 직관적이며 자동화된 적이 없습니다. zam.merchant를 개발하는 동안 우리는 전 세계 수 천명의 비즈니스 요구 사항을 고려했습니다.",
+      "title": "비즈니스를 위한 간편한 재무 관리!",
+      "desc": "사업을 진행하는 것은 쉽고, 직관적이고 자동화된 적이 없었습니다. 따라서 Zam.merchant를 개발하면서 전세계 수천명의 사업가들의 이러한 니즈를 충분히 고려했습니다.",
       "btn": ""
     },
     "chain": {
       "name": "Zam Chain",
-      "title": "스텔라 포크 기반의 <br> 빠른 재정적인 블록체인",
-      "desc": "우리는 최종 사용자를위한 수수료가 가장 적은 독립적인 블록체인 은행을 만들고 있습니다. 이 기술은 Zamzam 제품을 분산화하기 위해 금융 시스템을 기반으로 구성됩니다.",
+      "title": "스텔라 포크기반의 <br>빠른 금융 블록체인",
+      "desc": "우리는 최종 사용자들을 위해 최저 수수료를 제공하는 독립적 블록체인 은행을 만들고 있습니다. 이 기술은 분산화된 Zamzam 제품들을 위한 금융시스템을 기반으로 제작되고 있습니다.",
       "btn": ""
     }
   },
   "news": {
     "title": "<span class=\"dark-blue\">뉴스</span>",
-    "more": "더"
+    "more": "더 알아보기"
   },
   "table": {
-    "title": "가격",
-    "free": "무료",
+    "title": "가격표",
+    "free": "일반(무료)",
     "premium": "프리미엄",
     "data": [
-      "비용",
-      "전화 번호로 0% 가상화폐 송금",
-      "은행 송금",
-      "암호화폐 외부 송금",
-      "카드를 통한 가상화폐 구매 ",
-      "암호화폐 즉각적인 철수",
-      "개 은행 카드에 화폐를 인출 할 수 있음",
-      "매달 거래 25 건 무료 SMS 알림",
-      "한도로 카드 인출 가능"
+      "비용 (월 기준)",
+      "전화번호로 암호화폐 송금",
+      "은행 내 송금",
+      "암호화폐 은행 외부 송금",
+      "비자, 마스터카드, 유니온페이 카드를 통한 암호화폐 구매",
+      "암호화폐의 법정화폐로의 빠른 환전 및 카드 출금",
+      "연결가능한 출금용 은행카드 수",
+      "매 달 무료 SMS 거래 알람",
+      "매 달 카드 출금 제한"
     ],
     "freeData": [
       "$0 / 0 ZAM 달마다",
@@ -86,21 +86,185 @@
       "3.5%",
       "1% + 1,15$",
       "5",
-      "무제한 SMS 알림",
+      "무제한",
       "15 000 € / 15 000 $"
     ]
   },
   "alpha": {
-    "title": "ZAM 지갑을 테스트하고 <span class=\"sky-blue\">1000 ZAM</span>을 프리미엄 지불 용 선물로 받으십시오."
+    "title": "Zam.wallet을 테스트해보세요. <span class=\"sky-blue\">추가 1,000 ZAM</span>토큰도 받고 프리미엄 계정을 사용해보세요!"
   },
   "footer": {
-    "telegramButton": "전보에 가입하십시오.",
-    "privacy": "개인정보처리방침 ",
+    "telegramButton": "텔레그램 그룹에 가입하세요.",
+    "privacy": "개인정보처리방침",
     "terms": "이용약관 "
   },
   "team": {
     "title": "우리 팀",
-    "advisors": "고문"
+    "advisors": "고문",
+    "members": {
+      "iliaBeniaminov": {
+        "name": "Iliya Biniaminov",
+        "role": "CEO, Co-Founder",
+        "list": [
+          "Successful business developer with assets capitalisation of $50 mln.",
+          "Lobbyist in Turkey, Dubai, Israel, Russia and CIS",
+          "Speaks 6 languages (Turkish, English, Hebrew, Farsi, Russian, Azerbaijani)",
+          "Long track record of work in the financial market in Europe and CIS"
+        ]
+      },
+      "alexMikh": {
+        "name": "Alex Mikh",
+        "role": "CVO, Co-Founder",
+        "list": [
+          "Solid experience in business development",
+          "6 years of experience of managing investment company with Swissquote Bank white label",
+          "6 years of experience of asset management on American Stock Exchange (AMEX) ",
+          "Lead the representative office of one of the fastest-growing international payment providers in the world",
+          "Was responsible for business negotiations aimed at obtaining a payment system license in Cyprus",
+          "Responsible for developing a currencies exchange system service"
+        ]
+      },
+      "georgeGus": {
+        "name": "George Gus",
+        "role": "CMO, Co-Founder",
+        "list": [
+          "Crypto investor, blockchain evangelist",
+          "10 years of experience in marketing and product design",
+          "Owner of MakeFresh, international marketing agency",
+          "Experience in promotion of international corporations with HQs in Europe, Turkey, Dubai"
+        ]
+      },
+      "zakariaMekreloufi": {
+        "name": "Zakaria Mekreloufi",
+        "role": "CEO of the MENA region",
+        "list": [
+          "Founder of MKG Real Estate & Investment, a leading brokerage company for asset management in the Middle East and North Africa with a head office in Dubai, UAE",
+          "Has a CFA level 1 certificate and works closely with the government of Dubai, attracting investments in the stock and financial markets, as well as small and medium-sized businesses"
+        ]
+      },
+      "andrewSkurlatov": {
+        "name": "Andrew Skurlatov",
+        "role": "CTO",
+        "list": [
+          "10 years of experience of high-load systems development",
+          "5 years of experience as an expert in blockchain technologies",
+          "Developed wallets for 15 cryptocurrencies",
+          "Designed and managed the development of DEX exchange based on a proprietary blockchain system of smart contracts",
+          "Designed and managed the development of cryptocurrency indexes"
+        ]
+      },
+      "ivanPodtsebnev": {
+        "name": "Ivan Podtsebnev",
+        "role": "Head of DevOps & Security",
+        "list": [
+          "Experience in hardware and software system implementation in projects with Microsoft , IBM, HP, Intel, Cisco, McAfee, Kaspersky",
+          "Expert in the topics of intranet protocol, virtualization and storage systems, architecture of algo trading robots",
+          "2 years of experience in Federal Agency of Government Communications and Information (FAGCI)"
+        ]
+      },
+      "nikitaVelko": {
+        "name": "Nikita Velko",
+        "role": "Senior frontend developer",
+        "list": [
+          "9 years of experience in front-end development",
+          "Participated in projects with Google, LG, Adidas, McDonald’s, KFC",
+          "Experience in development at several startups with high ratings on Product Hunt",
+          "Developed a system of cryptocurrencies graphics for DEX exchange indexes"
+        ]
+      },
+      "alexPonomaryov": {
+        "name": "Alex Ponomaryov",
+        "role": "iOS Developer",
+        "list": [
+          "Has been developing applications in the Swift language since 2016",
+          "Knows Java, C#, C ++, as well as basic algorithms, data structures, design patterns, SQL, Git Flow",
+          "Made a game for Android, which had over 150,000 downloads"
+        ]
+      },
+      "danielDanilkin": {
+        "name": "Daniel Danilkin",
+        "role": "Senior backend developer",
+        "list": [
+          "7 years of experience in software development",
+          "Experience in system engineering based on Big Data",
+          "Was part of the team which developed a lending system in the banking sector",
+          "Participant as a developer in several open source projects"
+        ]
+      },
+      "dzhavidKhalilov": {
+        "name": "Dzhavid Khalilov",
+        "role": "Android developer",
+        "list": [
+          "Winner of SpaceAppChallenge hackathon organized by NASA (2017) and Yandex. Money Codefest (2018)",
+          "Participant of HackUPC and Junction hackathons (2017)",
+          "Winner of payment system QIWI API Contest (2017)",
+          "Developed an app for monitoring of cryptocurrencies prices"
+        ]
+      },
+      "dzeraGazdanova": {
+        "name": "Dzera Gazdanova",
+        "role": "Press Secretary",
+        "list": [
+          "Press Secretary",
+          "Graduated from the Faculty of International Journalism of St. Petersburg State University",
+          "Worked in the press-service of St. Petersburg State University",
+          "Was a chief  editor of the project in the Rosbalt news agency",
+          "Knows Ossetian,  English, Russian and Greek languages"
+        ]
+      },
+      "alinaBelova": {
+        "name": "Alina Belova",
+        "role": "Public Relations",
+        "list": [
+          "Specialist in Public Relations",
+          "Graduated from the Institute of Art for Modeling and Design named after Salvador Dali",
+          "Was an assistant of financial director of 4Cervice group Company",
+          "Was a chief of a model agency",
+          "Owns a business in organizing contests, events, private summits"
+        ]
+      },
+      "namigMamedov": {
+        "name": "Namig Mamedov",
+        "role": "Technical advisor",
+        "list": [
+          "He was the director of the Sales and Marketing department at Caspian American Telecom",
+          "From 2002 to 2005, he was a senior manager at Caspian Electronics",
+          "In 2005, he was appointed to the post of CEO of LLC Caspel",
+          "Since 2008 to this day, Masum is chairman of the Board of the Caspel international holding company"
+        ]
+      },
+      "andrewKoch": {
+        "name": "Andrew Koch",
+        "role": "Singapore Investment Advisor",
+        "list": [
+          "Не is an advisor of Singapore’s government, a businessman and a public figure",
+          "Has more than 28 years of expertise covering all aspects of banking and enterprise risk management including credit risk, market risk, operational risk, technology risk, as well as fraud risk and cyber risk",
+          "Currently, Andrew is the Director at the Investment Management Association of Singapore (“IMAS”)",
+          "Involved in more than 200 technology projects, connected with risk management and financial technologies"
+        ]
+      },
+      "timurMarshani": {
+        "name": "Timur Marshani",
+        "role": "Legal advisor",
+        "list": [
+          "15 years of experience as one of the most recognized Russian lawyers",
+          "One of the best lawyers in terms of percentage of won cases",
+          "Long track record of international legal cases",
+          "Regular commentator on legal issues on key TV news channels in the CIS"
+        ]
+      },
+      "samyNaceri": {
+        "name": "Samy Naceri",
+        "role": "France and Algir influencer",
+        "list": [
+          "Samy is a famous French actor and well-known public figure.",
+          "Was in more than in 35 movies, including The Code and four Taxi films directed by Luc Besson.",
+          "Got several awards and was nominated at international film festivals.",
+          "Has strong connections with  Algerian population of France (about 13% of total) and knows the problems they face trying to support their families overseas.",
+          "As an influencer, also promotes ZamZam solution among Muslims worldwide."
+        ]
+      }
+    }
   },
   "contacts": {
     "title": "<span class=\"dark-blue\">콘택트</span>",
@@ -121,10 +285,14 @@
     }
   },
   "token": {
-    "title": "<span class=\"dark-blue\">토큰 판매 문서</span>",
-    "tokenSaleWhitePaper": "토큰세일 백서",
+    "title": "<span class=\"dark-blue\">토큰 세일 문서</span>",
+    "tokenSaleWhitePaper": "토큰 세일 백서",
     "summary": "개요",
     "onePager": "원 페이저",
     "technicalWhitePaper": "기술 백서 <span class=\"grey\">(곧 제공 예정)</span>"
+  },
+  "successPage": {
+    "title": "Thank you for your trust",
+    "desc": "In September we will launch the ZAM Token in the application of Zam.Wallet and you will receive an SMS with bonus tokens."
   }
 }

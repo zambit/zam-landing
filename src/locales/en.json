@@ -100,7 +100,171 @@
   },
   "team": {
     "title": "<span class=\"dark-blue\">Our</span> team",
-    "advisors": "<span class=\"dark-blue\">Advisors</span>"
+    "advisors": "<span class=\"dark-blue\">Advisors</span>",
+    "members": {
+      "iliaBeniaminov": {
+        "name": "Iliya Biniaminov",
+        "role": "CEO, Co-Founder",
+        "list": [
+          "Successful business developer with assets capitalisation of $50 mln.",
+          "Lobbyist in Turkey, Dubai, Israel, Russia and CIS",
+          "Speaks 6 languages (Turkish, English, Hebrew, Farsi, Russian, Azerbaijani)",
+          "Long track record of work in the financial market in Europe and CIS"
+        ]
+      },
+      "alexMikh": {
+        "name": "Alex Mikh",
+        "role": "CVO, Co-Founder",
+        "list": [
+          "Solid experience in business development",
+          "6 years of experience of managing investment company with Swissquote Bank white label",
+          "6 years of experience of asset management on American Stock Exchange (AMEX) ",
+          "Lead the representative office of one of the fastest-growing international payment providers in the world",
+          "Was responsible for business negotiations aimed at obtaining a payment system license in Cyprus",
+          "Responsible for developing a currencies exchange system service"
+        ]
+      },
+      "georgeGus": {
+        "name": "George Gus",
+        "role": "CMO, Co-Founder",
+        "list": [
+          "Crypto investor, blockchain evangelist",
+          "10 years of experience in marketing and product design",
+          "Owner of MakeFresh, international marketing agency",
+          "Experience in promotion of international corporations with HQs in Europe, Turkey, Dubai"
+        ]
+      },
+      "zakariaMekreloufi": {
+        "name": "Zakaria Mekreloufi",
+        "role": "CEO of the MENA region",
+        "list": [
+          "Founder of MKG Real Estate & Investment, a leading brokerage company for asset management in the Middle East and North Africa with a head office in Dubai, UAE",
+          "Has a CFA level 1 certificate and works closely with the government of Dubai, attracting investments in the stock and financial markets, as well as small and medium-sized businesses"
+        ]
+      },
+      "andrewSkurlatov": {
+        "name": "Andrew Skurlatov",
+        "role": "CTO",
+        "list": [
+          "10 years of experience of high-load systems development",
+          "5 years of experience as an expert in blockchain technologies",
+          "Developed wallets for 15 cryptocurrencies",
+          "Designed and managed the development of DEX exchange based on a proprietary blockchain system of smart contracts",
+          "Designed and managed the development of cryptocurrency indexes"
+        ]
+      },
+      "ivanPodtsebnev": {
+        "name": "Ivan Podtsebnev",
+        "role": "Head of DevOps & Security",
+        "list": [
+          "Experience in hardware and software system implementation in projects with Microsoft , IBM, HP, Intel, Cisco, McAfee, Kaspersky",
+          "Expert in the topics of intranet protocol, virtualization and storage systems, architecture of algo trading robots",
+          "2 years of experience in Federal Agency of Government Communications and Information (FAGCI)"
+        ]
+      },
+      "nikitaVelko": {
+        "name": "Nikita Velko",
+        "role": "Senior frontend developer",
+        "list": [
+          "9 years of experience in front-end development",
+          "Participated in projects with Google, LG, Adidas, McDonald’s, KFC",
+          "Experience in development at several startups with high ratings on Product Hunt",
+          "Developed a system of cryptocurrencies graphics for DEX exchange indexes"
+        ]
+      },
+      "alexPonomaryov": {
+        "name": "Alex Ponomaryov",
+        "role": "iOS Developer",
+        "list": [
+          "Has been developing applications in the Swift language since 2016",
+          "Knows Java, C#, C ++, as well as basic algorithms, data structures, design patterns, SQL, Git Flow",
+          "Made a game for Android, which had over 150,000 downloads"
+        ]
+      },
+      "danielDanilkin": {
+        "name": "Daniel Danilkin",
+        "role": "Senior backend developer",
+        "list": [
+          "7 years of experience in software development",
+          "Experience in system engineering based on Big Data",
+          "Was part of the team which developed a lending system in the banking sector",
+          "Participant as a developer in several open source projects"
+        ]
+      },
+      "dzhavidKhalilov": {
+        "name": "Dzhavid Khalilov",
+        "role": "Android developer",
+        "list": [
+          "Winner of SpaceAppChallenge hackathon organized by NASA (2017) and Yandex. Money Codefest (2018)",
+          "Participant of HackUPC and Junction hackathons (2017)",
+          "Winner of payment system QIWI API Contest (2017)",
+          "Developed an app for monitoring of cryptocurrencies prices"
+        ]
+      },
+      "dzeraGazdanova": {
+        "name": "Dzera Gazdanova",
+        "role": "Press Secretary",
+        "list": [
+          "Press Secretary",
+          "Graduated from the Faculty of International Journalism of St. Petersburg State University",
+          "Worked in the press-service of St. Petersburg State University",
+          "Was a chief  editor of the project in the Rosbalt news agency",
+          "Knows Ossetian,  English, Russian and Greek languages"
+        ]
+      },
+      "alinaBelova": {
+        "name": "Alina Belova",
+        "role": "Public Relations",
+        "list": [
+          "Specialist in Public Relations",
+          "Graduated from the Institute of Art for Modeling and Design named after Salvador Dali",
+          "Was an assistant of financial director of 4Cervice group Company",
+          "Was a chief of a model agency",
+          "Owns a business in organizing contests, events, private summits"
+        ]
+      },
+      "namigMamedov": {
+        "name": "Namig Mamedov",
+        "role": "Technical advisor",
+        "list": [
+          "He was the director of the Sales and Marketing department at Caspian American Telecom",
+          "From 2002 to 2005, he was a senior manager at Caspian Electronics",
+          "In 2005, he was appointed to the post of CEO of LLC Caspel",
+          "Since 2008 to this day, Masum is chairman of the Board of the Caspel international holding company"
+        ]
+      },
+      "andrewKoch": {
+        "name": "Andrew Koch",
+        "role": "Singapore Investment Advisor",
+        "list": [
+          "Не is an advisor of Singapore’s government, a businessman and a public figure",
+          "Has more than 28 years of expertise covering all aspects of banking and enterprise risk management including credit risk, market risk, operational risk, technology risk, as well as fraud risk and cyber risk",
+          "Currently, Andrew is the Director at the Investment Management Association of Singapore (“IMAS”)",
+          "Involved in more than 200 technology projects, connected with risk management and financial technologies"
+        ]
+      },
+      "timurMarshani": {
+        "name": "Timur Marshani",
+        "role": "Legal advisor",
+        "list": [
+          "15 years of experience as one of the most recognized Russian lawyers",
+          "One of the best lawyers in terms of percentage of won cases",
+          "Long track record of international legal cases",
+          "Regular commentator on legal issues on key TV news channels in the CIS"
+        ]
+      },
+      "samyNaceri": {
+        "name": "Samy Naceri",
+        "role": "France and Algir influencer",
+        "list": [
+          "Samy is a famous French actor and well-known public figure.",
+          "Was in more than in 35 movies, including The Code and four Taxi films directed by Luc Besson.",
+          "Got several awards and was nominated at international film festivals.",
+          "Has strong connections with  Algerian population of France (about 13% of total) and knows the problems they face trying to support their families overseas.",
+          "As an influencer, also promotes ZamZam solution among Muslims worldwide."
+        ]
+      }
+    }
   },
   "contacts": {
     "title": "<span class=\"dark-blue\">Contact</span> Us",
@@ -126,5 +290,9 @@
     "summary": "Summary",
     "onePager": "One Pager",
     "technicalWhitePaper": "Technical White Paper <span class=\"grey\">(coming soon)</span>"
+  },
+  "successPage": {
+    "title": "Thank you for your trust",
+    "desc": "In September we will launch the ZAM Token in the application of Zam.Wallet and you will receive an SMS with bonus tokens."
   }
 }
