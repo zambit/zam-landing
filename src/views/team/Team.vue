@@ -220,7 +220,7 @@ export default {
             this.$t('team.members.andrewSkurlatov.list[3]'),
             this.$t('team.members.andrewSkurlatov.list[4]'),
           ],
-          linkedin: '',
+          linkedin: 'https://www.linkedin.com/in/andrew-skurlatov/',
           facebook: '',
         },
         {
@@ -350,7 +350,14 @@ export default {
             x2: require('./paul-averkiev@2x.jpg'), // eslint-disable-line
             x3: require('./paul-averkiev@3x.jpg'), // eslint-disable-line
           },
-          list: [],
+          list: [
+            this.$t('team.members.paulAverkiev.list[0]'),
+            this.$t('team.members.paulAverkiev.list[1]'),
+            this.$t('team.members.paulAverkiev.list[2]'),
+            this.$t('team.members.paulAverkiev.list[3]'),
+            this.$t('team.members.paulAverkiev.list[4]'),
+            this.$t('team.members.paulAverkiev.list[5]'),
+          ],
           linkedin: 'https://www.linkedin.com/in/paulaverkiev/',
           facebook: '',
         },
