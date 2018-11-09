@@ -223,6 +223,23 @@
           "컨테스트, 이벤트, 프라이빗 서밋 주최 비즈니스 소유"
         ]
       },
+      "paulAverkiev": {
+        "name": "Paul Averkiev",
+        "role": "Investment Director",
+        "list": []
+      },
+      "kamranKhan": {
+        "name": "Kamran Khan",
+        "role": "Financial advisor",
+        "list": [
+          "Mr. Khan is the CEO and Managing Partner of Singapore-based Emerging Infra-Tech Partners (EIP) and Infra-Tech Capital (ITC).",
+          "Has led over $12 billion of infrastructure investments in emerging markets.",
+          "He brings over 25 years of project finance investment banking expertise with firms including J.P. Morgan, Goldman Sachs, US Agency for International Development (USAID), the World Bank (WB) and the US Millennium Challenge Corporation (MCC).",
+          "Was appointed by President Obama to serve as Vice President at MCC (rank of Assistant Secretary in the US Government)",
+          "financial advisory experience includes participation in closing M&A transactions totaling approximately $10 billion.",
+          "Is a member of the Global Board of International Project Finance Association (IPFA) and has served as Technical Advisor to Asia Pacific Economic Cooperation (APEC), Association of Southeast Asian Nations (ASEAN) and Group of Twenty (G20)."
+        ]
+      },
       "namigMamedov": {
         "name": "Namig Mamedov",
         "role": "기술 고문",

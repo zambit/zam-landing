@@ -343,6 +343,37 @@ export default {
           facebook: '',
         },
         {
+          name: this.$t('team.members.paulAverkiev.name'),
+          role: this.$t('team.members.paulAverkiev.role'),
+          photo: {
+            x1: require('./paul-averkiev.jpg'), // eslint-disable-line
+            x2: require('./paul-averkiev@2x.jpg'), // eslint-disable-line
+            x3: require('./paul-averkiev@3x.jpg'), // eslint-disable-line
+          },
+          list: [],
+          linkedin: 'https://www.linkedin.com/in/paulaverkiev/',
+          facebook: '',
+        },
+        {
+          name: this.$t('team.members.kamranKhan.name'),
+          role: this.$t('team.members.kamranKhan.role'),
+          photo: {
+            x1: require('./kamran-khan.jpg'), // eslint-disable-line
+            x2: require('./kamran-khan@2x.jpg'), // eslint-disable-line
+            x3: require('./kamran-khan@3x.jpg'), // eslint-disable-line
+          },
+          list: [
+            this.$t('team.members.kamranKhan.list[0]'),
+            this.$t('team.members.kamranKhan.list[1]'),
+            this.$t('team.members.kamranKhan.list[2]'),
+            this.$t('team.members.kamranKhan.list[3]'),
+            this.$t('team.members.kamranKhan.list[4]'),
+            this.$t('team.members.kamranKhan.list[5]'),
+          ],
+          linkedin: 'https://www.linkedin.com/in/kamran-khan-778b3413/',
+          facebook: '',
+        },
+        {
           name: this.$t('team.members.namigMamedov.name'),
           role: this.$t('team.members.namigMamedov.role'),
           photo: {
@@ -414,10 +445,10 @@ export default {
       ];
     },
     members() {
-      return this.team.slice(0, 12);
+      return this.team.slice(0, 13);
     },
     advisors() {
-      return this.team.slice(12);
+      return this.team.slice(13);
     },
   },
 };
