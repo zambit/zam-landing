@@ -36,10 +36,10 @@
 </template>
 
 <script>
-import onePagerEng from './ZamZam One-Pager English 21.09.18.pdf';
+import onePagerEng from './ZamZam One-Pager English 13.11.18.pdf';
 import onePagerKorean from './ZamZam One-Pager Korean 21.09.18.pdf';
-import summaryEng from './ZamZam Summary English 21.09.18.pdf';
-import whitePaperEng from './ZamZam Whitepaper English 28.09.18.pdf';
+import summaryEng from './ZamZam Summary English 13.11.18.pdf';
+import whitePaperEng from './ZamZam Whitepaper English 13.11.18.pdf';
 
 export default {
   name: 'token-page',
