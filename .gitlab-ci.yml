@@ -1,0 +1,31 @@
+before_script:
+  - npm set registry http://npm.zam.io:4873
+  - npm config set //npm.zam.io:4873/:_authToken=${NPM_TOKEN}
+  - npm whoami
+  - node -v
+  - npm -v
+
+stages:
+  - build
+  - publish
+
+image: node:10
+
+build landing:
+  stage: build
+  script:
+    - npm install --progress=false
+    - npm run build
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - dist
+  only:
+    - master
+
+publish landing:
+  stage: publish
+  script:
+    - npm publish --registry http://npm.zam.io:4873
+  only:
+    - master
