@@ -134,6 +134,7 @@ export default {
   &:focus {
     outline: none;
     border-color: transparent transparent $sky-blue transparent;
+    caret-color: $sky-blue;
   }
 }
 
