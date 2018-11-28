@@ -1,7 +1,7 @@
 {
-  "name": "zam.io",
-  "description": "zamio landing page",
-  "version": "0.1.0-85-staging",
+  "name": "@zamzamtech/wallet-landing",
+  "description": "zam.io landing page",
+  "version": "0.1.1",
   "license": "UNLICENSED",
   "contributors": [
     "Nikita Velko <nikich@zam.me> (https://t.me/nikich)"
