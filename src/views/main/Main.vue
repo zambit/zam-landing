@@ -618,8 +618,11 @@ export default {
 
   margin-left: $spacer * 2;
 
+  transition: box-shadow .2s ease, background-color .2s ease;
+
   &:hover {
-    box-shadow: none;
+    box-shadow: 0 3px 18px 0 #19533b66;
+    background-color: #7ad86b;
   }
 }
 
@@ -685,10 +688,12 @@ export default {
   box-shadow: 0 3px 15px 0 #19533b29;
   background-color: #7ad86b;
   margin-top: 80px;
-  transition: box-shadow .2s ease;
+
+  transition: box-shadow .2s ease, background-color .2s ease;
 
   &:hover {
-    box-shadow: none;
+    box-shadow: 0 3px 18px 0 #19533b66;
+    background-color: #7ad86b;
   }
 
   @include media-breakpoint-down(md) {

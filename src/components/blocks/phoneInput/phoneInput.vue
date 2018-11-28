@@ -119,8 +119,11 @@ export default {
   font-size: 1rem;
   color: #858997;
 
+  transition: border-bottom-color .2s ease;
+
   &:focus {
     outline: none;
+    border-color: transparent transparent $sky-blue transparent;
   }
 }
 
