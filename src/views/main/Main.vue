@@ -646,12 +646,14 @@ export default {
 .musthead__pic {
   height: 633px;
   background-color: #c8cbd3;
-  border-radius: 45px;
+  border-radius: 47px;
   box-shadow: 0 20px 50px 0 #06133940;
 
   @include media-breakpoint-down(md) {
     height: auto;
     width: 100%;
+
+    margin-bottom: 50px;
 
     margin-top: $spacer * 4;
   }
