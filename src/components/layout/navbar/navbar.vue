@@ -2,7 +2,7 @@
   <nav class="navbar">
     <div ref="wrap" class="navbar-wrap d-flex justify-content-between navbar-wrap--fixed">
       <div class="d-flex align-items-center">
-        <router-link to="/">
+        <router-link to="/" class="d-flex align-items-center">
           <svg class="navbar__logo">
             <use xlink:href="#logo"></use>
           </svg>
@@ -12,7 +12,7 @@
         </router-link>
       </div>
       <div class="d-flex align-items-center">
-        <ul class="d-none d-md-flex navbar__list">
+        <ul class="d-none d-lg-flex navbar__list">
           <template v-for="item in routes">
             <li :key="item.route" class="navbar__list-item">
               <a
@@ -32,7 +32,7 @@
             </li>
           </template>
         </ul>
-        <div class="navbar__select-lang locales-sb d-none d-md-flex ">
+        <div class="navbar__select-lang locales-sb d-none d-lg-flex ">
           <div class="locales-sb__item" @click="showLocales = true">
             <div
               class="locales-sb__flag"
@@ -69,12 +69,32 @@
             </div>
           </transition>
         </div>
+        <div class="navbar__app-wrap d-none d-lg-flex">
+          <a
+            href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg class="navbar__app-icon">
+              <use xlink:href="#apple-logo"></use>
+            </svg>
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=zam.wallet"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <svg class="navbar__app-icon ml-4">
+              <use xlink:href="#android-logo"></use>
+            </svg>
+          </a>
+        </div>
         <a
           v-html="$t('signIn')"
           href="https://app.zam.io/sign-in"
           target="_blank"
           rel="noreferrer noopener"
-          :class="['navbar__btn navbar__btn--no-border mr-3 mr-md-0',
+          :class="['navbar__btn navbar__btn--no-border mr-3 mr-lg-0',
           { 'd-none' : showMobileNav }]">
         </a>
         <a
@@ -82,10 +102,10 @@
           href="https://app.zam.io/sign-up"
           target="_blank"
           rel="noreferrer noopener"
-          class="d-none d-md-flex navbar__btn ml-3"
+          class="d-none d-lg-flex navbar__btn ml-3"
         >
         </a>
-        <div class="d-md-none">
+        <div class="d-lg-none">
           <transition appear name="fade">
             <div
               v-if="!showMobileNav"
@@ -270,7 +290,7 @@ export default {
   background-color: white;
   padding: 20px 50px;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     padding: 20px 12px;
   }
 }
@@ -293,7 +313,7 @@ export default {
   letter-spacing: 0.6px;
   color: #2a3271;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     display: none;
   }
 }
@@ -346,7 +366,6 @@ export default {
 }
 
 .navbar__select-lang {
-  margin-right: 26px;
 }
 
 .locales-sb {
@@ -445,5 +464,20 @@ export default {
   height: 24px;
 
   cursor: pointer;
+}
+
+.navbar__app-wrap {
+  display: flex;
+  align-items: center;
+
+  margin-left: $spacer * 2;
+  margin-right: $spacer * 2;
+}
+
+.navbar__app-icon {
+  width: 32px;
+  height: 32px;
+
+  fill: #b0b3be;
 }
 </style>

@@ -9,8 +9,11 @@
   "signUp": "Sign Up",
   "getTheApp": "Get the app",
   "musthead": {
-    "title": "<span class=\"dark-blue\">The fair</span> blockchain bank",
-    "desc": "Take part in the open testing of cryptocurrency transfers by phone number and earn additional ZAM tokens"
+    "title": "<span class=\"dark-blue\">First fair</span> digital bank",
+    "subtitle": "powered by blockchain",
+    "desc": "We build transparent, fair and efficient generation 3.0 bank,\nbased on blockchain technology with a hybrid system of data distribution",
+    "code": "Code",
+    "phoneNumber": "Phone number"
   },
   "features": {
     "title": "Why does the world need blockchain banks?",
@@ -50,7 +53,7 @@
   },
   "news": {
     "title": "<span class=\"dark-blue\">Our</span> news",
-    "more": "More"
+    "more": "See more content"
   },
   "table": {
     "title": "Pricing",

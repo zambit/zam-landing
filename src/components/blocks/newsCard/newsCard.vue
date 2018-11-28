@@ -6,13 +6,11 @@
     <div class="position-relative" style="z-index: 1">
       <div class="d-flex justify-content-between align-items-center">
         <span class="news-card__day">{{ news.day }}</span>
-        <div class="news-card__tag">{{ news.tag }}</div>
       </div>
       <span class="news-card__month">{{ news.month }}</span>
     </div>
     <div class="position-relative" style="z-index: 1">
       <h3 class="news-card__title">{{ news.title }}</h3>
-      <p class="news-card__author mt-3">{{ news.author }}</p>
     </div>
   </article>
 </template>
@@ -76,17 +74,6 @@ export default {
   }
 }
 
-.news-card__tag {
-  border-radius: 24px;
-  border: solid 1px $sky-blue;
-
-  font-size: 0.9375rem;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  color: #ffffff;
-  padding: 3px 31px;
-}
-
 .news-card__day {
   font-size: 1.875rem;
   font-weight: 500;
@@ -111,12 +98,5 @@ export default {
     font-size: 1.3125rem;
     margin-top: 110px;
   }
-}
-
-.news-card__author {
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.5;
-  margin-bottom: 0;
 }
 </style>

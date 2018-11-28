@@ -1,66 +1,44 @@
 <template>
   <div class="row no-gutters">
     <div class="col-12 position-relative">
-      <v-input
-        :v-placeholder="'Phone'"
+      <input
+        :placeholder="'Code'"
+        :value="code"
+        :error="error"
+        :errorText="errorText"
+        aria-label="Country code"
+        type="text"
+        maxlength="6"
+        class="input input-code"
+        @input="$emit('code', $event.target.value)"
+      >
+      <input
+        :placeholder="'Phone'"
         :value="phone"
         :error="error"
         :errorText="errorText"
+        aria-label="Phone"
         type="text"
-        class="phone__value w-100 transaction-input"
-        @input="parseInputValue($event.target.value)"
-      />
-      <transition appear name="fade">
-        <div
-          v-if="country.length > 0"
-          class="phone__country"
-          :style="{ backgroundImage: `url(https://www.countryflags.io/${country}/flat/64.png)` }"
-        ></div>
-      </transition>
+        class="input"
+        @input="$emit('phone', $event.target.value)"
+      >
     </div>
   </div>
 </template>
 
 <script>
-import { AsYouType, parseNumber } from 'libphonenumber-js';
 import axios from 'axios';
-import vInput from '@/components/common/input';
 
 import phoneCodes from './phoneCodes.json';
 
 export default {
   name: 'phone-input',
   props: {
+    code: String,
     phone: String,
     errorText: String,
     error: Boolean,
     guessCountryOnCreated: Boolean,
-  },
-  data() {
-    return {
-      country: '',
-      formatter: new AsYouType(),
-    };
-  },
-  components: {
-    vInput,
-  },
-  methods: {
-    parseInputValue(value) {
-      const { countryCallingCode = '' } = parseNumber(value, { extended: true });
-
-      const countryInfo = phoneCodes.find(el => el.code === `+${countryCallingCode}`);
-
-      if (countryInfo) {
-        this.country = countryInfo.country;
-      } else {
-        this.country = '';
-      }
-
-      this.formatter.reset();
-      this.$emit('country', this.country);
-      this.$emit('value', this.formatter.input(value));
-    },
   },
   async created() {
     if (this.guessCountryOnCreated) {
@@ -82,7 +60,7 @@ export default {
       const countryInfo = phoneCodes.find(el => el.country === this.country);
 
       if (countryInfo) {
-        this.$emit('value', countryInfo.code);
+        this.code = countryInfo.code;
       }
       this.$emit('country', this.country);
     }
@@ -94,56 +72,45 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/styles/_settings.scss";
 
-.phone__code {
-  width: 100px;
+.input {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent transparent #b0b3be transparent;
+
+  padding: 10px 0;
+
+  font-size: 1rem;
+  color: #858997;
+
+  &:focus {
+    outline: none;
+  }
 }
 
-.phone__value {
-  width: 100%;
-  flex-shrink: 1;
+.input-code {
+  width: 75px;
+
+  margin-right: 28px;
 }
 
-.phone__country {
-  position: absolute;
-  right: 16px;
-  top: 24px;
-  width: 24px;
-  height: 24px;
-  border-radius: 100%;
-  background-size: inherit;
-  background-repeat: no-repeat;
-  background-position: center;
+.input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 1rem;
+  color: #858997;
 }
 
-.transaction-input /deep/ {
+.input::-moz-placeholder { /* Firefox 19+ */
+  font-size: 1rem;
+  color: #858997;
+}
 
-  & .input__body {
-    background-color: white;
-    border: solid 2px #ececec;
+.input:-ms-input-placeholder { /* IE 10+ */
+  font-size: 1rem;
+  color: #858997;
+}
 
-    &:hover, &:focus {
-      background-color: white;
-
-      & .input__placeholder {
-        color: $sky-blue;
-      }
-
-      & .input__root {
-        color: #5e5e5e;
-      }
-    }
-  }
-
-  & .input__placeholder {
-    color: $sky-blue;
-  }
-
-  & .input__root {
-    color: #5e5e5e;
-  }
-
-  & .input__body--focus {
-    background-color: white !important;
-  }
+.input:-moz-placeholder { /* Firefox 18- */
+  font-size: 1rem;
+  color: #858997;
 }
 </style>
