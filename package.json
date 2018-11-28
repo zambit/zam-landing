@@ -2,7 +2,6 @@
   "name": "zam.io",
   "description": "zamio landing page",
   "version": "0.1.0-85-staging",
-  "private": true,
   "license": "UNLICENSED",
   "contributors": [
     "Nikita Velko <nikich@zam.me> (https://t.me/nikich)"
