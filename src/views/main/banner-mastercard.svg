@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 215 140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 155 80">
   <defs>
     <style>
       .cls-1 {
@@ -24,24 +24,11 @@
       .cls-6 {
         fill: #f79e1b;
       }
-
-      .cls-7 {
-        filter: url(#Rectangle_15);
-      }
     </style>
-    <filter id="Rectangle_15" x="0" y="0" width="215" height="140" filterUnits="userSpaceOnUse">
-      <feOffset dy="3" input="SourceAlpha"/>
-      <feGaussianBlur stdDeviation="10" result="blur"/>
-      <feFlood flood-color="#47494d" flood-opacity="0.161"/>
-      <feComposite operator="in" in2="blur"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
   </defs>
-  <g id="Group_126" data-name="Group 126" transform="translate(-1486 -4785)">
+  <g id="Group_408" data-name="Group 408" transform="translate(-1516 -4812)">
     <g id="Group_18" data-name="Group 18" transform="translate(592 -570)">
-      <g class="cls-7" transform="matrix(1, 0, 0, 1, 894, 5355)">
-        <rect id="Rectangle_15-2" data-name="Rectangle 15" class="cls-1" width="155" height="80" rx="10" transform="translate(30 27)"/>
-      </g>
+      <rect id="Rectangle_15" data-name="Rectangle 15" class="cls-1" width="155" height="80" rx="10" transform="translate(924 5382)"/>
     </g>
     <g id="mc_vrt_pos" transform="translate(1552.733 4818.557)">
       <g id="Layer_1" data-name="Layer 1">

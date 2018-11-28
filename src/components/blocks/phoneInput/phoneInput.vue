@@ -1,33 +1,42 @@
 <template>
   <div class="row no-gutters">
     <div class="col-12 position-relative">
-      <input
-        :placeholder="'Code'"
-        :value="code"
-        :error="error"
-        :errorText="errorText"
-        aria-label="Country code"
-        type="text"
-        maxlength="6"
-        class="input input-code"
-        @input="$emit('code', $event.target.value)"
-      >
-      <input
-        :placeholder="'Phone'"
-        :value="phone"
-        :error="error"
-        :errorText="errorText"
-        aria-label="Phone"
-        type="text"
-        class="input"
-        @input="$emit('phone', $event.target.value)"
-      >
+      <div class="d-flex">
+        <div class="position-relative mr-4">
+          <input
+            :placeholder="'Code'"
+            :value="code"
+            :theme="theme"
+            type="text"
+            class="input input-code"
+            @input="$emit($event.target.value)"
+          />
+          <transition appear name="fade">
+            <div
+              v-if="country.length > 0"
+              class="phone__country"
+              :style="{ backgroundImage: `url(https://www.countryflags.io/${country}/flat/64.png)` }"
+            ></div>
+          </transition>
+        </div>
+        <input
+          :placeholder="'Phone'"
+          :value="phone"
+          :error="error"
+          :errorText="errorText"
+          type="text"
+          class="input"
+          @input="parseInputValue($event.target.value)"
+        >
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import { AsYouType, parseNumber } from 'libphonenumber-js';
 import axios from 'axios';
+import vInput from '@/components/common/input';
 
 import phoneCodes from './phoneCodes.json';
 
@@ -37,8 +46,34 @@ export default {
     code: String,
     phone: String,
     errorText: String,
+    theme: String,
     error: Boolean,
     guessCountryOnCreated: Boolean,
+  },
+  data() {
+    return {
+      country: '',
+      formatter: new AsYouType(),
+    };
+  },
+  components: {
+    vInput,
+  },
+  methods: {
+    parseInputValue(value) {
+      const { countryCallingCode = '' } = parseNumber(value, { extended: true });
+
+      const countryInfo = phoneCodes.find(el => el.code === `+${countryCallingCode}`);
+
+      if (countryInfo) {
+        this.country = countryInfo.country;
+      } else {
+        this.country = '';
+      }
+
+      this.formatter.reset();
+      this.$emit('value', this.formatter.input(value));
+    },
   },
   async created() {
     if (this.guessCountryOnCreated) {
@@ -60,8 +95,9 @@ export default {
       const countryInfo = phoneCodes.find(el => el.country === this.country);
 
       if (countryInfo) {
-        this.code = countryInfo.code;
+        this.$emit('code', countryInfo.code);
       }
+
       this.$emit('country', this.country);
     }
     return true;
@@ -90,8 +126,21 @@ export default {
 
 .input-code {
   width: 75px;
+}
 
-  margin-right: 28px;
+.phone__country {
+  position: absolute;
+  right: 0;
+  top: 15px;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 100%;
+
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
