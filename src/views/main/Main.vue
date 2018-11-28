@@ -863,6 +863,12 @@ export default {
 }
 
 .credit-card {
+  height: 700px;
+
+  @media all and (min-height: 1100px) {
+    height: 870px;
+  }
+
   @include media-breakpoint-down(md) {
     width: 90%;
     margin: 0 auto;
