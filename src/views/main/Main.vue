@@ -31,7 +31,7 @@
                   </a>
                 </div>
               </div>
-              <form class="d-none d-md-flex mt-5" @submit.prevent="submitForm">
+              <form class="d-none d-md-flex mt-5 align-items-baseline" @submit.prevent="submitForm">
                 <phone-input
                   :phone="formData.phone"
                   :code="formData.code"
@@ -801,7 +801,7 @@ export default {
 .phone-pic {
   height: 570px;
   background-color: #c8cbd3;
-  border-radius: 45px;
+  border-radius: 47px;
   box-shadow: 0 20px 50px 0 #06133940;
 
   @media all and (min-height: 1100px) {
@@ -811,7 +811,7 @@ export default {
   @include media-breakpoint-down(md) {
     height: auto;
     width: 50%;
-    border-radius: 25px;
+    border-radius: 27px;
   }
 }
 

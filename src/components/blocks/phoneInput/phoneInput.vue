@@ -9,7 +9,7 @@
             :theme="theme"
             type="text"
             class="input input-code"
-            @input="$emit($event.target.value)"
+            @input="$emit('code', $event.target.value)"
           />
           <transition appear name="fade">
             <div
@@ -58,6 +58,16 @@ export default {
   },
   components: {
     vInput,
+  },
+  watch: {
+    code(value) {
+      const countryInfo = phoneCodes.find(el => el.code === value);
+
+      if (countryInfo) {
+        this.country = countryInfo.country;
+        this.$emit('country', countryInfo.country);
+      }
+    },
   },
   methods: {
     parseInputValue(value) {
