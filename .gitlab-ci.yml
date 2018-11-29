@@ -29,3 +29,14 @@ publish landing:
     - npm publish --registry http://npm.zam.io:4873
   only:
     - master
+
+deploy landing:
+  stage: deploy
+  script:
+    - echo "$SSH_PRIVATE_DSA_KEY" > id_dsa
+    - chmod 600 id_dsa
+    - cat id_dsa
+    - ssh -o StrictHostKeyChecking=no -i id_dsa zam@10.200.1.107 "cd /opt/zam.io && npm set registry http://npm.zam.io:4873 && npm config set //npm.zam.io:4873/:_authToken=${NPM_TOKEN} && npm whoami && npm i @zamzamtech/wallet-landing@latest"
+    - rm id_dsa
+  only:
+    - master

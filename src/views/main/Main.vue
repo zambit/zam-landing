@@ -3,7 +3,7 @@
     <section class="musthead">
       <div class="container">
         <div class="row justify-content-between align-items-center">
-          <div class="col-12 col-lg-6">
+          <div class="col-12 col-xl-6">
             <div class="d-flex justify-content-center flex-column">
               <h1 v-html="$t('musthead.title')" class="musthead__title"></h1>
               <h3 v-html="$t('musthead.subtitle')" class="musthead__subtitle"></h3>
@@ -45,10 +45,13 @@
               </form>
             </div>
           </div>
-          <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center justify-content-md-end">
+          <div class="col-12 col-xl-6">
+            <div
+              class="d-flex mt-5 mt-xl-0
+            align-items-center justify-content-center justify-content-xl-end"
+            >
               <img
-                class="musthead__pic mr-5"
+                class="musthead__pic mr-0 mr-md-5"
                 src="./main.png"
                 srcset="./main@2x.png 2x, ./main@3x.png 3x"
                 alt=""
@@ -83,40 +86,54 @@
     <section class="section section-kyc">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-lg-6 order-1 order-md-0">
-            <div class="d-flex align-items-center flex-column flex-md-row">
+          <div class="col-12 col-lg-6 col-xl-6 order-1 order-lg-0">
+            <div
+              class="d-flex align-items-center flex-column flex-md-row
+            justify-content-center mt-5 mt-lg-0"
+            >
               <div
-                class="d-flex w-100 mt-5 mt-md-0
-              flex-md-column order-1 order-md-0
-              justify-content-around justify-content-md-start"
+                class="banner-wrap d-flex mt-5 mt-md-0
+            flex-md-column order-1 order-md-0
+            justify-content-around justify-content-md-start d-lg-none d-xl-flex"
               >
                 <svg class="banner banner-saltedge">
                   <use xlink:href="#banner-saltedge"></use>
                 </svg>
-                <svg class="banner banner-jumio">
+                <svg class="banner banner-jumio mt-md-5">
                   <use xlink:href="#banner-jumio"></use>
                 </svg>
               </div>
               <img
-                class="phone-pic ml-md-5"
-                src="./kyc.png"
-                srcset="./kyc@2x.png 2x, ./kyc@3x.png 3x"
-                alt=""
-              />
-            </div>
+                data-v-4bb18f76="" src="./kyc.png"
+                srcset="./kyc@2x.png 2x, ./kyc@3x.png 3x" alt=""
+                class="phone-pic ml-md-5 ml-lg-0 ml-xl-5"
+              ></div>
           </div>
-          <div class="col-12 col-lg-5">
-            <h2 class="title">Identity verification in 2 minutes</h2>
-            <p class="section-text">No need to fill in numerous forms and attach photos</p>
-            <div class="mb-3 mb-md-4">
-              <span class="kyc-title">3 minutes</span>
-              <p class="kyc-text">Passport scanning and face scanning with your smartphone
-                camera</p>
-            </div>
-            <div>
-              <span class="kyc-title">1 minute</span>
-              <p class="kyc-text">Identity verification and AML via your bank account in one of our
+          <div class="col-12 col-lg-5"><h2
+            class="title"
+          >Identity verification in 2 minutes</h2>
+            <p class="section-text">No need to fill in numerous forms and attach
+              photos</p>
+            <div class="mb-3 mb-md-4"><span data-v-4bb18f76="" class="kyc-title">3 minutes</span>
+              <p class="kyc-text">Passport scanning and face scanning with your
+                smartphone
+                camera</p></div>
+            <div><span class="kyc-title">1 minute</span>
+              <p class="kyc-text">Identity verification and AML via your bank
+                account in one of our
                 2500 partner banks worldwide</p>
+              <div
+                class=" mt-5 mt-md-0
+             order-1 order-md-0
+            d-xl-none d-none d-lg-flex"
+              >
+                <svg class="banner banner-saltedge mb-0">
+                  <use xlink:href="#banner-saltedge"></use>
+                </svg>
+                <svg class="banner banner-jumio ml-5">
+                  <use xlink:href="#banner-jumio"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
@@ -129,26 +146,39 @@
         <div class="row align-items-center justify-content-between h-100">
           <div class="col-12 col-lg-5">
             <div class="d-flex justify-content-center">
-              <div>
-                <h2 class="title">Instant access to&nbsp;your virtual card</h2>
-                <p class="section-text">Start using the service just after the registration.
+              <div><h2 data-v-4bb18f76="" class="title">Instant access to&nbsp;your
+                virtual card</h2>
+                <p class="section-text">Start using the service just after the
+                  registration.
                   Do online shopping and NFC payments with a virtual card.</p>
+                <div class="mt-5 mt-md-0 d-xl-none d-none d-lg-flex">
+                  <svg class="banner banner-google-pay mb-0">
+                    <use xlink:href="#banner-google-pay"></use>
+                  </svg>
+                  <svg class="banner banner-apple-pay ml-5">
+                    <use xlink:href="#banner-apple-pay"></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-12 col-lg-6">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-              <img
-                class="phone-pic mr-md-5"
-                src="./face-id.png"
-                srcset="./face-id@2x.png 2x, ./face-id@3x.png 3x"
-                alt=""
-              />
-              <div class="d-flex flex-md-column w-100 mt-5 mt-md-0 justify-content-around">
+            <div
+              class="d-flex flex-column flex-md-row align-items-center
+            justify-content-center mt-5 mt-lg-0"
+            ><img
+              src="./face-id.png"
+              srcset="./face-id@2x.png 2x, ./face-id@3x.png 3x" alt=""
+              class="phone-pic mr-md-5 mr-lg-0 mr-xl-5"
+            >
+              <div
+                class="banner-wrap d-flex flex-md-column
+                mt-5 mt-md-0 justify-content-around d-lg-none d-xl-flex"
+              >
                 <svg class="banner banner-google-pay">
                   <use xlink:href="#banner-google-pay"></use>
                 </svg>
-                <svg class="banner banner-apple-pay">
+                <svg class="banner banner-apple-pay mt-0 mt-md-5 mt-xl-0">
                   <use xlink:href="#banner-apple-pay"></use>
                 </svg>
               </div>
@@ -162,8 +192,8 @@
     <section class="section section-physical-cards">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-lg-6 order-1 order-md-0">
-            <div class="position-relative" style="z-index: 0;">
+          <div class="col-12 col-lg-6 order-1 order-xl-0">
+            <div class="position-relative text-center" style="z-index: 0;">
               <img
                 class="phone-pic credit-card"
                 style="box-shadow: none; background-color: transparent"
@@ -187,32 +217,48 @@
     <section class="section section-deposit-money">
       <div class="container">
         <div class="row justify-content-between align-items-center h-100">
-          <div class="col-12 col-lg-5">
-            <h2 class="title">Replenish your account in any convenient way with minimal
-              commissions</h2>
-            <p class="section-text">Replenish your zam.account with any bank card with 2% commission
+          <div class="col-12 col-lg-5"><h2 data-v-4bb18f76="" class="title">
+            Replenish your account in any convenient way with minimal
+            commissions</h2>
+            <p class="section-text">Replenish your zam.account with any bank card
+              with 2% commission
               only. We’d like to make it free, but Visa, MasterCard and your card
               issuing bank have their conditions.</p>
+            <div
+              class="d-none d-lg-flex d-xl-none justify-content-around flex-wrap
+             mt-5 mt-md-0"
+            >
+              <svg class="banner banner-visa mx-1 mt-sm-0">
+                <use xlink:href="#banner-visa"></use>
+              </svg>
+              <svg class="banner banner-mastercard mx-1 mt-sm-0">
+                <use xlink:href="#banner-mastercard"></use>
+              </svg>
+              <svg class="banner banner-union-pay mx-1 mt-md-0 mt-3 mt-sm-0">
+                <use xlink:href="#banner-union-pay"></use>
+              </svg>
+            </div>
           </div>
           <div class="col-12 col-lg-6">
-            <div class="d-flex flex-column flex-md-row align-items-center">
-              <img
-                class="phone-pic mr-md-5"
-                src="./deposit.png"
-                srcset="./deposit@2x.png 2x, ./deposit@3x.png 3x"
-                alt=""
-              />
+            <div
+              class="d-flex flex-column flex-md-row align-items-center
+            justify-content-center mt-5 mt-lg-0"
+            ><img
+              src="./deposit.png"
+              srcset="./deposit@2x.png 2x, ./deposit@3x.png 3x" alt=""
+              class="phone-pic mr-md-5 mr-lg-0 mr-xl-5"
+            >
               <div
-                class="d-flex flex-md-column justify-content-around flex-wrap
-              justify-content-md-start w-100 mt-5 mt-md-0"
+                class="flex-md-column justify-content-around flex-wrap
+            justify-content-md-start mt-5 mt-md-0 d-flex d-lg-none d-xl-flex banner-wrap"
               >
-                <svg class="banner banner-visa mx-1 mt-sm-0">
+                <svg class="banner banner-visa mx-1 mt-sm-0 mb-3 mb-md-5">
                   <use xlink:href="#banner-visa"></use>
                 </svg>
-                <svg class="banner banner-mastercard mx-1 mt-sm-0">
+                <svg class="banner banner-mastercard mx-1 mt-sm-0 mb-3 mb-md-5">
                   <use xlink:href="#banner-mastercard"></use>
                 </svg>
-                <svg class="banner banner-union-pay mx-1 mt-md-0 mt-3 mt-sm-0">
+                <svg class="banner banner-union-pay mx-1">
                   <use xlink:href="#banner-union-pay"></use>
                 </svg>
               </div>
@@ -226,44 +272,54 @@
     <section class="section section-exchange-fiat">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-lg-6 order-1 order-md-0">
-            <div class="d-flex align-items-center flex-column flex-md-row">
+          <div class="col-12 col-lg-6 order-1 order-lg-0">
+            <div
+              class="d-flex align-items-center flex-column flex-md-row flex-lg-column flex-xl-row"
+            >
               <div
-                class="d-flex flex-md-column flex-wrap mt-5 mt-md-0
-              order-1 order-md-0 justify-content-center justify-content-md-start"
-              >
-                <img
-                  src="./banner-dme.png"
-                  class="banner banner-dme mx-1 mt-sm-0"
-                  srcset="./banner-dme@2x.png 2x, ./banner-dme@3x.png 3x"
-                  alt=""
-                >
-                <img
-                  src="./banner-stock-exchange.png"
-                  class="banner banner-stock-exchange mx-1 mt-sm-0"
-                  srcset="./banner-stock-exchange@2x.png 2x, ./banner-stock-exchange@3x.png 3x"
-                  alt=""
-                >
-                <img
-                  src="./banner-sgx.png"
-                  class="banner banner-sgx mx-1 mt-md-0 mt-3 mt-sm-0"
-                  srcset="./banner-sgx@2x.png 2x, ./banner-sgx@3x.png 3x"
-                  alt=""
-                >
-              </div>
+                class="banner-wrap d-flex flex-md-column flex-wrap mt-5 mt-md-0
+            order-1 order-md-0 justify-content-around justify-content-md-start d-lg-none d-xl-flex"
+              ><img
+                src="./banner-dme.png"
+                srcset="./banner-dme@2x.png 2x, ./banner-dme@3x.png 3x"
+                alt="" class="banner banner-dme mx-1 mt-sm-0 mb-md-5"
+              ><img
+                src="./banner-stock-exchange.png"
+                srcset="./banner-stock-exchange@2x.png 2x, ./banner-stock-exchange@3x.png 3x"
+                alt="" class="banner banner-stock-exchange mx-1 mt-sm-0 mb-md-5"
+              ><img
+                src="./banner-sgx.png"
+                srcset="./banner-sgx@2x.png 2x, ./banner-sgx@3x.png 3x"
+                alt="" class="banner banner-sgx mx-1 mt-md-0 mt-3 mt-sm-0 mb-md-5"
+              ></div>
               <img
-                class="phone-pic ml-md-5"
                 src="./exchange.png"
-                srcset="./exchange@2x.png 2x, ./exchange@3x.png 3x"
-                alt=""
-              />
-            </div>
+                srcset="./exchange@2x.png 2x, ./exchange@3x.png 3x" alt=""
+                class="phone-pic ml-md-5 ml-lg-0 ml-xl-5"
+              ></div>
           </div>
-          <div class="col-12 col-lg-5">
-            <h2 class="title">Exchange fiat and digital money at genuine exchange rates</h2>
-            <p class="section-text">Transparent exchange rates for any currency. We provide exchange
+          <div data-v-4bb18f76="" class="col-12 col-lg-5"><h2 data-v-4bb18f76="" class="title">
+            Exchange fiat and digital money at genuine exchange rates</h2>
+            <p data-v-4bb18f76="" class="section-text">Transparent exchange rates for any currency.
+              We provide exchange
               services at average market rates and with fixed withdrawal fee (0.5%).
               Traditional banks exchange rates are 2-10% higher.</p>
+            <div
+              class="d-none d-lg-flex d-xl-none flex-wrap mt-5 mt-md-0
+            order-1 order-md-0 justify-content-center justify-content-md-around"
+            ><img
+              src="./banner-dme.png"
+              srcset="./banner-dme@2x.png 2x, ./banner-dme@3x.png 3x" alt=""
+              class="banner banner-dme mx-1 mt-sm-0"
+            ><img
+              src="./banner-stock-exchange.png"
+              srcset="./banner-stock-exchange@2x.png 2x, ./banner-stock-exchange@3x.png 3x"
+              alt="" class="banner banner-stock-exchange mx-1 mt-sm-0"
+            ><img
+              src="./banner-sgx.png"
+              srcset="./banner-sgx@2x.png 2x, ./banner-sgx@3x.png 3x" alt=""
+              class="banner banner-sgx mx-1 mt-md-0 mt-3 mt-sm-0"
+            ></div>
           </div>
         </div>
       </div>
@@ -278,16 +334,19 @@
             <p class="section-text">Send money to friends and relatives by a phone number only.
               Even if they don’t have Zam.account, they will receive payment
               after a simple authentication.</p>
+            <svg class="coins-mobile d-none d-lg-block d-xl-none mx-auto mt-5">
+              <use xlink:href="#coins-mobile"></use>
+            </svg>
           </div>
           <div class="col-12 col-lg-6">
-            <div class="d-flex flex-column flex-md-row align-items-center">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
               <img
-                class="phone-pic mr-md-5"
+                class="phone-pic mr-md-5 mr-lg-0 mr-xl-5"
                 src="./send.png"
                 srcset="./send@2x.png 2x, ./send@3x.png 3x"
                 alt=""
               />
-              <div class="d-flex flex-md-column">
+              <div class="d-flex flex-md-column d-lg-none d-xl-flex">
                 <svg class="coins d-none d-md-block">
                   <use xlink:href="#coins"></use>
                 </svg>
@@ -652,6 +711,7 @@ export default {
   @include media-breakpoint-down(md) {
     height: auto;
     width: 100%;
+    max-width: 275px;
 
     margin-bottom: 50px;
 
@@ -731,7 +791,7 @@ export default {
   & .container {
     height: 100vh;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
       height: auto;
     }
   }
@@ -814,6 +874,7 @@ export default {
   @include media-breakpoint-down(md) {
     height: auto;
     width: 50%;
+    max-width: 172px;
     border-radius: 27px;
   }
 }
@@ -876,6 +937,14 @@ export default {
     width: 100%;
     margin: 0 auto;
     height: auto;
+  }
+}
+
+.banner-wrap {
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    width: auto;
   }
 }
 </style>
