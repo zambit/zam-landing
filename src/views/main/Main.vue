@@ -46,7 +46,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-6">
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center justify-content-md-end">
               <img
                 class="musthead__pic mr-5"
                 src="./main.png"
@@ -206,13 +206,13 @@
                 class="d-flex flex-md-column justify-content-around flex-wrap
               justify-content-md-start w-100 mt-5 mt-md-0"
               >
-                <svg class="banner banner-visa mx-1 mt-md-0">
+                <svg class="banner banner-visa mx-1 mt-sm-0">
                   <use xlink:href="#banner-visa"></use>
                 </svg>
-                <svg class="banner banner-mastercard mx-1 mt-md-0">
+                <svg class="banner banner-mastercard mx-1 mt-sm-0">
                   <use xlink:href="#banner-mastercard"></use>
                 </svg>
-                <svg class="banner banner-union-pay mx-1 mt-md-0 mt-3 mt-md-0">
+                <svg class="banner banner-union-pay mx-1 mt-md-0 mt-3 mt-sm-0">
                   <use xlink:href="#banner-union-pay"></use>
                 </svg>
               </div>
@@ -234,19 +234,19 @@
               >
                 <img
                   src="./banner-dme.png"
-                  class="banner banner-dme mx-1 mt-md-0"
+                  class="banner banner-dme mx-1 mt-sm-0"
                   srcset="./banner-dme@2x.png 2x, ./banner-dme@3x.png 3x"
                   alt=""
                 >
                 <img
                   src="./banner-stock-exchange.png"
-                  class="banner banner-stock-exchange mx-1 mt-md-0"
+                  class="banner banner-stock-exchange mx-1 mt-sm-0"
                   srcset="./banner-stock-exchange@2x.png 2x, ./banner-stock-exchange@3x.png 3x"
                   alt=""
                 >
                 <img
                   src="./banner-sgx.png"
-                  class="banner banner-sgx mx-1 mt-md-0 mt-3 mt-md-0"
+                  class="banner banner-sgx mx-1 mt-md-0 mt-3 mt-sm-0"
                   srcset="./banner-sgx@2x.png 2x, ./banner-sgx@3x.png 3x"
                   alt=""
                 >
