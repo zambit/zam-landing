@@ -8,6 +8,7 @@ before_script:
 stages:
   - build
   - publish
+  - deploy
 
 image: node:10
 
