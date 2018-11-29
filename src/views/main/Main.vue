@@ -808,6 +808,7 @@ export default {
 
   @media all and (min-height: 1100px) {
     height: 700px;
+    border-radius: 57px;
   }
 
   @include media-breakpoint-down(md) {
