@@ -3,31 +3,47 @@
     <div class="col-12 position-relative">
       <div class="d-flex">
         <div class="position-relative mr-4">
-          <input
-            :placeholder="'Code'"
-            :value="code"
-            :theme="theme"
-            type="text"
-            class="input input-code"
-            @input="$emit('code', $event.target.value)"
-          />
+          <div class="position-relative">
+            <div
+              v-html="'Code'"
+              :class="['placeholder', { 'placeholder--focused': codeInputFocused || code.length >
+             0 }]"
+            ></div>
+            <input
+              :value="code"
+              :theme="theme"
+              type="text"
+              class="input input-code"
+              @focus="codeInputFocused = true"
+              @blur="codeInputFocused = false"
+              @input="$emit('code', $event.target.value)"
+            />
+          </div>
           <transition appear name="fade">
             <div
-              v-if="country.length > 0"
+              v-if="country.length > 0 && code.length > 0"
               class="phone__country"
               :style="{ backgroundImage: `url(https://www.countryflags.io/${country}/flat/64.png)` }"
             ></div>
           </transition>
         </div>
-        <input
-          :placeholder="'Phone'"
-          :value="phone"
-          :error="error"
-          :errorText="errorText"
-          type="text"
-          class="input"
-          @input="$emit('value', $event.target.value)"
-        >
+        <div class="position-relative">
+          <div
+            v-html="'Phone'"
+            :class="['placeholder', { 'placeholder--focused': phoneInputFocused || phone.length >
+             0 }]"
+          ></div>
+          <input
+            :value="phone"
+            :error="error"
+            :errorText="errorText"
+            type="text"
+            class="input"
+            @focus="phoneInputFocused = true"
+            @blur="phoneInputFocused = false"
+            @input="$emit('value', $event.target.value)"
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -52,6 +68,8 @@ export default {
   },
   data() {
     return {
+      codeInputFocused: false,
+      phoneInputFocused: false,
       country: '',
       formatter: new AsYouType(),
     };
@@ -172,5 +190,28 @@ export default {
 .input:-moz-placeholder { /* Firefox 18- */
   font-size: 1rem;
   color: #858997;
+}
+
+.placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 1rem;
+  color: #858997;
+
+  padding: 10px 0;
+  border: 1px solid transparent;
+
+  transition: color .2s ease, transform .2s ease;
+  transform-origin: left;
+
+  pointer-events: none;
+}
+
+.placeholder--focused {
+  color: $sky-blue;
+  transform: scale(.75) translateY(-24px);
 }
 </style>
