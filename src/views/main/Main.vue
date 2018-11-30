@@ -3,7 +3,7 @@
     <section class="musthead">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-12 col-xl-5">
+          <div class="col-12 col-lg-7 col-xl-5">
             <div class="d-flex flex-column musthead__wrapper">
               <h1 v-html="$t('musthead.title')" class="musthead__title"></h1>
               <h3 v-html="$t('musthead.subtitle')" class="musthead__subtitle"></h3>
@@ -48,7 +48,7 @@
               </form>
             </div>
           </div>
-          <div class="col-12 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               class="musthead__pic mx-auto"
               src="./main.png"
@@ -57,7 +57,7 @@
             >
           </div>
           <div class="col-12 col-xl-2">
-            <div class="d-none d-md-flex flex-column align-items-center">
+            <div class="d-none d-md-flex d-lg-none flex-column align-items-center">
               <a
                 href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
                 target="_blank"
@@ -77,6 +77,28 @@
                 </svg>
               </a>
             </div>
+
+            <div class="d-lg-flex musthead__bottom-app-row">
+              <a
+                href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <svg class="musthead__app-icon musthead__app-icon--bottom">
+                  <use xlink:href="#apple-logo"></use>
+                </svg>
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=zam.wallet"
+                target="_blank"
+                class="ml-4"
+                rel="noreferrer noopener"
+              >
+                <svg class="musthead__app-icon musthead__app-icon--bottom ml-3">
+                  <use xlink:href="#android-logo"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -86,7 +108,7 @@
     <section class="section section-kyc">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-xl-2">
+          <div class="col-12 col-xl-2 d-lg-none">
             <div
               class="d-flex flex-column align-items-center"
             >
@@ -98,19 +120,19 @@
               </svg>
             </div>
           </div>
-          <div class="col-12 col-xl-4 col-xxl-3 order-1 order-lg-0">
+          <div class="col-12 col-lg-4 col-xl-4 col-xxl-3 order-1 order-lg-0">
             <img
               data-v-4bb18f76="" src="./kyc.png"
               srcset="./kyc@2x.png 2x, ./kyc@3x.png 3x" alt=""
               class="phone-pic"
             >
           </div>
-          <div class="col-12 col-xl-5 offset-xxl-2 offset-xl-1"><h2
+          <div class="col-12 col-lg-7 offset-lg-1 col-xl-5 offset-xxl-2 offset-xl-1"><h2
             class="title"
           >Identity verification in 2 minutes</h2>
             <p class="section-text mb-4">No need to fill in numerous forms and attach
               photos</p>
-            <div class="mb-3 mb-md-4"><span class="kyc-title">3 minutes</span>
+            <div class="mb-3 mb-lg-3 mb-xl-4"><span class="kyc-title">3 minutes</span>
               <p class="kyc-text">Passport scanning and face scanning with your
                 smartphone
                 camera</p></div>
@@ -119,14 +141,12 @@
                 account in one of our
                 2500 partner banks worldwide</p>
               <div
-                class=" mt-5 mt-md-0
-             order-1 order-md-0
-            d-xl-none d-none d-lg-flex"
+                class="d-lg-flex mt-5"
               >
-                <svg class="banner banner-saltedge mb-0">
+                <svg class="banner banner-saltedge">
                   <use xlink:href="#banner-saltedge"></use>
                 </svg>
-                <svg class="banner banner-jumio ml-5">
+                <svg class="banner banner-jumio">
                   <use xlink:href="#banner-jumio"></use>
                 </svg>
               </div>
@@ -140,32 +160,32 @@
     <section class="section section-virtual-cards">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-xl-5">
+          <div class="col-12 col-lg-7 col-xl-5">
             <div class="d-flex justify-content-center section-text-wrap">
               <div><h2 data-v-4bb18f76="" class="title">Instant access to&nbsp;your
                 virtual card</h2>
                 <p class="section-text">Start using the service just after the
                   registration.
                   Do online shopping and NFC payments with a virtual card.</p>
-                <div class="mt-5 mt-md-0 d-xl-none d-none d-lg-flex">
-                  <svg class="banner banner-google-pay mb-0">
+                <div class="mt-5 mt-md-0 mt-lg-5 d-xl-none d-none d-lg-flex">
+                  <svg class="banner banner-google-pay">
                     <use xlink:href="#banner-google-pay"></use>
                   </svg>
-                  <svg class="banner banner-apple-pay ml-5">
+                  <svg class="banner banner-apple-pay">
                     <use xlink:href="#banner-apple-pay"></use>
                   </svg>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-12 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               src="./face-id.png"
               srcset="./face-id@2x.png 2x, ./face-id@3x.png 3x" alt=""
               class="phone-pic"
             >
           </div>
-          <div class="col-12 col-xl-2">
+          <div class="col-12 col-xl-2 d-lg-none">
             <div class="d-flex flex-column align-items-center">
               <svg class="banner banner-google-pay">
                 <use xlink:href="#banner-google-pay"></use>
@@ -183,7 +203,7 @@
     <section class="section section-physical-cards">
       <div class="container">
         <div class="row align-items-center h-100">
-          <div class="col-12 col-xl-6 col-xxl-5 order-1 order-xl-0">
+          <div class="col-12 col-lg-5 order-lg-0 col-xl-6 col-xxl-5 order-1 order-xl-0">
             <img
               class="phone-pic credit-card ml-4"
               src="./credit-card.png"
@@ -191,7 +211,7 @@
               alt=""
             />
           </div>
-          <div class="col-12 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-2">
+          <div class="col-12 col-lg-6 offset-lg-1 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-2">
             <h2 class="title">Even more possibilities with a physical card</h2>
             <p class="section-text">Multicurrency cash is always with you. Withdraw money at
               any ATM worldwide with a minimal fee. We are not earning
@@ -205,7 +225,7 @@
     <section class="section section-deposit-money">
       <div class="container">
         <div class="row justify-content-between align-items-center h-100">
-          <div class="col-12 col-xl-5">
+          <div class="col-12 col-lg-7 col-xl-5">
             <div class="section-text-wrap">
               <h2 class="title">Replenish your account in any convenient way with minimal
                 commissions</h2>
@@ -214,10 +234,9 @@
                 only. We’d like to make it free, but Visa, MasterCard and your card
                 issuing bank have their conditions.</p>
               <div
-                class="d-none d-lg-flex d-xl-none justify-content-around flex-wrap
-             mt-5 mt-md-0"
+                class="d-lg-flex mt-5"
               >
-                <svg class="banner banner-visa mx-1 mt-sm-0">
+                <svg class="banner banner-visa">
                   <use xlink:href="#banner-visa"></use>
                 </svg>
                 <img
@@ -225,20 +244,20 @@
                   srcset="./banner-mastercard@2x.png 2x, ./banner-mastercard@3x.png 3x" alt=""
                   class="banner banner-mastercard"
                 >
-                <svg class="banner banner-union-pay mx-1 mt-md-0 mt-3 mt-sm-0">
+                <svg class="banner banner-union-pay">
                   <use xlink:href="#banner-union-pay"></use>
                 </svg>
               </div>
             </div>
           </div>
-          <div class="col-12 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               src="./deposit.png"
               srcset="./deposit@2x.png 2x, ./deposit@3x.png 3x" alt=""
               class="phone-pic"
             >
           </div>
-          <div class="col-12 col-xl-2">
+          <div class="col-12 col-xl-2 d-lg-none">
             <div class="d-flex flex-column align-items-center">
               <svg class="banner banner-visa">
                 <use xlink:href="#banner-visa"></use>
@@ -261,14 +280,14 @@
     <section class="section section-exchange-fiat">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-lg-4 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               src="./exchange.png"
               srcset="./exchange@2x.png 2x, ./exchange@3x.png 3x" alt=""
               class="phone-pic"
             >
           </div>
-          <div class="col-12 col-xl-6 offset-xl-1 col-xxl-5 offset-xxl-2">
+          <div class="col-12 col-lg-7 offset-lg-1 col-xl-6 offset-xl-1 col-xxl-5 offset-xxl-2">
             <h2 class="title">Exchange fiat and digital money at genuine exchange rates</h2>
             <p class="section-text">Transparent exchange rates for any currency.
               We provide exchange
@@ -282,19 +301,20 @@
 
     <section class="section section-send-money">
       <div class="container">
-        <div class="row justify-content-between align-items-center h-100">
-          <div class="col-12 col-xl-5">
+        <div class="row align-items-center h-100">
+          <div class="col-12 col-lg-7 offset-lg-1 order-lg-1 col-xl-5">
             <div class="section-text-wrap">
               <h2 class="title">Instant remittances via a&nbsp;telephone number</h2>
-              <p class="section-text">Send money to friends and relatives by a phone number only.
+              <p class="section-text">Send money to friends and relatives by a phone number
+                only.
                 Even if they don’t have Zam.account, they will receive payment
                 after a simple authentication.</p>
-              <svg class="coins-mobile d-none d-lg-block d-xl-none mx-auto mt-5">
+              <svg class="coins-mobile coins-mobile-lg d-lg-block mt-5">
                 <use xlink:href="#coins-mobile"></use>
               </svg>
             </div>
           </div>
-          <div class="col-12 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-lg-4 order-lg-0 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               class="phone-pic"
               src="./send.png"
@@ -302,7 +322,7 @@
               alt=""
             />
           </div>
-          <div class="col-12 col-xl-2">
+          <div class="col-12 col-xl-2 d-lg-none">
             <div class="d-flex justify-content-center">
               <svg class="coins d-none d-md-block">
                 <use xlink:href="#coins"></use>
@@ -326,17 +346,17 @@
         </div>
         <div class="row justify-content-center news-row">
           <div class="col-12 col-xxl-10">
-            <div class="row justify-content-around">
+            <div class="row justify-content-center justify-content-xl-around">
               <template v-for="(item, index) in news">
                 <div
                   :key="index"
                   style="margin-top: 30px"
-                  class="col-12 col-sm-6 col-lg-4"
+                  class="col-12 col-sm-6 col-lg-6 col-xl-4"
                 >
                   <a :href="item.url" target="_blank" rel="noreferrer noopener">
                     <news-card
                       :news="item"
-                      class="h-100"
+                      class="h-100 mx-lg-auto"
                     />
                   </a>
                 </div>
@@ -577,6 +597,12 @@ export default {
   align-items: center;
   min-height: 100vh;
 
+  @include media-breakpoint-down(lg) {
+    min-height: auto;
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+
   @include media-breakpoint-down(md) {
     padding-top: 0;
   }
@@ -584,6 +610,10 @@ export default {
 
 .musthead__wrapper {
   margin: 0 36px;
+
+  @include media-breakpoint-down(xl) {
+    margin: 0;
+  }
 }
 
 .musthead__title {
@@ -618,6 +648,10 @@ export default {
   color: #858997;
   margin-top: $spacer * 2.5;
 
+  @include media-breakpoint-down(lg) {
+    margin-top: 50px;
+  }
+
   @include media-breakpoint-down(md) {
     margin-top: $spacer * 1.5;
   }
@@ -625,6 +659,15 @@ export default {
 
 .musthead__form {
   margin-top: 94px;
+
+  @include media-breakpoint-down(lg) {
+    margin-top: 32px;
+  }
+}
+
+.musthead__app-icon--bottom {
+  width: 44px;
+  height: 44px;
 }
 
 .musthead__btn {
@@ -742,6 +785,10 @@ export default {
   padding: 50px 0;
   font-size: 1vh;
 
+  @include media-breakpoint-down(lg) {
+    padding: 110px 0;
+  }
+
   & .container {
     height: 100vh;
 
@@ -764,6 +811,10 @@ export default {
   color: #2a3271;
 
   margin-bottom: $spacer * 2.5;
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: $spacer * 1.75;
+  }
 
   @include media-breakpoint-down(md) {
     font-size: 1.87500rem;
@@ -800,6 +851,14 @@ export default {
     width: 100px;
     height: 52px;
   }
+}
+
+.banner-saltedge,
+.banner-google-pay,
+.banner-visa {
+ @include media-breakpoint-down(lg) {
+   margin-left: -20px;
+ }
 }
 
 .phone-pic {
@@ -855,6 +914,13 @@ export default {
   height: 130px;
 }
 
+.coins-mobile-lg {
+  @include media-breakpoint-down(lg) {
+    width: 396px;
+    height: 156px;
+  }
+}
+
 .banner-wrap {
   width: 100%;
 
@@ -865,5 +931,13 @@ export default {
 
 .section-text-wrap {
   margin-left: 60px;
+
+  @include media-breakpoint-down(lg) {
+    margin-left: 0;
+  }
+}
+
+.musthead__bottom-app-row {
+  margin-top: 110px;
 }
 </style>
