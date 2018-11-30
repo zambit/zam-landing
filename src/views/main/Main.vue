@@ -48,7 +48,7 @@
               </form>
             </div>
           </div>
-          <div class="col-12 col-xl-3 offset-xl-2">
+          <div class="col-12 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               class="musthead__pic mx-auto"
               src="./main.png"
@@ -98,14 +98,14 @@
               </svg>
             </div>
           </div>
-          <div class="col-12 col-xl-3 order-1 order-lg-0">
+          <div class="col-12 col-xl-4 col-xxl-3 order-1 order-lg-0">
             <img
               data-v-4bb18f76="" src="./kyc.png"
               srcset="./kyc@2x.png 2x, ./kyc@3x.png 3x" alt=""
               class="phone-pic"
             >
           </div>
-          <div class="col-12 col-xl-5 offset-xl-2"><h2
+          <div class="col-12 col-xl-5 offset-xxl-2 offset-xl-1"><h2
             class="title"
           >Identity verification in 2 minutes</h2>
             <p class="section-text mb-4">No need to fill in numerous forms and attach
@@ -140,7 +140,7 @@
     <section class="section section-virtual-cards">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-lg-5">
+          <div class="col-12 col-xl-5">
             <div class="d-flex justify-content-center section-text-wrap">
               <div><h2 data-v-4bb18f76="" class="title">Instant access to&nbsp;your
                 virtual card</h2>
@@ -158,7 +158,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-xl-3 offset-xl-2">
+          <div class="col-12 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               src="./face-id.png"
               srcset="./face-id@2x.png 2x, ./face-id@3x.png 3x" alt=""
@@ -183,7 +183,7 @@
     <section class="section section-physical-cards">
       <div class="container">
         <div class="row align-items-center h-100">
-          <div class="col-12 col-xl-5 order-1 order-xl-0">
+          <div class="col-12 col-xl-6 col-xxl-5 order-1 order-xl-0">
             <img
               class="phone-pic credit-card ml-4"
               src="./credit-card.png"
@@ -191,7 +191,7 @@
               alt=""
             />
           </div>
-          <div class="col-12 col-xl-4 offset-xl-2">
+          <div class="col-12 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-2">
             <h2 class="title">Even more possibilities with a physical card</h2>
             <p class="section-text">Multicurrency cash is always with you. Withdraw money at
               any ATM worldwide with a minimal fee. We are not earning
@@ -231,7 +231,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-xl-3 offset-xl-2">
+          <div class="col-12 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               src="./deposit.png"
               srcset="./deposit@2x.png 2x, ./deposit@3x.png 3x" alt=""
@@ -261,14 +261,14 @@
     <section class="section section-exchange-fiat">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-xl-3 offset-xl-2">
+          <div class="col-12 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               src="./exchange.png"
               srcset="./exchange@2x.png 2x, ./exchange@3x.png 3x" alt=""
               class="phone-pic"
             >
           </div>
-          <div class="col-12 col-xl-5 offset-xl-2">
+          <div class="col-12 col-xl-6 offset-xl-1 col-xxl-5 offset-xxl-2">
             <h2 class="title">Exchange fiat and digital money at genuine exchange rates</h2>
             <p class="section-text">Transparent exchange rates for any currency.
               We provide exchange
@@ -285,7 +285,7 @@
         <div class="row justify-content-between align-items-center h-100">
           <div class="col-12 col-xl-5">
             <div class="section-text-wrap">
-              <h2 class="title">Instant remittances via a telephone number</h2>
+              <h2 class="title">Instant remittances via a&nbsp;telephone number</h2>
               <p class="section-text">Send money to friends and relatives by a phone number only.
                 Even if they don’t have Zam.account, they will receive payment
                 after a simple authentication.</p>
@@ -294,7 +294,7 @@
               </svg>
             </div>
           </div>
-          <div class="col-12 col-xl-3 offset-xl-2">
+          <div class="col-12 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               class="phone-pic"
               src="./send.png"
@@ -325,7 +325,7 @@
           </div>
         </div>
         <div class="row justify-content-center news-row">
-          <div class="col-12 col-xl-10">
+          <div class="col-12 col-xxl-10">
             <div class="row justify-content-around">
               <template v-for="(item, index) in news">
                 <div
@@ -670,17 +670,7 @@ export default {
 }
 
 .musthead__pic {
-  height: 633px;
-
-  @include media-breakpoint-down(md) {
-    height: auto;
-    width: 100%;
-    max-width: 275px;
-
-    margin-bottom: 50px;
-
-    margin-top: $spacer * 4;
-  }
+  width: 100%;
 }
 
 .feature-right {
