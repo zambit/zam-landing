@@ -52,6 +52,9 @@ export default {
   flex-direction: column;
   justify-content: space-between;
 
+  width: 360px;
+  height: 360px;
+
   padding: 30px 28px 35px;
 
   color: #ffffff;
