@@ -3,7 +3,7 @@
     <section class="musthead">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-12 col-lg-7 col-xl-5">
+          <div class="col-12 col-md-7 col-xl-5">
             <div class="d-flex flex-column musthead__wrapper">
               <h1 v-html="$t('musthead.title')" class="musthead__title"></h1>
               <h3 v-html="$t('musthead.subtitle')" class="musthead__subtitle"></h3>
@@ -32,7 +32,7 @@
                 </div>
               </div>
               <form
-                class="d-none d-md-flex align-items-baseline musthead__form"
+                class="d-none d-md-flex align-items-end musthead__form"
                 @submit.prevent="submitForm"
               >
                 <phone-input
@@ -48,7 +48,7 @@
               </form>
             </div>
           </div>
-          <div class="col-12 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-md-4 offset-md-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               class="musthead__pic mx-auto"
               src="./main.png"
@@ -57,7 +57,7 @@
             >
           </div>
           <div class="col-12 col-xl-2">
-            <div class="d-none d-md-flex d-lg-none flex-column align-items-center">
+            <div class="d-none d-md-none flex-column align-items-center">
               <a
                 href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
                 target="_blank"
@@ -78,7 +78,7 @@
               </a>
             </div>
 
-            <div class="d-lg-flex musthead__bottom-app-row">
+            <div class="d-md-flex musthead__bottom-app-row">
               <a
                 href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
                 target="_blank"
@@ -108,7 +108,7 @@
     <section class="section section-kyc">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-xl-2 d-lg-none">
+          <div class="col-12 col-xl-2 d-md-none d-lg-none">
             <div
               class="d-flex flex-column align-items-center"
             >
@@ -120,19 +120,19 @@
               </svg>
             </div>
           </div>
-          <div class="col-12 col-lg-4 col-xl-4 col-xxl-3 order-1 order-lg-0">
+          <div class="col-12 col-md-4 col-xl-4 col-xxl-3 order-1 order-md-0">
             <img
               data-v-4bb18f76="" src="./kyc.png"
               srcset="./kyc@2x.png 2x, ./kyc@3x.png 3x" alt=""
               class="phone-pic"
             >
           </div>
-          <div class="col-12 col-lg-7 offset-lg-1 col-xl-5 offset-xxl-2 offset-xl-1"><h2
+          <div class="col-12 col-md-7 offset-md-1 col-xl-5 offset-xxl-2 offset-xl-1"><h2
             class="title"
           >Identity verification in 2 minutes</h2>
             <p class="section-text mb-4">No need to fill in numerous forms and attach
               photos</p>
-            <div class="mb-3 mb-lg-3 mb-xl-4"><span class="kyc-title">3 minutes</span>
+            <div class="mb-3 mb-md-3 mb-xl-4"><span class="kyc-title">3 minutes</span>
               <p class="kyc-text">Passport scanning and face scanning with your
                 smartphone
                 camera</p></div>
@@ -141,7 +141,7 @@
                 account in one of our
                 2500 partner banks worldwide</p>
               <div
-                class="d-lg-flex mt-5"
+                class="d-md-flex mt-5"
               >
                 <svg class="banner banner-saltedge">
                   <use xlink:href="#banner-saltedge"></use>
@@ -160,14 +160,14 @@
     <section class="section section-virtual-cards">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-lg-7 col-xl-5">
+          <div class="col-12 col-md-7 col-xl-5">
             <div class="d-flex justify-content-center section-text-wrap">
               <div><h2 data-v-4bb18f76="" class="title">Instant access to&nbsp;your
                 virtual card</h2>
                 <p class="section-text">Start using the service just after the
                   registration.
                   Do online shopping and NFC payments with a virtual card.</p>
-                <div class="mt-5 mt-md-0 mt-lg-5 d-xl-none d-none d-lg-flex">
+                <div class="mt-5 mt-md-0 mt-md-5 d-xl-none d-none d-md-flex">
                   <svg class="banner banner-google-pay">
                     <use xlink:href="#banner-google-pay"></use>
                   </svg>
@@ -178,14 +178,14 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-md-4 offset-md-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               src="./face-id.png"
               srcset="./face-id@2x.png 2x, ./face-id@3x.png 3x" alt=""
               class="phone-pic"
             >
           </div>
-          <div class="col-12 col-xl-2 d-lg-none">
+          <div class="col-12 col-xl-2 d-md-none">
             <div class="d-flex flex-column align-items-center">
               <svg class="banner banner-google-pay">
                 <use xlink:href="#banner-google-pay"></use>
@@ -203,7 +203,7 @@
     <section class="section section-physical-cards">
       <div class="container">
         <div class="row align-items-center h-100">
-          <div class="col-12 col-lg-5 order-lg-0 col-xl-6 col-xxl-5 order-1 order-xl-0">
+          <div class="col-12 col-md-5 order-md-0 col-xl-6 col-xxl-5 order-1 order-xl-0">
             <img
               class="phone-pic credit-card ml-4"
               src="./credit-card.png"
@@ -211,7 +211,7 @@
               alt=""
             />
           </div>
-          <div class="col-12 col-lg-6 offset-lg-1 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-2">
+          <div class="col-12 col-md-6 offset-md-1 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-2">
             <h2 class="title">Even more possibilities with a physical card</h2>
             <p class="section-text">Multicurrency cash is always with you. Withdraw money at
               any ATM worldwide with a minimal fee. We are not earning
@@ -225,7 +225,7 @@
     <section class="section section-deposit-money">
       <div class="container">
         <div class="row justify-content-between align-items-center h-100">
-          <div class="col-12 col-lg-7 col-xl-5">
+          <div class="col-12 col-md-7 col-xl-5">
             <div class="section-text-wrap">
               <h2 class="title">Replenish your account in any convenient way with minimal
                 commissions</h2>
@@ -234,9 +234,9 @@
                 only. We’d like to make it free, but Visa, MasterCard and your card
                 issuing bank have their conditions.</p>
               <div
-                class="d-lg-flex mt-5"
+                class="d-md-flex mt-5"
               >
-                <svg class="banner banner-visa">
+                <svg class="banner banner-visa flex-shrink-0">
                   <use xlink:href="#banner-visa"></use>
                 </svg>
                 <img
@@ -244,20 +244,20 @@
                   srcset="./banner-mastercard@2x.png 2x, ./banner-mastercard@3x.png 3x" alt=""
                   class="banner banner-mastercard"
                 >
-                <svg class="banner banner-union-pay">
+                <svg class="banner banner-union-pay flex-shrink-0">
                   <use xlink:href="#banner-union-pay"></use>
                 </svg>
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-4 offset-lg-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-md-4 offset-md-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               src="./deposit.png"
               srcset="./deposit@2x.png 2x, ./deposit@3x.png 3x" alt=""
               class="phone-pic"
             >
           </div>
-          <div class="col-12 col-xl-2 d-lg-none">
+          <div class="col-12 col-xl-2 d-md-none d-lg-none">
             <div class="d-flex flex-column align-items-center">
               <svg class="banner banner-visa">
                 <use xlink:href="#banner-visa"></use>
@@ -280,14 +280,14 @@
     <section class="section section-exchange-fiat">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-lg-4 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-md-4 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               src="./exchange.png"
               srcset="./exchange@2x.png 2x, ./exchange@3x.png 3x" alt=""
               class="phone-pic"
             >
           </div>
-          <div class="col-12 col-lg-7 offset-lg-1 col-xl-6 offset-xl-1 col-xxl-5 offset-xxl-2">
+          <div class="col-12 col-md-7 offset-md-1 col-xl-6 offset-xl-1 col-xxl-5 offset-xxl-2">
             <h2 class="title">Exchange fiat and digital money at genuine exchange rates</h2>
             <p class="section-text">Transparent exchange rates for any currency.
               We provide exchange
@@ -302,19 +302,19 @@
     <section class="section section-send-money">
       <div class="container">
         <div class="row align-items-center h-100">
-          <div class="col-12 col-lg-7 offset-lg-1 order-lg-1 col-xl-5">
+          <div class="col-12 col-md-7 offset-md-1 order-md-1 col-xl-5">
             <div class="section-text-wrap">
               <h2 class="title">Instant remittances via a&nbsp;telephone number</h2>
               <p class="section-text">Send money to friends and relatives by a phone number
                 only.
                 Even if they don’t have Zam.account, they will receive payment
                 after a simple authentication.</p>
-              <svg class="coins-mobile coins-mobile-lg d-lg-block mt-5">
+              <svg class="coins-mobile coins-mobile-lg d-md-block mt-5">
                 <use xlink:href="#coins-mobile"></use>
               </svg>
             </div>
           </div>
-          <div class="col-12 col-lg-4 order-lg-0 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-md-4 order-md-0 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               class="phone-pic"
               src="./send.png"
@@ -322,7 +322,7 @@
               alt=""
             />
           </div>
-          <div class="col-12 col-xl-2 d-lg-none">
+          <div class="col-12 col-xl-2 d-md-none d-lg-none">
             <div class="d-flex justify-content-center">
               <svg class="coins d-none d-md-block">
                 <use xlink:href="#coins"></use>
@@ -351,12 +351,12 @@
                 <div
                   :key="index"
                   style="margin-top: 30px"
-                  class="col-12 col-sm-6 col-lg-6 col-xl-4"
+                  class="col-12 col-sm-6 col-md-6 col-xl-4"
                 >
                   <a :href="item.url" target="_blank" rel="noreferrer noopener">
                     <news-card
                       :news="item"
-                      class="h-100 mx-lg-auto"
+                      class="mx-md-auto mx-lg-auto"
                     />
                   </a>
                 </div>
@@ -509,89 +509,6 @@ export default {
 <style lang="scss" scoped>
 @import "@/assets/styles/_settings.scss";
 
-.product {
-  display: flex;
-  align-items: center;
-  min-height: 100vh;
-
-  @include media-breakpoint-down(md) {
-    margin-top: 150px;
-  }
-}
-
-.product__name {
-  font-size: 1rem;
-  letter-spacing: 2.3px;
-  color: $sky-blue;
-  text-transform: uppercase;
-}
-
-.product__title {
-  font-size: 3.12500rem;
-  font-weight: bold;
-  line-height: 1.3;
-  letter-spacing: 0.8px;
-  color: #2a3271;
-  margin-top: 20px;
-  transition: font-size .2s ease;
-
-  @include media-breakpoint-down(md) {
-    font-size: 1.875rem;
-    line-height: 1;
-    letter-spacing: 1px;
-  }
-}
-
-.product__desc {
-  font-size: 1rem;
-  line-height: 1.56;
-  color: $silver;
-  margin-top: 20px;
-}
-
-.product__button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 180px;
-  padding: 0 15px;
-  height: 70px;
-  border-radius: 78px;
-  background-color: #8de37f;
-  box-shadow: 0 20px 42px -8px rgba(141, 227, 127, 0.82);
-  font-size: 1.3125rem;
-  font-weight: bold;
-  letter-spacing: -0.7px;
-  color: #ffffff;
-  margin-top: 45px;
-  transition: box-shadow .2s ease, font-size .2s ease;
-
-  &:hover {
-    box-shadow: none;
-  }
-
-  @include media-breakpoint-down(md) {
-    width: 136px;
-    height: 53px;
-    font-size: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.feature-title {
-  font-size: 1.625rem;
-  letter-spacing: 0.1px;
-  color: $silver;
-}
-
-.feature-desc {
-  font-size: 1rem;
-  line-height: 1.56;
-  color: $silver;
-  margin-top: 19px;
-}
-
 .musthead {
   display: flex;
   align-items: center;
@@ -601,10 +518,6 @@ export default {
     min-height: auto;
     padding-top: 180px;
     padding-bottom: 180px;
-  }
-
-  @include media-breakpoint-down(md) {
-    padding-top: 0;
   }
 }
 
@@ -620,11 +533,10 @@ export default {
   font-size: 5.625rem;
   font-weight: bold;
   line-height: 1;
-  letter-spacing: -3px;
   color: $sky-blue;
 
-  @include media-breakpoint-down(md) {
-    font-size: 3.625rem;
+  @include media-breakpoint-down(lg) {
+    font-size: 4.125rem;
     line-height: 1;
   }
 }
@@ -635,11 +547,6 @@ export default {
 
   margin-top: $spacer;
   margin-bottom: 0;
-
-  @include media-breakpoint-down(md) {
-    font-size: 0.875rem;
-    margin-top: 0;
-  }
 }
 
 .musthead__desc {
@@ -650,10 +557,6 @@ export default {
 
   @include media-breakpoint-down(lg) {
     margin-top: 50px;
-  }
-
-  @include media-breakpoint-down(md) {
-    margin-top: $spacer * 1.5;
   }
 }
 
@@ -693,6 +596,10 @@ export default {
     box-shadow: 0 3px 18px 0 #19533b66;
     background-color: #7ad86b;
   }
+
+  @include media-breakpoint-down(lg) {
+    padding: 12px 40px;
+  }
 }
 
 .apps-row {
@@ -714,16 +621,6 @@ export default {
 
 .musthead__pic {
   width: 100%;
-}
-
-.feature-right {
-  position: relative;
-  top: 160px;
-}
-
-.feature-left {
-  position: relative;
-  top: 70px;
 }
 
 .news-row {
@@ -774,13 +671,6 @@ export default {
   }
 }
 
-.phones {
-  @include media-breakpoint-down(md) {
-    width: auto;
-    height: 310px;
-  }
-}
-
 .section {
   padding: 50px 0;
   font-size: 1vh;
@@ -814,12 +704,7 @@ export default {
 
   @include media-breakpoint-down(lg) {
     margin-bottom: $spacer * 1.75;
-  }
-
-  @include media-breakpoint-down(md) {
-    font-size: 1.87500rem;
-    line-height: 1.33;
-    margin-bottom: $spacer * 1.5;
+    font-size: 2.25rem;
   }
 }
 
@@ -828,7 +713,7 @@ export default {
   line-height: 1.56;
   color: #858997;
 
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(lg) {
     font-size: 1rem;
   }
 }
@@ -847,9 +732,9 @@ export default {
   width: 160px;
   height: 105px;
 
-  @include media-breakpoint-down(md) {
-    width: 100px;
-    height: 52px;
+  @include media-breakpoint-down(lg) {
+    width: 167px;
+    height: 116px;
   }
 }
 

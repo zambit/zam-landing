@@ -9,7 +9,7 @@
   "signUp": "Sign Up",
   "getTheApp": "Get the app",
   "musthead": {
-    "title": "<span class=\"dark-blue\">First fair</span> digital bank",
+    "title": "<span class=\"dark-blue\">First fair</span><br> digital bank",
     "subtitle": "powered by blockchain",
     "desc": "We build transparent, fair and efficient generation 3.0 bank,\nbased on blockchain technology with a hybrid system of data distribution",
     "code": "Code",

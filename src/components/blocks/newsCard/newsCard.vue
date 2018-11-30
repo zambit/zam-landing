@@ -73,6 +73,8 @@ export default {
   }
 
   @include media-breakpoint-down(md) {
+    width: 325px;
+    height: 325px;
     padding: 20px 12px 30px;
   }
 }
