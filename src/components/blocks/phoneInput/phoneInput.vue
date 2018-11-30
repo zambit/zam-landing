@@ -6,8 +6,10 @@
           <div class="position-relative">
             <div
               v-html="'Code'"
-              :class="['placeholder', { 'placeholder--focused': codeInputFocused || code.length >
-             0 }]"
+              :class="['placeholder',
+              { 'placeholder--active': code.length > 0 && !codeInputFocused },
+              { 'placeholder--focused': codeInputFocused }]
+              "
             ></div>
             <input
               :value="code"
@@ -30,8 +32,10 @@
         <div class="position-relative">
           <div
             v-html="'Phone'"
-            :class="['placeholder', { 'placeholder--focused': phoneInputFocused || phone.length >
-             0 }]"
+            :class="['placeholder',
+              { 'placeholder--active': phone.length > 0 && !phoneInputFocused },
+              { 'placeholder--focused': phoneInputFocused }]
+              "
           ></div>
           <input
             :value="phone"
@@ -212,6 +216,11 @@ export default {
 
 .placeholder--focused {
   color: $sky-blue;
+  transform: scale(.75) translateY(-24px);
+}
+
+.placeholder--active {
+  color: #cbccd1;
   transform: scale(.75) translateY(-24px);
 }
 </style>
