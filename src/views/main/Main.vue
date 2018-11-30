@@ -292,7 +292,7 @@
               ><img
                 src="./banner-sgx.png"
                 srcset="./banner-sgx@2x.png 2x, ./banner-sgx@3x.png 3x"
-                alt="" class="banner banner-sgx mx-1 mt-md-0 mt-3 mt-sm-0 mb-md-5"
+                alt="" class="banner banner-sgx mx-1 mt-md-0  mt-sm-0 mb-md-5"
               ></div>
               <img
                 src="./exchange.png"
