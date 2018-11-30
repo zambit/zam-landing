@@ -284,15 +284,15 @@
               ><img
                 src="./banner-dme.png"
                 srcset="./banner-dme@2x.png 2x, ./banner-dme@3x.png 3x"
-                alt="" class="banner banner-dme mx-1 mt-sm-0 mb-md-5"
+                alt="" class="banner banner-dme mx-1 mt-sm-0 mb-3 mb-md-5"
               ><img
                 src="./banner-stock-exchange.png"
                 srcset="./banner-stock-exchange@2x.png 2x, ./banner-stock-exchange@3x.png 3x"
-                alt="" class="banner banner-stock-exchange mx-1 mt-sm-0 mb-md-5"
+                alt="" class="banner banner-stock-exchange mx-1 mt-sm-0 mb-3 mb-md-5"
               ><img
                 src="./banner-sgx.png"
                 srcset="./banner-sgx@2x.png 2x, ./banner-sgx@3x.png 3x"
-                alt="" class="banner banner-sgx mx-1 mt-md-0  mt-sm-0 mb-md-5"
+                alt="" class="banner banner-sgx mx-1"
               ></div>
               <img
                 src="./exchange.png"
