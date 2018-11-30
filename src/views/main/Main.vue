@@ -274,7 +274,9 @@
         <div class="row align-items-center justify-content-between h-100">
           <div class="col-12 col-lg-6 order-1 order-lg-0">
             <div
-              class="d-flex align-items-center flex-column flex-md-row flex-lg-column flex-xl-row"
+              class="d-flex justify-content-center
+               align-items-center
+               flex-column flex-md-row flex-lg-column flex-xl-row"
             >
               <div
                 class="banner-wrap d-flex flex-md-column flex-wrap mt-5 mt-md-0
