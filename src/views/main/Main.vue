@@ -57,7 +57,7 @@
             >
           </div>
           <div class="col-12 col-xl-2">
-            <div class="d-none d-md-none flex-column align-items-center">
+            <div class="d-none d-md-none d-xl-flex flex-column align-items-center">
               <a
                 href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
                 target="_blank"
@@ -78,7 +78,7 @@
               </a>
             </div>
 
-            <div class="d-md-flex musthead__bottom-app-row">
+            <div class="d-md-flex d-xl-none musthead__bottom-app-row">
               <a
                 href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
                 target="_blank"
