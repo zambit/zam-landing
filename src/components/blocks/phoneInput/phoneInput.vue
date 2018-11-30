@@ -2,7 +2,7 @@
   <div class="row no-gutters">
     <div class="col-12 position-relative">
       <div class="d-flex">
-        <div class="position-relative mr-4">
+        <div class="position-relative mr-3 mr-xl-4">
           <div class="position-relative">
             <div
               v-html="'Code'"

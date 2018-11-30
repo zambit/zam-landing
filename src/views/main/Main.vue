@@ -599,6 +599,7 @@ export default {
 
   @include media-breakpoint-down(lg) {
     padding: 12px 40px;
+    margin-left: $spacer;
   }
 }
 
@@ -731,6 +732,12 @@ export default {
 .banner {
   width: 160px;
   height: 105px;
+
+  &:not(:first-child) {
+    @include media-breakpoint-down(lg) {
+      margin-left: -30px;
+    }
+  }
 
   @include media-breakpoint-down(lg) {
     width: 167px;
