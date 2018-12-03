@@ -739,13 +739,13 @@ export default {
     margin-left: -10px;
   }
 
+  &.banner-mastercard {
+    height: auto;
+  }
+
   @include media-breakpoint-down(lg) {
     width: 133px;
     height: 106px;
-
-    &.banner-mastercard {
-      height: auto;
-    }
   }
 }
 
