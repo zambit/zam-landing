@@ -236,7 +236,8 @@
                 only. We’d like to make it free, but Visa, MasterCard and your card
                 issuing bank have their conditions.</p>
               <div
-                class="d-md-flex mt-5 flex-wrap align-items-md-center justify-content-md-center"
+                class="d-md-flex mt-5 flex-wrap align-items-center justify-content-md-center
+                justify-content-xl-start"
               >
                 <svg class="banner banner-visa flex-shrink-0">
                   <use xlink:href="#banner-visa"></use>
