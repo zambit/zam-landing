@@ -107,8 +107,8 @@
 
     <section class="section section-kyc">
       <div class="container">
-        <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-xl-2 d-md-none d-lg-none">
+        <div class="row align-items-center h-100">
+          <div class="col-12 col-xl-2 d-md-none d-lg-none d-xl-none d-xxl-none">
             <div
               class="d-flex flex-column align-items-center"
             >
@@ -120,11 +120,11 @@
               </svg>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-xl-4 col-xxl-3 order-1 order-md-0">
+          <div class="col-12 col-md-4 col-xl-4 col-xxl-4 offset-xl-1 order-1 order-md-0">
             <img
               data-v-4bb18f76="" src="./kyc.png"
               srcset="./kyc@2x.png 2x, ./kyc@3x.png 3x" alt=""
-              class="phone-pic"
+              class="phone-pic px-xxl-5"
             >
           </div>
           <div class="col-12 col-md-7 offset-md-1 col-xl-5 offset-xxl-2 offset-xl-1"><h2
@@ -159,15 +159,15 @@
 
     <section class="section section-virtual-cards">
       <div class="container">
-        <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-md-7 col-xl-5">
+        <div class="row align-items-center h-100">
+          <div class="col-12 col-md-7 col-xl-4 offset-xl-1">
             <div class="d-flex justify-content-center section-text-wrap">
-              <div><h2 data-v-4bb18f76="" class="title">Instant access to&nbsp;your
+              <div><h2 class="title">Instant access to&nbsp;your
                 virtual card</h2>
                 <p class="section-text">Start using the service just after the
                   registration.
                   Do online shopping and NFC payments with a virtual card.</p>
-                <div class="mt-5 mt-md-0 mt-md-5 d-xl-none d-none d-md-flex">
+                <div class="mt-5 mt-md-0 mt-md-5 d-none d-md-flex">
                   <svg class="banner banner-google-pay">
                     <use xlink:href="#banner-google-pay"></use>
                   </svg>
@@ -178,11 +178,11 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 offset-md-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-md-4 offset-md-1 col-xl-4 offset-xl-2">
             <img
               src="./face-id.png"
               srcset="./face-id@2x.png 2x, ./face-id@3x.png 3x" alt=""
-              class="phone-pic"
+              class="phone-pic px-xxl-5"
             >
           </div>
           <div class="col-12 col-xl-2 d-md-none">
@@ -203,9 +203,11 @@
     <section class="section section-physical-cards">
       <div class="container">
         <div class="row align-items-center h-100">
-          <div class="col-12 col-md-5 order-md-0 col-xl-6 col-xxl-5 order-1 order-xl-0">
+          <div
+            class="col-12 col-md-5 order-md-0 col-xl-6 col-xxl-4 offset-xxl-1
+             order-1 order-xl-0">
             <img
-              class="phone-pic credit-card ml-4"
+              class="phone-pic credit-card"
               src="./credit-card.png"
               srcset="./credit-card@2x.png 2x, ./credit-card@3x.png 3x"
               alt=""
@@ -224,8 +226,8 @@
 
     <section class="section section-deposit-money">
       <div class="container">
-        <div class="row justify-content-between align-items-center h-100">
-          <div class="col-12 col-md-7 col-xl-5">
+        <div class="row align-items-center h-100">
+          <div class="col-12 col-md-7 col-xl-5 offset-xl-1">
             <div class="section-text-wrap">
               <h2 class="title">Replenish your account in any convenient way with minimal
                 commissions</h2>
@@ -250,11 +252,11 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 offset-md-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-md-4 offset-md-1 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
             <img
               src="./deposit.png"
               srcset="./deposit@2x.png 2x, ./deposit@3x.png 3x" alt=""
-              class="phone-pic"
+              class="phone-pic px-xxl-5"
             >
           </div>
           <div class="col-12 col-xl-2 d-md-none d-lg-none">
@@ -280,11 +282,11 @@
     <section class="section section-exchange-fiat">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-md-4 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-md-4 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
             <img
               src="./exchange.png"
               srcset="./exchange@2x.png 2x, ./exchange@3x.png 3x" alt=""
-              class="phone-pic"
+              class="phone-pic px-xxl-5"
             >
           </div>
           <div class="col-12 col-md-7 offset-md-1 col-xl-6 offset-xl-1 col-xxl-5 offset-xxl-2">
@@ -302,7 +304,7 @@
     <section class="section section-send-money">
       <div class="container">
         <div class="row align-items-center h-100">
-          <div class="col-12 col-md-7 offset-md-1 order-md-1 col-xl-5">
+          <div class="col-12 col-md-7 offset-md-1 col-xl-5 offset-xxl-1 col-xxl-5">
             <div class="section-text-wrap">
               <h2 class="title">Instant remittances via a&nbsp;telephone number</h2>
               <p class="section-text">Send money to friends and relatives by a phone number
@@ -314,9 +316,9 @@
               </svg>
             </div>
           </div>
-          <div class="col-12 col-md-4 order-md-0 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-md-4 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
             <img
-              class="phone-pic"
+              class="phone-pic px-xxl-5"
               src="./send.png"
               srcset="./send@2x.png 2x, ./send@3x.png 3x"
               alt=""
@@ -346,20 +348,19 @@
         </div>
         <div class="row justify-content-center news-row">
           <div class="col-12 col-xxl-10">
-            <div class="row justify-content-center justify-content-xl-around">
+            <div class="row justify-content-center">
               <template v-for="(item, index) in news">
-                <div
+                <a
                   :key="index"
-                  style="margin-top: 30px"
-                  class="col-12 col-sm-6 col-md-6 col-xl-4"
+                  :href="item.url"
+                  class="mx-3 mt-4"
+                  target="_blank"
+                  rel="noreferrer noopener"
                 >
-                  <a :href="item.url" target="_blank" rel="noreferrer noopener">
-                    <news-card
-                      :news="item"
-                      class="mx-md-auto mx-lg-auto"
-                    />
-                  </a>
-                </div>
+                  <news-card
+                    :news="item"
+                  />
+                </a>
               </template>
             </div>
           </div>
@@ -733,10 +734,8 @@ export default {
   width: 160px;
   height: 105px;
 
-  &:not(:first-child) {
-    @include media-breakpoint-down(lg) {
-      margin-left: -30px;
-    }
+  &:first-child {
+    margin-left: -10px;
   }
 
   @include media-breakpoint-down(lg) {
@@ -822,7 +821,7 @@ export default {
 }
 
 .section-text-wrap {
-  margin-left: 60px;
+  margin-left: 0px;
 
   @include media-breakpoint-down(lg) {
     margin-left: 0;
