@@ -48,7 +48,7 @@
               </form>
             </div>
           </div>
-          <div class="col-12 col-md-4 offset-md-1 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
+          <div class="col-12 col-md-5 col-xl-4 offset-xl-1 col-xxl-3 offset-xxl-2">
             <img
               class="musthead__pic mx-auto"
               src="./main.png"
@@ -120,14 +120,14 @@
               </svg>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-xl-4 col-xxl-4 offset-xl-1 order-1 order-md-0">
+          <div class="col-12 col-md-5 col-xl-4 col-xxl-4 offset-xl-1 order-1 order-md-0">
             <img
               data-v-4bb18f76="" src="./kyc.png"
               srcset="./kyc@2x.png 2x, ./kyc@3x.png 3x" alt=""
               class="phone-pic px-xxl-5"
             >
           </div>
-          <div class="col-12 col-md-7 offset-md-1 col-xl-5 offset-xxl-2 offset-xl-1"><h2
+          <div class="col-12 col-md-7 col-xl-5 offset-xxl-2 offset-xl-1"><h2
             class="title"
           >Identity verification in 2 minutes</h2>
             <p class="section-text mb-4">No need to fill in numerous forms and attach
@@ -178,7 +178,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 offset-md-1 col-xl-4 offset-xl-2">
+          <div class="col-12 col-md-5 col-xl-4 offset-xl-2">
             <img
               src="./face-id.png"
               srcset="./face-id@2x.png 2x, ./face-id@3x.png 3x" alt=""
@@ -236,7 +236,7 @@
                 only. We’d like to make it free, but Visa, MasterCard and your card
                 issuing bank have their conditions.</p>
               <div
-                class="d-md-flex mt-5"
+                class="d-md-flex mt-5 flex-wrap align-items-center justify-content-md-center"
               >
                 <svg class="banner banner-visa flex-shrink-0">
                   <use xlink:href="#banner-visa"></use>
@@ -252,7 +252,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-4 offset-md-1 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
+          <div class="col-12 col-md-5 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
             <img
               src="./deposit.png"
               srcset="./deposit@2x.png 2x, ./deposit@3x.png 3x" alt=""
@@ -282,14 +282,14 @@
     <section class="section section-exchange-fiat">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-md-4 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
+          <div class="col-12 col-md-5 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
             <img
               src="./exchange.png"
               srcset="./exchange@2x.png 2x, ./exchange@3x.png 3x" alt=""
               class="phone-pic px-xxl-5"
             >
           </div>
-          <div class="col-12 col-md-7 offset-md-1 col-xl-6 offset-xl-1 col-xxl-5 offset-xxl-2">
+          <div class="col-12 col-md-7 col-xl-6 offset-xl-1 col-xxl-5 offset-xxl-2">
             <h2 class="title">Exchange fiat and digital money at genuine exchange rates</h2>
             <p class="section-text">Transparent exchange rates for any currency.
               We provide exchange
@@ -304,7 +304,7 @@
     <section class="section section-send-money">
       <div class="container">
         <div class="row align-items-center h-100">
-          <div class="col-12 col-md-7 offset-md-1 col-xl-5 offset-xxl-1 col-xxl-5">
+          <div class="col-12 col-md-7 order-md-1 col-xl-5 offset-xxl-1 col-xxl-5">
             <div class="section-text-wrap">
               <h2 class="title">Instant remittances via a&nbsp;telephone number</h2>
               <p class="section-text">Send money to friends and relatives by a phone number
@@ -316,7 +316,7 @@
               </svg>
             </div>
           </div>
-          <div class="col-12 col-md-4 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
+          <div class="col-12 col-md-5 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
             <img
               class="phone-pic px-xxl-5"
               src="./send.png"
@@ -741,6 +741,10 @@ export default {
   @include media-breakpoint-down(lg) {
     width: 167px;
     height: 116px;
+
+    &.banner-mastercard {
+      height: auto;
+    }
   }
 }
 
@@ -830,5 +834,12 @@ export default {
 
 .musthead__bottom-app-row {
   margin-top: 110px;
+}
+
+.section-physical-cards {
+  @include media-breakpoint-down(lg) {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
 }
 </style>
