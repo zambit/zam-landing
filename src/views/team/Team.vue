@@ -131,6 +131,9 @@ export default {
       }
 
       this.memberToShow += direction;
+
+      window.getSelection().removeAllRanges();
+
       return false;
     },
   },
@@ -432,22 +435,22 @@ export default {
           facebook: '',
         },
         {
-          name: this.$t('team.members.samyNaceri.name'),
-          role: this.$t('team.members.samyNaceri.role'),
+          name: this.$t('team.members.antonyScuderi.name'),
+          role: this.$t('team.members.antonyScuderi.role'),
           photo: {
-            x1: require('./samy-naceri.jpg'), // eslint-disable-line
-            x2: require('./samy-naceri@2x.jpg'), // eslint-disable-line
-            x3: require('./samy-naceri@3x.jpg'), // eslint-disable-line
+            x1: require('./antony-scuderi.jpg'), // eslint-disable-line
+            x2: require('./antony-scuderi@2x.jpg'), // eslint-disable-line
+            x3: require('./antony-scuderi@3x.jpg'), // eslint-disable-line
           },
           list: [
-            this.$t('team.members.samyNaceri.list[0]'),
-            this.$t('team.members.samyNaceri.list[1]'),
-            this.$t('team.members.samyNaceri.list[2]'),
-            this.$t('team.members.samyNaceri.list[3]'),
-            this.$t('team.members.samyNaceri.list[4]'),
+            this.$t('team.members.antonyScuderi.list[0]'),
+            this.$t('team.members.antonyScuderi.list[1]'),
+            this.$t('team.members.antonyScuderi.list[2]'),
+            this.$t('team.members.antonyScuderi.list[3]'),
+            this.$t('team.members.antonyScuderi.list[4]'),
           ],
-          linkedin: '',
-          facebook: 'https://www.facebook.com/SamyNaceriOfficiel/',
+          linkedin: 'https://www.linkedin.com/in/anthony-scuderi/',
+          facebook: '',
         },
       ];
     },
