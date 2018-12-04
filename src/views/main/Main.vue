@@ -441,19 +441,6 @@ export default {
           },
         },
         {
-          day: '26',
-          tag: 'News',
-          month: 'Oct',
-          title: 'Zamzam welcomes Samy Naceri to the team',
-          author: 'zamzam',
-          url: 'https://medium.com/@Zamzamofficial/zamzam-welcomes-samy-naceri-to-the-team-64960c6b0c05',
-          thumb: {
-            x1: require('./news-samy-naceri.jpg'),
-            x2: require('./news-samy-naceri@2x.jpg'),
-            x3: require('./news-samy-naceri@3x.jpg'),
-          },
-        },
-        {
           day: '23',
           tag: 'News',
           month: 'Oct',
@@ -464,6 +451,20 @@ export default {
             x1: require('./news-zamzam-digest-03.jpg'),
             x2: require('./news-zamzam-digest-03@2x.jpg'),
             x3: require('./news-zamzam-digest-03@3x.jpg'),
+          },
+        },
+
+        {
+          day: '17',
+          tag: 'News',
+          month: 'Sep',
+          title: 'Zamzam launched sending crypto by cell phone number',
+          author: 'zamzam',
+          url: 'https://medium.com/@Zamzamofficial/zamzam-welcomes-samy-naceri-to-the-team-64960c6b0c05',
+          thumb: {
+            x1: require('./medium-news.jpg'),
+            x2: require('./medium-news@2x.jpg'),
+            x3: require('./medium-news@3x.jpg'),
           },
         },
       ],
