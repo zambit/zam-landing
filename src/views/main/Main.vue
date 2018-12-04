@@ -305,7 +305,7 @@
     <section class="section section-send-money">
       <div class="container">
         <div class="row align-items-center h-100">
-          <div class="col-12 col-md-7 order-md-1 col-xl-5 offset-xxl-1 col-xxl-5">
+          <div class="col-12 col-md-7 order-md-1 order-xl-0 col-xl-5 offset-xxl-1 col-xxl-5">
             <div class="section-text-wrap">
               <h2 class="title">Instant remittances via a&nbsp;telephone number</h2>
               <p class="section-text">Send money to friends and relatives by a phone number
@@ -807,7 +807,8 @@ export default {
 }
 
 .coins-mobile {
-  height: 130px;
+  height: 168px;
+  width: 439px;
 }
 
 .coins-mobile-lg {
