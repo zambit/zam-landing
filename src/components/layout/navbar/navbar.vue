@@ -365,9 +365,6 @@ export default {
   }
 }
 
-.navbar__select-lang {
-}
-
 .locales-sb {
   position: relative;
 }
@@ -479,5 +476,9 @@ export default {
   height: 32px;
 
   fill: #b0b3be;
+
+  &:hover {
+    fill: #cfd0d6;
+  }
 }
 </style>

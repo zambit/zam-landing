@@ -269,7 +269,7 @@
             >
           </div>
           <div class="col-12 col-xl-2 d-md-none d-lg-none">
-            <div class="d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center flex-wrap">
               <svg class="banner banner-visa">
                 <use xlink:href="#banner-visa"></use>
               </svg>
@@ -699,6 +699,11 @@ export default {
     margin-left: auto;
     margin-right: auto;
   }
+
+  @include media-breakpoint-down(sm) {
+    box-shadow: 0 3px 15px 0 rgba(16, 154, 48, 0.3);
+    background-color: rgb(122, 216, 107);
+  }
 }
 
 .section-news {
@@ -774,6 +779,12 @@ export default {
 .banner-google-play {
   width: 200px;
   height: 77px;
+
+  transition: transform .2s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .banner {
@@ -800,6 +811,12 @@ export default {
  @include media-breakpoint-down(lg) {
    margin-left: -20px;
  }
+}
+
+.banner-union-pay {
+  @media all and (max-width: 425px){
+    margin-top: -30px;
+  }
 }
 
 .phone-pic {
@@ -829,8 +846,14 @@ export default {
   padding: 16px 32px;
 
   border-radius: 30px;
-  box-shadow: 0 3px 10px 0 #19533b29;
-  background-color: #7ad86b;
+  box-shadow: 0 3px 15px 0 rgba(16, 154, 48, 0.3);
+  background-color: rgb(122, 216, 107);
+
+  transition: box-shadow .2s ease;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .kyc-title {
