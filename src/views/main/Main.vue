@@ -699,11 +699,6 @@ export default {
     margin-left: auto;
     margin-right: auto;
   }
-
-  @include media-breakpoint-down(sm) {
-    box-shadow: 0 3px 15px 0 rgba(16, 154, 48, 0.3);
-    background-color: rgb(122, 216, 107);
-  }
 }
 
 .section-news {
@@ -846,7 +841,7 @@ export default {
   padding: 16px 32px;
 
   border-radius: 30px;
-  box-shadow: 0 3px 15px 0 rgba(16, 154, 48, 0.3);
+  box-shadow: 3px 20px 35px 0 rgba(141, 227, 127, 0.4);
   background-color: rgb(122, 216, 107);
 
   transition: box-shadow .2s ease;

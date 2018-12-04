@@ -209,7 +209,7 @@ export default {
   padding: 10px 0;
   border: 1px solid transparent;
 
-  transition: color .2s ease, transform .2s ease;
+  transition: color .2s ease, transform .2s ease, opacity .2s ease;
   transform-origin: left;
 
   pointer-events: none;
@@ -218,10 +218,10 @@ export default {
 .placeholder--focused {
   color: $sky-blue;
   transform: scale(.75) translateY(-24px);
+  opacity: 1;
 }
 
 .placeholder--active {
-  color: #cbccd1;
-  transform: scale(.75) translateY(-24px);
+  opacity: 0;
 }
 </style>
