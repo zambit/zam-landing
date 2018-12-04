@@ -78,7 +78,7 @@
               </a>
             </div>
 
-            <div class="d-md-flex d-xl-none musthead__bottom-app-row">
+            <div class="d-none d-md-flex d-xl-none musthead__bottom-app-row">
               <a
                 href="https://itunes.apple.com/ru/app/zam-wallet/id1436344249?mt=8"
                 target="_blank"
@@ -108,9 +108,9 @@
     <section class="section section-kyc">
       <div class="container">
         <div class="row align-items-center h-100">
-          <div class="col-12 col-xl-2 d-md-none d-lg-none d-xl-none d-xxl-none">
+          <div class="col-12 order-2 d-md-none d-lg-none d-xl-none d-xxl-none">
             <div
-              class="d-flex flex-column align-items-center"
+              class="d-flex align-items-center justify-content-center"
             >
               <svg class="banner banner-saltedge">
                 <use xlink:href="#banner-saltedge"></use>
@@ -141,7 +141,7 @@
                 account in one of our
                 2500 partner banks worldwide</p>
               <div
-                class="d-md-flex mt-5"
+                class="d-none d-md-flex mt-5"
               >
                 <svg class="banner banner-saltedge">
                   <use xlink:href="#banner-saltedge"></use>
@@ -186,7 +186,7 @@
             >
           </div>
           <div class="col-12 col-xl-2 d-md-none">
-            <div class="d-flex flex-column align-items-center">
+            <div class="d-flex align-items-center justify-content-center">
               <svg class="banner banner-google-pay">
                 <use xlink:href="#banner-google-pay"></use>
               </svg>
@@ -207,15 +207,23 @@
             class="col-12 col-md-5 order-md-0 col-xl-6 col-xxl-4 offset-xxl-1
              order-1 order-xl-0">
             <img
-              class="phone-pic credit-card"
+              class="phone-pic credit-card d-none d-md-block"
               src="./credit-card.png"
               srcset="./credit-card@2x.png 2x, ./credit-card@3x.png 3x"
+              alt=""
+            />
+
+            <img
+              class="phone-pic credit-card d-md-none"
+              src="./credit-card-rotated.png"
+              srcset="./credit-card-rotated@2x.png 2x, ./credit-card-rotated@3x.png 3x"
               alt=""
             />
           </div>
           <div class="col-12 col-md-6 offset-md-1 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-2">
             <h2 class="title">Even more possibilities with a physical card</h2>
-            <p class="section-text">Multicurrency cash is always with you. Withdraw money at
+            <p class="section-text mb-0 mb-md-auto">Multicurrency cash is always with you. Withdraw
+              money at
               any ATM worldwide with a minimal fee. We are not earning
               on you, just covering the costs.</p>
           </div>
@@ -231,12 +239,12 @@
             <div class="section-text-wrap">
               <h2 class="title">Replenish your account in any convenient way with minimal
                 commissions</h2>
-              <p class="section-text">Replenish your zam.account with any bank card
+              <p class="section-text mb-0 mb-md-auto">Replenish your zam.account with any bank card
                 with 2% commission
                 only. We’d like to make it free, but Visa, MasterCard and your card
                 issuing bank have their conditions.</p>
               <div
-                class="d-md-flex mt-5 align-items-center justify-content-md-center
+                class="d-none d-md-flex mt-5 align-items-center justify-content-md-center
                 justify-content-lg-start"
               >
                 <svg class="banner banner-visa flex-shrink-0">
@@ -261,7 +269,7 @@
             >
           </div>
           <div class="col-12 col-xl-2 d-md-none d-lg-none">
-            <div class="d-flex flex-column align-items-center">
+            <div class="d-flex align-items-center justify-content-center">
               <svg class="banner banner-visa">
                 <use xlink:href="#banner-visa"></use>
               </svg>
@@ -283,7 +291,9 @@
     <section class="section section-exchange-fiat">
       <div class="container">
         <div class="row align-items-center justify-content-between h-100">
-          <div class="col-12 col-md-5 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
+          <div
+            class="order-1 order-md-0
+            col-12 col-md-5 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
             <img
               src="./exchange.png"
               srcset="./exchange@2x.png 2x, ./exchange@3x.png 3x" alt=""
@@ -292,7 +302,7 @@
           </div>
           <div class="col-12 col-md-7 col-xl-6 offset-xl-1 col-xxl-5 offset-xxl-2">
             <h2 class="title">Exchange fiat and digital money at genuine exchange rates</h2>
-            <p class="section-text">Transparent exchange rates for any currency.
+            <p class="section-text mb-0 mb-md-auto">Transparent exchange rates for any currency.
               We provide exchange
               services at average market rates and with fixed withdrawal fee (0.5%).
               Traditional banks exchange rates are 2-10% higher.</p>
@@ -308,16 +318,17 @@
           <div class="col-12 col-md-7 order-md-1 order-xl-0 col-xl-5 offset-xxl-1 col-xxl-5">
             <div class="section-text-wrap">
               <h2 class="title">Instant remittances via a&nbsp;telephone number</h2>
-              <p class="section-text">Send money to friends and relatives by a phone number
+              <p class="section-text mb-0 mb-md-auto">
+                Send money to friends and relatives by a phone number
                 only.
                 Even if they don’t have Zam.account, they will receive payment
                 after a simple authentication.</p>
-              <svg class="coins-mobile coins-mobile-lg d-md-block mt-5">
+              <svg class="d-none coins-mobile coins-mobile-lg d-md-block mt-5">
                 <use xlink:href="#coins-mobile"></use>
               </svg>
             </div>
           </div>
-          <div class="col-12 col-md-5 col-xl-4 offset-xl-1 col-xxl-4 offset-xxl-1">
+          <div class="col-12 col-md-5 col-xl-4 offset-xl-2 col-xxl-4 offset-xxl-1">
             <img
               class="phone-pic px-xxl-5"
               src="./send.png"
@@ -521,6 +532,12 @@ export default {
     padding-top: 180px;
     padding-bottom: 180px;
   }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 0;
+    padding-bottom: 102px;
+    margin-bottom: 0;
+  }
 }
 
 .musthead__wrapper {
@@ -541,6 +558,10 @@ export default {
     font-size: 4.125rem;
     line-height: 1;
   }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 3.625rem;
+  }
 }
 
 .musthead__subtitle {
@@ -549,6 +570,11 @@ export default {
 
   margin-top: $spacer;
   margin-bottom: 0;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 2px;
+    font-size: 0.9375rem;
+  }
 }
 
 .musthead__desc {
@@ -559,6 +585,11 @@ export default {
 
   @include media-breakpoint-down(lg) {
     margin-top: 50px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 18px;
+    margin-bottom: 40px;
   }
 }
 
@@ -587,16 +618,15 @@ export default {
   color: #ffffff;
 
   border-radius: 30px;
-  box-shadow: 0 3px 10px 0 #19533b29;
-  background-color: #7ad86b;
+  box-shadow: 3px 20px 35px 0 rgba(141, 227, 127, 0.4);
+  background-color: rgb(122, 216, 107);
 
   margin-left: $spacer * 2;
 
   transition: box-shadow .2s ease, background-color .2s ease;
 
   &:hover {
-    box-shadow: 0 3px 18px 0 #19533b66;
-    background-color: #7ad86b;
+    box-shadow: none;
   }
 
   @include media-breakpoint-down(lg) {
@@ -624,6 +654,13 @@ export default {
 
 .musthead__pic {
   width: 100%;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+    max-width: 232px;
+
+    margin-top: 84px;
+  }
 }
 
 .news-row {
@@ -644,15 +681,14 @@ export default {
   font-weight: 500;
   color: #ffffff;
   border-radius: 70px;
-  box-shadow: 0 3px 15px 0 #19533b29;
-  background-color: #7ad86b;
+  box-shadow: 3px 20px 35px 0 rgba(141, 227, 127, 0.4);
+  background-color: rgb(122, 216, 107);
   margin-top: 90px;
 
   transition: box-shadow .2s ease, background-color .2s ease;
 
   &:hover {
-    box-shadow: 0 3px 18px 0 #19533b66;
-    background-color: #7ad86b;
+    box-shadow: none;
   }
 
   @include media-breakpoint-down(md) {
@@ -682,6 +718,10 @@ export default {
     padding: 110px 0;
   }
 
+  @include media-breakpoint-down(sm) {
+    padding: 50px 0;
+  }
+
   & .container {
     height: 100vh;
 
@@ -708,6 +748,11 @@ export default {
   @include media-breakpoint-down(lg) {
     margin-bottom: $spacer * 1.75;
     font-size: 2.25rem;
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1.875rem;
+    line-height: 1.33;
   }
 }
 
@@ -759,14 +804,20 @@ export default {
 
 .phone-pic {
   width: 100%;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+    max-width: 175px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+  }
 }
 
-.card-pic {
-  position: absolute;
-  height: 60%;
-  top: 20%;
-  right: 15%;
-  z-index: -1;
+.credit-card {
+  @include media-breakpoint-down(sm) {
+    max-width: 180px;
+  }
 }
 
 .get-app-link {
@@ -798,6 +849,7 @@ export default {
 
   @include media-breakpoint-down(md) {
     font-size: .75rem;
+    margin-bottom: 0;
   }
 }
 
@@ -809,6 +861,11 @@ export default {
 .coins-mobile {
   height: 168px;
   width: 439px;
+
+  @include media-breakpoint-down(sm) {
+    width: 266px;
+    height: 117px;
+  }
 }
 
 .coins-mobile-lg {
@@ -842,6 +899,11 @@ export default {
   @include media-breakpoint-down(lg) {
     padding-top: 250px;
     padding-bottom: 250px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 </style>

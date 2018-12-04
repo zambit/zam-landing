@@ -162,6 +162,7 @@ export default {
 
 .input-code {
   width: 75px;
+  padding-right: 24px;
 }
 
 .phone__country {
@@ -169,11 +170,11 @@ export default {
   right: 0;
   top: 15px;
   width: 24px;
-  height: 18px;
-  background-size: 100%;
+  height: 24px;
+  border-radius: 100%;
+  background-size: inherit;
   background-repeat: no-repeat;
   background-position: center;
-  box-shadow: 0px 0px 30px -5px #00000085;
 }
 
 .input::-webkit-input-placeholder { /* Chrome/Opera/Safari */

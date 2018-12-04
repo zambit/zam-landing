@@ -77,6 +77,11 @@ export default {
     height: 325px;
     padding: 20px 12px 30px;
   }
+
+  @include media-breakpoint-down(sm) {
+    width: 275px;
+    height: 275px;
+  }
 }
 
 .news-card__day {

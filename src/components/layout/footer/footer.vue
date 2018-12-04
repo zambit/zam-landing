@@ -245,7 +245,6 @@ footer.footer {
   }
 
   @include media-breakpoint-down(sm) {
-    width: 100%;
     font-size: 1rem;
   }
 }
