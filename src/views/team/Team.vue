@@ -495,6 +495,8 @@ export default {
   overflow-y: auto;
   overflow-x: hidden;
 
+  user-select: none;
+
   @include media-breakpoint-down(md) {
     align-items: initial;
     justify-content: initial;
