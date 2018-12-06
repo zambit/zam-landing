@@ -316,7 +316,6 @@
     "technicalWhitePaper": "기술 백서 <span class=\"grey\">(곧 제공 예정)</span>"
   },
   "successPage": {
-    "title": "Thank you for your trust",
-    "desc": "In September we will launch the ZAM Token in the application of Zam.Wallet and you will receive an SMS with bonus tokens."
+    "title": "Thank you for your trust"
   }
 }
