@@ -387,9 +387,9 @@ export default {
           name: this.$t('team.members.namigMamedov.name'),
           role: this.$t('team.members.namigMamedov.role'),
           photo: {
-            x1: require('./namig-mamedov.jpg'), // eslint-disable-line
-            x2: require('./namig-mamedov@2x.jpg'), // eslint-disable-line
-            x3: require('./namig-mamedov@3x.jpg'), // eslint-disable-line
+            x1: require('./namiq-mamedov.jpg'), // eslint-disable-line
+            x2: require('./namiq-mamedov@2x.jpg'), // eslint-disable-line
+            x3: require('./namiq-mamedov@3x.jpg'), // eslint-disable-line
           },
           list: [
             this.$t('team.members.namigMamedov.list[0]'),
@@ -450,6 +450,23 @@ export default {
             this.$t('team.members.antonyScuderi.list[4]'),
           ],
           linkedin: 'https://www.linkedin.com/in/anthony-scuderi/',
+          facebook: '',
+        },
+        {
+          name: this.$t('team.members.jaberAlMarzoqi.name'),
+          role: this.$t('team.members.jaberAlMarzoqi.role'),
+          photo: {
+            x1: require('./jaber-al-marzoqi.jpg'), // eslint-disable-line
+            x2: require('./jaber-al-marzoqi@2x.jpg'), // eslint-disable-line
+            x3: require('./jaber-al-marzoqi@3x.jpg'), // eslint-disable-line
+          },
+          list: [
+            this.$t('team.members.antonyScuderi.list[0]'),
+            this.$t('team.members.antonyScuderi.list[1]'),
+            this.$t('team.members.antonyScuderi.list[2]'),
+            this.$t('team.members.antonyScuderi.list[3]'),
+          ],
+          linkedin: '',
           facebook: '',
         },
       ];
