@@ -351,7 +351,7 @@
     </section>
 
 
-    <section class="section-news">
+    <!--<section class="section-news">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -381,7 +381,7 @@
           <div class="col-auto">
             <a
               v-html="$t('news.more')"
-              href="https://medium.com/@zamzamofficial"
+              href="https://blog.zam.io"
               target="_blank"
               rel="noreferrer noopener"
               class="news-btn"
@@ -390,7 +390,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
   </div>
 </template>
 
@@ -398,6 +398,8 @@
 import axios from 'axios';
 import md5 from 'md5';
 import MobileDetect from 'mobile-detect';
+
+// import blogCard from '@/components/blocks/blogCard';
 
 import newsCard from '@/components/blocks/newsCard';
 import phoneInput from '@/components/blocks/phoneInput';
