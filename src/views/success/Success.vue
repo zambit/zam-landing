@@ -4,9 +4,6 @@
       <div class="col-12 col-md-7">
         <h1 v-html="$t('successPage.title')" class="success-title"></h1>
       </div>
-      <div class="col-12 col-md-6">
-        <p v-html="$t('successPage.desc')" class="success-desc mt-5"></p>
-      </div>
     </div>
   </div>
 </template>
