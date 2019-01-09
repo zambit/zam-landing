@@ -268,6 +268,11 @@ export default {
           name: this.$t('navbar.contacts'),
           external: false,
         },
+        {
+          route: 'https://blog.zam.io',
+          name: 'Blog',
+          external: true,
+        },
       ];
     },
   },
