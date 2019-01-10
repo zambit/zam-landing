@@ -418,23 +418,6 @@ export default {
           facebook: '',
         },
         {
-          name: this.$t('team.members.timurMarshani.name'),
-          role: this.$t('team.members.timurMarshani.role'),
-          photo: {
-            x1: require('./timur-marshani.jpg'), // eslint-disable-line
-            x2: require('./timur-marshani@2x.jpg'), // eslint-disable-line
-            x3: require('./timur-marshani@3x.jpg'), // eslint-disable-line
-          },
-          list: [
-            this.$t('team.members.timurMarshani.list[0]'),
-            this.$t('team.members.timurMarshani.list[1]'),
-            this.$t('team.members.timurMarshani.list[2]'),
-            this.$t('team.members.timurMarshani.list[3]'),
-          ],
-          linkedin: 'https://www.linkedin.com/in/timur-marshani-447a9883/',
-          facebook: '',
-        },
-        {
           name: this.$t('team.members.antonyScuderi.name'),
           role: this.$t('team.members.antonyScuderi.role'),
           photo: {
